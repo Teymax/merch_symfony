@@ -1,0 +1,115 @@
+<!-- app/Resources/views/base.html.twig -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html"; charset=utf-8" />
+    <title>{% block title %}MerchHelper{% endblock %}</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    {% block stylesheets %}
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,300i" rel="stylesheet">
+
+        <!-- Styles -->
+        <link href="assets/css/core.min.css" rel="stylesheet">
+        <link href="assets/css/app.min.css" rel="stylesheet">
+        <link href="assets/css/style.min.css" rel="stylesheet">
+        <link href="assets/css/main.css" rel="stylesheet">
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+        <link rel="icon" href="assets/img/favicon.png">
+    {% endblock %}
+</head>
+<body>
+    <div class="container-fluid" id="main_container">
+            {% block navigation %}
+                <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Merch Helper</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse col" id="navbarSupportedContent">
+                        <ul class="nav justify-content-end main_menu">
+                            <li class="nav-item text-uppercase">
+                                <a class="nav-link" id="home" href="#">Home</a>
+                            </li>
+                            <li class="nav-item text-uppercase">
+                                <a class="nav-link" id="about" href="#">About</a>
+                            </li>
+                            <li class="nav-item text-uppercase">
+                                <a class="nav-link" id="contact" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item text-uppercase">
+                                <a class="nav-link badge badge-info" id="logInBtn" href="#">Log-In</a>
+                            </li>
+                            <li class="nav-item text-uppercase">
+                                <a class="nav-link badge badge-dark" id="singUpBtn" href="#">Sing-Up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+        <div class="p-3 mb-2 bg-success text-white" id="logIn_form" style="display: none;">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary">Log-In</button>
+            </form>
+        </div>
+        <div class="p-3 mb-2 bg-primary  text-white" id="singUp_form"  style="display: none;">
+            <form>
+                <div class="form-group">
+                    <label for="firstName">Firstname</label>
+                    <input type="text" class="form-control" id="firstName" aria-describedby="firstName" placeholder="Enter your Firstname">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-success">Sing-Up</button>
+            </form>
+        </div>
+    </div>
+            {% endblock %}
+
+
+{% block javascripts %}
+    <!-- Scripts -->
+    <script src="assets/js/core.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#logInBtn').show();
+            $('#logIn_form').hide();
+            $('#singUpBtn').show();
+            $('#singUp_form').hide();
+            $('#logInBtn').click(function(event) {
+                event.preventDefault(); // Для того чтобы при нажатии на ссылку не кидало вверх
+                $('#logIn_form').slideToggle();
+                $('#singUp_form').hide();
+            });
+            $('#singUpBtn').click(function(event) {
+                event.preventDefault(); // Для того чтобы при нажатии на ссылку не кидало вверх
+                $('#singUp_form').slideToggle();
+                $('#logIn_form').hide();
+            });
+        });
+    </script>
+{% endblock %}
+    </div>
+</body>
+</html>
