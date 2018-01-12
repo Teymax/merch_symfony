@@ -1,3 +1,11 @@
 index:
     path: /
     controller: App\Controller\MainController::index
+
+app_task:
+    path: /sing-up
+    controller: App\Controller\TaskController::task
+
+app_done:
+    path: /login
+    controller: App\Controller\TaskSuccessController::taskSuccess

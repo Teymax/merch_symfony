@@ -42,46 +42,14 @@
                                 <a class="nav-link" id="contact" href="#">Contact</a>
                             </li>
                             <li class="nav-item text-uppercase">
-                                <a class="nav-link badge badge-info" id="logInBtn" href="#">Log-In</a>
+                                <a class="nav-link badge badge-info" id="logInBtn" href="log-in">Log-In</a>
                             </li>
                             <li class="nav-item text-uppercase">
-                                <a class="nav-link badge badge-dark" id="singUpBtn" href="#">Sing-Up</a>
+                                <a class="nav-link badge badge-dark" id="singUpBtn" href="sing-up">Sing-Up</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
-        <div class="p-3 mb-2 bg-success text-white" id="logIn_form" style="display: none;">
-            <form>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <button type="submit" class="btn btn-primary">Log-In</button>
-            </form>
-        </div>
-        <div class="p-3 mb-2 bg-primary  text-white" id="singUp_form"  style="display: none;">
-            <form>
-                <div class="form-group">
-                    <label for="firstName">Firstname</label>
-                    <input type="text" class="form-control" id="firstName" aria-describedby="firstName" placeholder="Enter your Firstname">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <button type="submit" class="btn btn-success">Sing-Up</button>
-            </form>
-        </div>
     </div>
             {% endblock %}
 
@@ -91,24 +59,6 @@
     <script src="assets/js/core.min.js"></script>
     <script src="assets/js/app.min.js"></script>
     <script src="assets/js/script.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#logInBtn').show();
-            $('#logIn_form').hide();
-            $('#singUpBtn').show();
-            $('#singUp_form').hide();
-            $('#logInBtn').click(function(event) {
-                event.preventDefault(); // Для того чтобы при нажатии на ссылку не кидало вверх
-                $('#logIn_form').slideToggle();
-                $('#singUp_form').hide();
-            });
-            $('#singUpBtn').click(function(event) {
-                event.preventDefault(); // Для того чтобы при нажатии на ссылку не кидало вверх
-                $('#singUp_form').slideToggle();
-                $('#logIn_form').hide();
-            });
-        });
-    </script>
 {% endblock %}
     </div>
 </body>

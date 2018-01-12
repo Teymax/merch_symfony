@@ -2,13 +2,11 @@ html, body {
 	height: 100%;
 }
 #main_container {
-	background-color: #00BFFF;
 	height: 100%;
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { 
 	#main_container {
-	background-color: #00BFFF;
 	height: 100%;
 	}
 }
@@ -16,7 +14,6 @@ html, body {
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
 	#main_container {
-	background-color: #EE82EE;
 	height: 100%;
 	}
 }
@@ -24,7 +21,6 @@ html, body {
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
 	#main_container {
-	background-color: #7B68EE;
 	height: 100%;
 	}
 }
@@ -32,7 +28,6 @@ html, body {
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
 	#main_container {
-	background-color: #808080;
 	height: 100%;
 	}
 }
