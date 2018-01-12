@@ -25,7 +25,7 @@ class TaskController extends Controller
         $user = new Users();
 
         $form = $this->createFormBuilder($user)
-            ->add('login', TextType::class, array('attr' => ['class' => 'form-control', 'placeholder' => 'Enter your login']))
+            ->add('login', TextType::class, array('attr' => ['class' => 'form-control', 'placeholder' => 'Enter your Name']))
             ->add('email', EmailType::class, array('attr' => ['class' => 'form-control', 'placeholder' => 'Enter your email']))
             ->add('password', PasswordType::class, array('attr' => ['class' => 'form-control', 'placeholder' => 'Enter your password']))
             ->add('regDate', HiddenType::class, array('data' => date("Y-m-d H:i:s"), 'attr' => ['class' => 'form-control']))
@@ -44,7 +44,7 @@ class TaskController extends Controller
             return $this->redirectToRoute('app_done');
         }
 
-        return $this->render('default/new.html.twig', array(
+        return $this->render('default/sing-up.html.twig', array(
             'form' => $form->createView(),
         ));
     }
