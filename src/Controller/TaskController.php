@@ -37,9 +37,9 @@ class TaskController extends Controller
 
         if ($form->isSubmitted()) {
             $user = $form->getData();
-             $em = $this->getDoctrine()->getManager();
-             $em->persist($user);
-             $em->flush();
+//             $em = $this->getDoctrine()->getManager();
+//             $em->persist($user);
+//             $em->flush();
 
             return $this->redirectToRoute('app_done');
         }
