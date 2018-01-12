@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="67393e52-def7-4304-93c1-7600d300baf2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/Controller/TaskController.php" afterPath="$PROJECT_DIR$/src/Controller/TaskController.php" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TaskSuccessController.php" afterPath="$PROJECT_DIR$/src/Controller/TaskSuccessController.php" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/-/S/a1JEldOnqwwwKtWP6JQx" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/-/S/a1JEldOnqwwwKtWP6JQx" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/G/L/tvv7DQdPklnttaLRWWII" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/G/L/tvv7DQdPklnttaLRWWII" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/H/N/Gco4sttJXp8KoMIbzpjC" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/H/N/Gco4sttJXp8KoMIbzpjC" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/W/N/II+UNJJ2XjmKp9swF6M5" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/W/N/II+UNJJ2XjmKp9swF6M5" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,15 +42,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaskController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TaskController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/TaskController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="2" selection-end-line="41" selection-end-column="28" />
+            <state relative-caret-position="408">
+              <caret line="27" column="121" lean-forward="false" selection-start-line="27" selection-start-column="121" selection-end-line="27" selection-end-column="121" />
               <folding>
                 <element signature="e#6#90#0#PHP" expanded="true" />
                 <element signature="e#119#140#0#PHP" expanded="true" />
-                <element signature="e#1770#1797#0#PHP" expanded="true" />
+                <element signature="e#1764#1791#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,14 +86,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaskSuccessController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TaskSuccessController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/TaskSuccessController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="34" column="35" lean-forward="false" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+            <state relative-caret-position="544">
+              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding>
                 <element signature="e#120#141#0#PHP" expanded="true" />
-                <element signature="e#1404#1429#0#PHP" expanded="true" />
+                <element signature="e#1410#1435#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,12 +113,12 @@
         <option value="$PROJECT_DIR$/config/routes.yaml" />
         <option value="$PROJECT_DIR$/templates/default/new.html.twig" />
         <option value="$PROJECT_DIR$/config/packages/security.yaml" />
-        <option value="$PROJECT_DIR$/src/Controller/TaskSuccessController.php" />
         <option value="$PROJECT_DIR$/src/Entity/Task.php" />
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/templates/default/login.html.twig" />
         <option value="$PROJECT_DIR$/templates/default/sing-up.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/TaskController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/TaskSuccessController.php" />
       </list>
     </option>
   </component>
@@ -310,12 +316,12 @@
       <option name="presentableId" value="Default" />
       <updated>1515696210407</updated>
       <workItem from="1515696213996" duration="3308000" />
-      <workItem from="1515745216439" duration="12914000" />
+      <workItem from="1515745216439" duration="12991000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16222000" />
+    <option name="totallyTimeSpent" value="16299000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -348,7 +354,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -424,17 +432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/TaskSuccessController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="34" column="35" lean-forward="false" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
-          <folding>
-            <element signature="e#120#141#0#PHP" expanded="true" />
-            <element signature="e#1404#1429#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -485,12 +482,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/TaskController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="2" selection-end-line="41" selection-end-column="28" />
+        <state relative-caret-position="408">
+          <caret line="27" column="121" lean-forward="false" selection-start-line="27" selection-start-column="121" selection-end-line="27" selection-end-column="121" />
           <folding>
             <element signature="e#6#90#0#PHP" expanded="true" />
             <element signature="e#119#140#0#PHP" expanded="true" />
-            <element signature="e#1770#1797#0#PHP" expanded="true" />
+            <element signature="e#1764#1791#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/TaskSuccessController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="e#120#141#0#PHP" expanded="true" />
+            <element signature="e#1410#1435#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
