@@ -30,7 +30,46 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
 
 
-        if (0 === strpos($pathinfo, '/_')) {
+        if (0 === strpos($pathinfo, '/admin')) {
+            // app_admin_admin
+            if ('/admin' === $pathinfo) {
+                return array (  '_controller' => 'App\\Controller\\AdminController::admin',  '_route' => 'app_admin_admin',);
+            }
+
+            // app_admin
+            if ('/admin' === $pathinfo) {
+                return array (  '_controller' => 'App\\Controller\\AdminController::admin',  '_route' => 'app_admin',);
+            }
+
+        }
+
+        elseif (0 === strpos($pathinfo, '/register')) {
+            // user_registration
+            if ('/register' === $pathinfo) {
+                return array (  '_controller' => 'App\\Controller\\RegisterController::registerAction',  '_route' => 'user_registration',);
+            }
+
+            // app_task
+            if ('/register' === $pathinfo) {
+                return array (  '_controller' => 'App\\Controller\\RegisterController::registerAction',  '_route' => 'app_task',);
+            }
+
+        }
+
+        elseif (0 === strpos($pathinfo, '/login')) {
+            // login
+            if ('/login' === $pathinfo) {
+                return array (  '_controller' => 'App\\Controller\\SecurityController::login',  '_route' => 'login',);
+            }
+
+            // app_done
+            if ('/login' === $pathinfo) {
+                return array (  '_controller' => 'App\\Controller\\SecutiyController::login',  '_route' => 'app_done',);
+            }
+
+        }
+
+        elseif (0 === strpos($pathinfo, '/_')) {
             // _twig_error_test
             if (0 === strpos($pathinfo, '/_error') && preg_match('#^/_error/(?P<code>\\d+)(?:\\.(?P<_format>[^/]++))?$#s', $pathinfo, $matches)) {
                 return $this->mergeDefaults(array_replace($matches, array('_route' => '_twig_error_test')), array (  '_controller' => 'twig.controller.preview_error:previewErrorPageAction',  '_format' => 'html',));
@@ -112,16 +151,6 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             }
 
             return $ret;
-        }
-
-        // app_task
-        if ('/sing-up' === $pathinfo) {
-            return array (  '_controller' => 'App\\Controller\\TaskController::task',  '_route' => 'app_task',);
-        }
-
-        // app_done
-        if ('/login' === $pathinfo) {
-            return array (  '_controller' => 'App\\Controller\\TaskSuccessController::taskSuccess',  '_route' => 'app_done',);
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

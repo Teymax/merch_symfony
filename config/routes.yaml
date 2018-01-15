@@ -3,9 +3,13 @@ index:
     controller: App\Controller\MainController::index
 
 app_task:
-    path: /sing-up
-    controller: App\Controller\TaskController::task
+    path: /register
+    controller: App\Controller\RegisterController::registerAction
 
 app_done:
     path: /login
-    controller: App\Controller\TaskSuccessController::taskSuccess
+    controller: App\Controller\SecutiyController::login
+
+app_admin:
+    path: /admin
+    controller: App\Controller\AdminController::admin

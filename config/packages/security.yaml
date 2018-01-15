@@ -1,9 +1,26 @@
+# config/packages/security.yaml
 security:
+    encoders:
+        App\Entity\User:
+            algorithm: bcrypt
+            cost: 12
+    # ...
+
     providers:
-        in_memory: { memory: ~ }
+        our_db_provider:
+            entity:
+                class: App\Entity\User
+                property: username
+                # if you're using multiple entity managers
+                # manager_name: customer
+
     firewalls:
-        dev:
-            pattern: ^/(_(profiler|wdt)|css|images|js)/
-            security: false
         main:
+            pattern:    ^/
+            http_basic: ~
             anonymous: ~
+            provider: our_db_provider
+            form_login:
+                login_path: login
+                check_path: login
+    # ...

@@ -61,8 +61,10 @@ final class Versions
   'symfony/security' => 'v4.0.3@dfc0ef20a75b723ab2f20449a7b5dd768800c9e2',
   'symfony/security-bundle' => 'v4.0.3@0440854c202dd49a64310cdd40a1c7008449b578',
   'symfony/templating' => 'v4.0.3@1b30ab3884d860f59811960db670273893edddae',
+  'symfony/translation' => 'v4.0.3@2bb1b9dac38d32c5afb00edc9371b5db4cf6d000',
   'symfony/twig-bridge' => 'v4.0.3@92b7c3f30fc8d23ac4be8da4e575a3bb7ea903c1',
   'symfony/twig-bundle' => 'v4.0.3@7c1ee541f7d8836d901d989c449746c953be930b',
+  'symfony/validator' => 'v4.0.3@dac55edb2d1a59026d2e51a04def7f9a1f19f365',
   'symfony/web-server-bundle' => 'v4.0.3@20ad52df8164d2eae029e6bb24356956c52380be',
   'symfony/yaml' => 'v4.0.3@b84f646b9490d2101e2c25ddeec77ceefbda2eee',
   'twig/twig' => 'v2.4.4@eddb97148ad779f27e670e1e3f19fb323aedafeb',
@@ -74,7 +76,7 @@ final class Versions
   'symfony/stopwatch' => 'v4.0.3@d52321f0e2b596bd03b5d1dd6eebe71caa925704',
   'symfony/var-dumper' => 'v4.0.3@883f6109a2069773e088c08626b87a3d3d61c566',
   'symfony/web-profiler-bundle' => 'v4.0.3@20a04d0672d7f538d1c06ded7bf5990f23c089aa',
-  '__root__' => 'dev-master@d26ba20bb9e1a5bf10bca2048eaad7933e73f4c8',
+  '__root__' => 'dev-master@779e2b3ea54793a4d6d6699bf4478f412ef82f5f',
 );
 
     private function __construct()
