@@ -25,13 +25,13 @@
 <body>
     <div class="container-fluid" id="main_container">
             {% block navigation %}
-                <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light justify-content-end main_menu">
                     <a class="navbar-brand" href="#">Merch Helper</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse col" id="navbarSupportedContent">
-                        <ul class="nav justify-content-end main_menu">
+                        <ul class="nav justify-content-end main_menu ml-auto">
                             <li class="nav-item text-uppercase">
                                 <a class="nav-link" id="home" href="#">Home</a>
                             </li>
@@ -47,6 +47,18 @@
                             <li class="nav-item text-uppercase">
                                 <a class="nav-link badge badge-dark" id="singUpBtn" href="register" style="color: white">Sing-Up</a>
                             </li>
+                            {#{% if is_granted('IS_AUTHENTICATED_FULLY') %}#}
+                                {#<p>{{ app.user.username }}</p>#}
+                                {#<li class="nav-item text-uppercase">#}
+                                    {#<a class="nav-link badge badge-danger" id="singUpBtn" href="{{ path('logout') }}" style="color: white">Logout</a>#}
+                                {#</li>#}
+                            {#{% endif %}#}
+                            {#{% if is_granted('ROLE_USER') %}#}
+                                {#<li class="nav-item text-uppercase">#}
+                                    {#<a class="nav-link badge badge-danger" id="singUpBtn" href="#" style="color: white">Delete</a>#}
+                                {#</li>#}
+                            {#{% endif %}#}
+
                         </ul>
                     </div>
                 </nav>

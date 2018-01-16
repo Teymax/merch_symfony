@@ -37,6 +37,11 @@ class srcDevDebugProjectContainerUrlGenerator extends Symfony\Component\Routing\
         'app_task' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'App\\Controller\\RegisterController::registerAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/register',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
         'app_done' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'App\\Controller\\SecutiyController::login',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/login',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
         'app_admin' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'App\\Controller\\AdminController::admin',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/admin',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
+        'app_list' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'App\\Controller\\ListController::list',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/list',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
+        'app_listCreate' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'App\\Controller\\ListCreateController::listCreate',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/list-create',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
+        'app_listEdit' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'App\\Controller\\ListEditController::listEdit',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/list-edit',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
+        'app_listDelete' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'App\\Controller\\ListDeleteController::listDelete',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/list-delete',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
+        'logout' => array (  0 =>   array (  ),  1 =>   array (  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/logout',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
     );
         }
     }

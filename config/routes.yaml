@@ -13,3 +13,17 @@ app_done:
 app_admin:
     path: /admin
     controller: App\Controller\AdminController::admin
+app_list:
+    path: /list
+    controller: App\Controller\ListController::list
+app_listCreate:
+    path: /list-create
+    controller: App\Controller\ListCreateController::listCreate
+app_listEdit:
+    path: /list-edit
+    controller: App\Controller\ListEditController::listEdit
+app_listDelete:
+    path: /list-delete
+    controller: App\Controller\ListDeleteController::listDelete
+logout:
+    path: /logout

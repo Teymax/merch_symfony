@@ -56,15 +56,46 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
-        elseif (0 === strpos($pathinfo, '/login')) {
-            // login
-            if ('/login' === $pathinfo) {
-                return array (  '_controller' => 'App\\Controller\\SecurityController::login',  '_route' => 'login',);
+        elseif (0 === strpos($pathinfo, '/l')) {
+            if (0 === strpos($pathinfo, '/login')) {
+                // login
+                if ('/login' === $pathinfo) {
+                    return array (  '_controller' => 'App\\Controller\\SecurityController::login',  '_route' => 'login',);
+                }
+
+                // app_done
+                if ('/login' === $pathinfo) {
+                    return array (  '_controller' => 'App\\Controller\\SecutiyController::login',  '_route' => 'app_done',);
+                }
+
             }
 
-            // app_done
-            if ('/login' === $pathinfo) {
-                return array (  '_controller' => 'App\\Controller\\SecutiyController::login',  '_route' => 'app_done',);
+            // logout
+            if ('/logout' === $pathinfo) {
+                return array('_route' => 'logout');
+            }
+
+            // app_list
+            if ('/list' === $pathinfo) {
+                return array (  '_controller' => 'App\\Controller\\ListController::list',  '_route' => 'app_list',);
+            }
+
+            if (0 === strpos($pathinfo, '/list-')) {
+                // app_listCreate
+                if ('/list-create' === $pathinfo) {
+                    return array (  '_controller' => 'App\\Controller\\ListCreateController::listCreate',  '_route' => 'app_listCreate',);
+                }
+
+                // app_listEdit
+                if ('/list-edit' === $pathinfo) {
+                    return array (  '_controller' => 'App\\Controller\\ListEditController::listEdit',  '_route' => 'app_listEdit',);
+                }
+
+                // app_listDelete
+                if ('/list-delete' === $pathinfo) {
+                    return array (  '_controller' => 'App\\Controller\\ListDeleteController::listDelete',  '_route' => 'app_listDelete',);
+                }
+
             }
 
         }
