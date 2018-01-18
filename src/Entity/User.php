@@ -19,7 +19,7 @@ class User implements UserInterface, \Serializable
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
-    private $id;
+    private $user_id;
 
     /**
      * @ORM\Column(type="string", length=255, unique=true)
@@ -133,7 +133,7 @@ class User implements UserInterface, \Serializable
     public function serialize()
     {
         return serialize(array(
-            $this->id,
+            $this->user_id,
             $this->username,
             $this->password,
             // see section on salt below
@@ -145,7 +145,7 @@ class User implements UserInterface, \Serializable
     public function unserialize($serialized)
     {
         list (
-            $this->id,
+            $this->user_id,
             $this->username,
             $this->password,
             // see section on salt below

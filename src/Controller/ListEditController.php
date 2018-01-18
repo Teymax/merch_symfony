@@ -7,9 +7,15 @@
  */
 
 namespace App\Controller;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 
-class ListEditController
+class ListEditController extends Controller
 {
-
+    public function listEdit()
+    {
+//        return new Response('Edit Listing');
+        return $this->render('list/listEdit.html.twig');
+    }
 }

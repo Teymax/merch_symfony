@@ -8,8 +8,13 @@
 
 namespace App\Controller;
 
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-class ListDeleteController
+class ListDeleteController extends Controller
 {
-
+    public function listDelete()
+    {
+        return new Response('Delete Listing');
+    }
 }

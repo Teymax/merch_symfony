@@ -68,6 +68,7 @@
     <parameter key="container.dumper.inline_class_loader">true</parameter>
     <parameter key="env(DATABASE_URL)"></parameter>
     <parameter key="locale">en</parameter>
+    <parameter key="brochures_directory">D:\OSPanel\domains\merch/public/uploads/brochures</parameter>
     <parameter key="fragment.renderer.hinclude.global_template"></parameter>
     <parameter key="fragment.path">/_fragment</parameter>
     <parameter key="kernel.secret">%env(APP_SECRET)%</parameter>
@@ -344,6 +345,10 @@
       <tag name="form.type"/>
     </service>
     <service id="App\Kernel" class="App\Kernel" public="false" autowire="true" autoconfigure="true"/>
+    <service id="App\Repository\ListingRepository" class="App\Repository\ListingRepository" public="false" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
     <service id="App\Repository\UsersRepository" class="App\Repository\UsersRepository" public="false" autowire="true" autoconfigure="true">
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
@@ -364,7 +369,7 @@
     </service>
     <service id="argument_resolver.service" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver" public="false">
       <tag name="controller.argument_value_resolver" priority="-50"/>
-      <argument type="service" id="service_locator.KJZtosS"/>
+      <argument type="service" id="service_locator.F6E0TeC"/>
     </service>
     <service id="argument_resolver.default" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver" public="false">
       <tag name="controller.argument_value_resolver" priority="-100"/>
@@ -2416,7 +2421,7 @@
       <factory class="Doctrine\ORM\EntityManager" method="create"/>
     </service>
     <service id="doctrine.orm.container_repository_factory" class="Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory" public="false">
-      <argument type="service" id="service_locator.0.62aL1"/>
+      <argument type="service" id="service_locator.B8AIJyH"/>
     </service>
     <service id="doctrine.orm.manager_configurator.abstract" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator" abstract="true">
       <argument type="collection"/>
@@ -3606,6 +3611,12 @@
     <service id="abstract.instanceof.App\Controller\AdminController" class="App\Controller\AdminController" public="false" autowire="true" autoconfigure="true" abstract="true"/>
     <service id="instanceof.Symfony\Bundle\FrameworkBundle\Controller\Controller.0.App\Controller\ListController" class="App\Controller\ListController" public="false" autowire="true" abstract="true"/>
     <service id="abstract.instanceof.App\Controller\ListController" class="App\Controller\ListController" public="false" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id="instanceof.Symfony\Bundle\FrameworkBundle\Controller\Controller.0.App\Controller\ListCreateController" class="App\Controller\ListCreateController" public="false" autowire="true" abstract="true"/>
+    <service id="abstract.instanceof.App\Controller\ListCreateController" class="App\Controller\ListCreateController" public="false" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id="instanceof.Symfony\Bundle\FrameworkBundle\Controller\Controller.0.App\Controller\ListDeleteController" class="App\Controller\ListDeleteController" public="false" autowire="true" abstract="true"/>
+    <service id="abstract.instanceof.App\Controller\ListDeleteController" class="App\Controller\ListDeleteController" public="false" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id="instanceof.Symfony\Bundle\FrameworkBundle\Controller\Controller.0.App\Controller\ListEditController" class="App\Controller\ListEditController" public="false" autowire="true" abstract="true"/>
+    <service id="abstract.instanceof.App\Controller\ListEditController" class="App\Controller\ListEditController" public="false" autowire="true" autoconfigure="true" abstract="true"/>
     <service id="instanceof.Symfony\Bundle\FrameworkBundle\Controller\Controller.0.App\Controller\MainController" class="App\Controller\MainController" public="false" autowire="true" abstract="true"/>
     <service id="abstract.instanceof.App\Controller\MainController" class="App\Controller\MainController" public="false" autowire="true" autoconfigure="true" abstract="true"/>
     <service id="instanceof.Symfony\Bundle\FrameworkBundle\Controller\Controller.0.App\Controller\RegisterController" class="App\Controller\RegisterController" public="false" autowire="true" abstract="true"/>
@@ -3614,6 +3625,8 @@
     <service id="abstract.instanceof.App\Controller\SecurityController" class="App\Controller\SecurityController" public="false" autowire="true" autoconfigure="true" abstract="true"/>
     <service id="instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\UserType" class="App\Form\UserType" public="false" autowire="true" abstract="true"/>
     <service id="abstract.instanceof.App\Form\UserType" class="App\Form\UserType" public="false" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id="instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\ListingRepository" class="App\Repository\ListingRepository" public="false" autowire="true" abstract="true"/>
+    <service id="abstract.instanceof.App\Repository\ListingRepository" class="App\Repository\ListingRepository" public="false" autowire="true" autoconfigure="true" abstract="true"/>
     <service id="instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\UsersRepository" class="App\Repository\UsersRepository" public="false" autowire="true" abstract="true"/>
     <service id="abstract.instanceof.App\Repository\UsersRepository" class="App\Repository\UsersRepository" public="false" autowire="true" autoconfigure="true" abstract="true"/>
     <service id="maker.auto_command.make_auth" class="Symfony\Bundle\MakerBundle\Command\MakerCommand">
@@ -3712,6 +3725,10 @@
         <argument>make:voter</argument>
       </call>
     </service>
+    <service id="service_locator.TERv3uW" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection"/>
+    </service>
     <service id="service_locator.mGYU9oQ" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -3724,7 +3741,7 @@
         <argument key="authUtils" type="service" id="security.authentication_utils" on-invalid="ignore"/>
       </argument>
     </service>
-    <service id="service_locator.KJZtosS" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id="service_locator.F6E0TeC" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\RegisterController:registerAction" type="service" id="service_locator.mGYU9oQ"/>
@@ -3888,9 +3905,10 @@
         <argument key="Symfony\Component\Form\Extension\Core\Type\FormType" type="service" id="form.type.form"/>
       </argument>
     </service>
-    <service id="service_locator.0.62aL1" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id="service_locator.B8AIJyH" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
+        <argument key="App\Repository\ListingRepository" type="service" id="App\Repository\ListingRepository"/>
         <argument key="App\Repository\UsersRepository" type="service" id="App\Repository\UsersRepository"/>
       </argument>
     </service>
