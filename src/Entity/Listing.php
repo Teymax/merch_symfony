@@ -3,7 +3,6 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Table(name="app_listing")
@@ -55,23 +54,32 @@ class Listing
      */
     private $description;
     /**
-     * @ORM\Column(type="string")
-    /**
-     * @Assert\Image(
-     *     maxWidth = 4500,
-     *     maxHeight = 5400
-     * )
-     *     detectCorrupted = true,
-     *     corruptedMessage = "Yhe image is Corrupted! Please upload a valid PNG"
-     *     mimeTypes = {"image/png"},
-     *     mimeTypesMessage = "Please upload a valid PNG"
-     * )
+     * @ORM\Column(type="string", length=100)
      */
-    private $image;
+    private $master_id;
     /**
-     * @ORM\Column(type="integer", length=100)
+     * @ORM\Column(type="string", length=100)
      */
-    private $userId;
+    private $user_id;
+
+    public function getUserId()
+    {
+        return $this->user_id;
+    }
+
+    public function setUserId($user_id)
+    {
+        $this->user_id = $user_id;
+    }
+    public function getMasterId()
+    {
+        return $this->master_id;
+    }
+
+    public function setMasterId($master_id)
+    {
+        $this->master_id = $master_id;
+    }
     /**
      * @ORM\Column(type="datetime")
      */
@@ -167,25 +175,6 @@ class Listing
     {
         $this->description = $description;
     }
-    public function getImage()
-    {
-        return $this->image;
-    }
-
-    public function setImage($image)
-    {
-        $this->image = $image;
-    }
-    public function getUserId()
-    {
-        return $this->userId;
-    }
-
-    public function setUserId($userId)
-    {
-        $this->userId = $userId;
-    }
-
     public function getCreated()
     {
         return $this->created;

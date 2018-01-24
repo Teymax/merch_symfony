@@ -1,0 +1,6 @@
+{{ form_start(form) }}
+                    {{ form_row(form.title, { 'attr': {'class': 'form-control'} }) }}
+                    {{ form_row(form.filename, { 'attr': {'class': 'form-control'} }) }}
+                    {{ form_row(form.userId, { 'attr': {'id': 'user_ID'} }) }}
+<button type="submit" class="btn btn-info">Create!</button>
+{{ form_end(form) }}

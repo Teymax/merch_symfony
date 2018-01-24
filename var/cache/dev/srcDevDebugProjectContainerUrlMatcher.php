@@ -43,6 +43,52 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
+        elseif (0 === strpos($pathinfo, '/master')) {
+            // list_show
+            if ('/master' === $trimmedPathinfo) {
+                $ret = array (  '_controller' => 'App\\Controller\\MasterListController::masterList',  '_route' => 'list_show',);
+                if (substr($pathinfo, -1) !== '/') {
+                    return array_replace($ret, $this->redirect($rawPathinfo.'/', 'list_show'));
+                }
+
+                return $ret;
+            }
+
+            // list_delete
+            if (0 === strpos($pathinfo, '/master-delete') && preg_match('#^/master\\-delete/(?P<master_id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'list_delete')), array (  '_controller' => 'App\\Controller\\MasterListDeleteController::MasterDelete',));
+            }
+
+            // list_edit
+            if (0 === strpos($pathinfo, '/master-edit') && preg_match('#^/master\\-edit/(?P<master_id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'list_edit')), array (  '_controller' => 'App\\Controller\\MasterListEditController::MasterEdit',));
+            }
+
+            // app_masterList
+            if ('/master' === $pathinfo) {
+                return array (  '_controller' => 'App\\Controller\\MasterListController::masterList',  '_route' => 'app_masterList',);
+            }
+
+            if (0 === strpos($pathinfo, '/master-')) {
+                // app_masterCreate
+                if ('/master-create' === $pathinfo) {
+                    return array (  '_controller' => 'App\\Controller\\MasterListCreateController::MasterCreate',  '_route' => 'app_masterCreate',);
+                }
+
+                // app_masterEdit
+                if ('/master-edit' === $pathinfo) {
+                    return array (  '_controller' => 'App\\Controller\\MasterListEditController::MasterEdit',  '_route' => 'app_masterEdit',);
+                }
+
+                // app_masterDelete
+                if ('/master-delete' === $pathinfo) {
+                    return array (  '_controller' => 'App\\Controller\\MasterListDeleteController::MasterDelete',  '_route' => 'app_masterDelete',);
+                }
+
+            }
+
+        }
+
         elseif (0 === strpos($pathinfo, '/register')) {
             // user_registration
             if ('/register' === $pathinfo) {

@@ -34,13 +34,7 @@
                         <ul class="nav justify-content-end main_menu ml-auto">
                             {% if is_granted('IS_AUTHENTICATED_FULLY') %}
                                 <li class="nav-item text-uppercase">
-                                    <a class="nav-link badge badge-success" id="singUpBtn" href="{{ path('app_listCreate') }}" style="color: white">Create Listing</a>
-                                </li>
-                                <li class="nav-item text-uppercase">
-                                    <a class="nav-link badge badge-info" id="singUpBtn" href="{{ path('app_listEdit') }}" style="color: white">Edit Listing</a>
-                                </li>
-                                <li class="nav-item text-uppercase">
-                                    <a class="nav-link badge badge-danger" id="singUpBtn" href="{{ path('app_listDelete') }}" style="color: white">Delete Listing</a>
+                                    <a class="nav-link badge badge-success" id="singUpBtn" href="{{ path('app_masterCreate') }}" style="color: white">Create Listing</a>
                                 </li>
                                 <li class="nav-item active">
                                     <p class="nav-link" style="color: black;">Hello, <span class="text-uppercase">{{ app.user.username }}</span></p>

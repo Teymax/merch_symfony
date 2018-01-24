@@ -16,6 +16,18 @@ app_admin:
 app_list:
     path: /list
     controller: App\Controller\ListController::list
+app_masterList:
+    path: /master
+    controller: App\Controller\MasterListController::masterList
+app_masterCreate:
+    path: /master-create
+    controller: App\Controller\MasterListCreateController::MasterCreate
+app_masterEdit:
+    path: /master-edit
+    controller: App\Controller\MasterListEditController::MasterEdit
+app_masterDelete:
+    path: /master-delete
+    controller: App\Controller\MasterListDeleteController::MasterDelete
 app_listCreate:
     path: /list-create
     controller: App\Controller\ListCreateController::listCreate

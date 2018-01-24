@@ -29,7 +29,6 @@
                         <h2>Create List</h2>
                 </header>
                 <div class="form-group">
-                    {{ app.user.username }}
                     {{ form_start(form) }}
                     {{ form_row(form.type, { 'attr': {'class': 'form-control'} }) }}
                     {{ form_row(form.fit, { 'attr': {'class': 'form-control'} }) }}
@@ -40,8 +39,8 @@
                     {{ form_row(form.bulletOne, { 'attr': {'class': 'form-control'} }) }}
                     {{ form_row(form.bulletTwo, { 'attr': {'class': 'form-control'} }) }}
                     {{ form_row(form.description, { 'attr': {'class': 'form-control'} }) }}
-                    {{ form_row(form.image, { 'attr': {'class': 'form-control'} }) }}
-                    {{ form_row(form.userId, { 'attr': {'class': 'form-control'} }) }}
+                    {{ form_row(form.userId, { 'attr': {'id': 'user_ID'} }) }}
+                    {{ form_row(form.master_id, { 'attr': {'class': 'form-control'} }) }}
                         <button type="submit" class="btn btn-info">Create!</button>
                     {{ form_end(form) }}
                 </div>
@@ -53,6 +52,13 @@
 {% block javascripts %}
         <!-- Scripts -->
         <script src="assets/js/core.min.js"></script>
+        <script type="text/javascript">
+            {#$('#user_ID').val({{ app.user.user_id }});#}
+            {#alert({{ app.user.user_id }});#}
+            document.getElementById('form_userId').value = {{ app.user.user_id }};
+            document.getElementById('form_master_id').value = {{ app.user.user_id }};
+            {#document.getElementById('user_ID').value = {{ app.user.user_id }};#}
+        </script>
         <script src="assets/js/app.min.js"></script>
         <script src="assets/js/script.min.js"></script>
 {% endblock %}

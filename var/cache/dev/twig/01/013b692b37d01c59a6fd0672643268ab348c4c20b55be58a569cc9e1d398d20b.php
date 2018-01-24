@@ -19,11 +19,11 @@ class __TwigTemplate_5c444136e0c8aa60c5f668b7a4be291533955e4c6f75df03eb68fa2be9f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f933c430c558804f179cef8be96869623ab7685ffb6c6cfe823704c350c93c1c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_f933c430c558804f179cef8be96869623ab7685ffb6c6cfe823704c350c93c1c->enter($__internal_f933c430c558804f179cef8be96869623ab7685ffb6c6cfe823704c350c93c1c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "list/list.html.twig"));
+        $__internal_748cd67070200c8fba03c060eba5421d6bcd8a0f26874129eeb38e7eaa042a91 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_748cd67070200c8fba03c060eba5421d6bcd8a0f26874129eeb38e7eaa042a91->enter($__internal_748cd67070200c8fba03c060eba5421d6bcd8a0f26874129eeb38e7eaa042a91_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "list/list.html.twig"));
 
-        $__internal_f59cae8ee788daf4cfee205d7eb21ebaec30bb585e1dfb7c551e850d6022f62e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f59cae8ee788daf4cfee205d7eb21ebaec30bb585e1dfb7c551e850d6022f62e->enter($__internal_f59cae8ee788daf4cfee205d7eb21ebaec30bb585e1dfb7c551e850d6022f62e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "list/list.html.twig"));
+        $__internal_77109a99d8fdf62d9d28357f3ef79e3e9274aebf8609851f424ead2cfe7e7964 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_77109a99d8fdf62d9d28357f3ef79e3e9274aebf8609851f424ead2cfe7e7964->enter($__internal_77109a99d8fdf62d9d28357f3ef79e3e9274aebf8609851f424ead2cfe7e7964_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "list/list.html.twig"));
 
         // line 1
         echo "<!-- app/Resources/views/base.html.twig -->
@@ -48,50 +48,50 @@ class __TwigTemplate_5c444136e0c8aa60c5f668b7a4be291533955e4c6f75df03eb68fa2be9f
             ";
         // line 27
         $this->displayBlock('navigation', $context, $blocks);
-        // line 67
+        // line 61
         echo "
 
 ";
-        // line 69
+        // line 63
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 75
+        // line 69
         echo "    </div>
 </body>
 </html>";
         
-        $__internal_f933c430c558804f179cef8be96869623ab7685ffb6c6cfe823704c350c93c1c->leave($__internal_f933c430c558804f179cef8be96869623ab7685ffb6c6cfe823704c350c93c1c_prof);
+        $__internal_748cd67070200c8fba03c060eba5421d6bcd8a0f26874129eeb38e7eaa042a91->leave($__internal_748cd67070200c8fba03c060eba5421d6bcd8a0f26874129eeb38e7eaa042a91_prof);
 
         
-        $__internal_f59cae8ee788daf4cfee205d7eb21ebaec30bb585e1dfb7c551e850d6022f62e->leave($__internal_f59cae8ee788daf4cfee205d7eb21ebaec30bb585e1dfb7c551e850d6022f62e_prof);
+        $__internal_77109a99d8fdf62d9d28357f3ef79e3e9274aebf8609851f424ead2cfe7e7964->leave($__internal_77109a99d8fdf62d9d28357f3ef79e3e9274aebf8609851f424ead2cfe7e7964_prof);
 
     }
 
     // line 6
     public function block_title($context, array $blocks = array())
     {
-        $__internal_56678491b4e557259582b6da8895e9b3db35badc8b9ec0d64af5ed5b1d57aacd = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_56678491b4e557259582b6da8895e9b3db35badc8b9ec0d64af5ed5b1d57aacd->enter($__internal_56678491b4e557259582b6da8895e9b3db35badc8b9ec0d64af5ed5b1d57aacd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_f23a9c1c6e3765337915615c267cd07b907adb6c2c0cbfc2ce962e40b2db007c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_f23a9c1c6e3765337915615c267cd07b907adb6c2c0cbfc2ce962e40b2db007c->enter($__internal_f23a9c1c6e3765337915615c267cd07b907adb6c2c0cbfc2ce962e40b2db007c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        $__internal_fe1160be91bc1ac6bdd33688253306b4ffc87537e3a493b7e57493b211bcb377 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_fe1160be91bc1ac6bdd33688253306b4ffc87537e3a493b7e57493b211bcb377->enter($__internal_fe1160be91bc1ac6bdd33688253306b4ffc87537e3a493b7e57493b211bcb377_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_13b901266c5dbbad3682b28bd2e7858300acab5193445d31a8897903e1a423bb = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_13b901266c5dbbad3682b28bd2e7858300acab5193445d31a8897903e1a423bb->enter($__internal_13b901266c5dbbad3682b28bd2e7858300acab5193445d31a8897903e1a423bb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "MerchHelper";
         
-        $__internal_fe1160be91bc1ac6bdd33688253306b4ffc87537e3a493b7e57493b211bcb377->leave($__internal_fe1160be91bc1ac6bdd33688253306b4ffc87537e3a493b7e57493b211bcb377_prof);
+        $__internal_13b901266c5dbbad3682b28bd2e7858300acab5193445d31a8897903e1a423bb->leave($__internal_13b901266c5dbbad3682b28bd2e7858300acab5193445d31a8897903e1a423bb_prof);
 
         
-        $__internal_56678491b4e557259582b6da8895e9b3db35badc8b9ec0d64af5ed5b1d57aacd->leave($__internal_56678491b4e557259582b6da8895e9b3db35badc8b9ec0d64af5ed5b1d57aacd_prof);
+        $__internal_f23a9c1c6e3765337915615c267cd07b907adb6c2c0cbfc2ce962e40b2db007c->leave($__internal_f23a9c1c6e3765337915615c267cd07b907adb6c2c0cbfc2ce962e40b2db007c_prof);
 
     }
 
     // line 10
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_52757db91974b1d57617549dab4d67bd1067359558b4afdf950a99752407bb7a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_52757db91974b1d57617549dab4d67bd1067359558b4afdf950a99752407bb7a->enter($__internal_52757db91974b1d57617549dab4d67bd1067359558b4afdf950a99752407bb7a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_b4ab5c35547a75d3031fa37ba119ec155b5cc43b729fc2351600006ace2dd899 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_b4ab5c35547a75d3031fa37ba119ec155b5cc43b729fc2351600006ace2dd899->enter($__internal_b4ab5c35547a75d3031fa37ba119ec155b5cc43b729fc2351600006ace2dd899_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        $__internal_79ea8443fdb517beffa566677e8f938dd89fb9be077bca1d3a91c8a8209187b8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_79ea8443fdb517beffa566677e8f938dd89fb9be077bca1d3a91c8a8209187b8->enter($__internal_79ea8443fdb517beffa566677e8f938dd89fb9be077bca1d3a91c8a8209187b8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_22e91361676125474423b18284a86487712860efe9b1d8c0ee69a96da65d358f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_22e91361676125474423b18284a86487712860efe9b1d8c0ee69a96da65d358f->enter($__internal_22e91361676125474423b18284a86487712860efe9b1d8c0ee69a96da65d358f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 11
         echo "        <!-- Fonts -->
@@ -108,21 +108,21 @@ class __TwigTemplate_5c444136e0c8aa60c5f668b7a4be291533955e4c6f75df03eb68fa2be9f
         <link rel=\"icon\" href=\"assets/img/favicon.png\">
     ";
         
-        $__internal_79ea8443fdb517beffa566677e8f938dd89fb9be077bca1d3a91c8a8209187b8->leave($__internal_79ea8443fdb517beffa566677e8f938dd89fb9be077bca1d3a91c8a8209187b8_prof);
+        $__internal_22e91361676125474423b18284a86487712860efe9b1d8c0ee69a96da65d358f->leave($__internal_22e91361676125474423b18284a86487712860efe9b1d8c0ee69a96da65d358f_prof);
 
         
-        $__internal_52757db91974b1d57617549dab4d67bd1067359558b4afdf950a99752407bb7a->leave($__internal_52757db91974b1d57617549dab4d67bd1067359558b4afdf950a99752407bb7a_prof);
+        $__internal_b4ab5c35547a75d3031fa37ba119ec155b5cc43b729fc2351600006ace2dd899->leave($__internal_b4ab5c35547a75d3031fa37ba119ec155b5cc43b729fc2351600006ace2dd899_prof);
 
     }
 
     // line 27
     public function block_navigation($context, array $blocks = array())
     {
-        $__internal_33025f03b9d59a55bb6d553f9a3ea5e2d808910abea8c43a91d8e2060f11eefd = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_33025f03b9d59a55bb6d553f9a3ea5e2d808910abea8c43a91d8e2060f11eefd->enter($__internal_33025f03b9d59a55bb6d553f9a3ea5e2d808910abea8c43a91d8e2060f11eefd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "navigation"));
+        $__internal_f091d047b5fd8d06efa56b249c7d9a35bb984a6dd2cc2bbbccb23d34f0116e4c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_f091d047b5fd8d06efa56b249c7d9a35bb984a6dd2cc2bbbccb23d34f0116e4c->enter($__internal_f091d047b5fd8d06efa56b249c7d9a35bb984a6dd2cc2bbbccb23d34f0116e4c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "navigation"));
 
-        $__internal_288a0f3115e80199e7ff0bce1d1b901626d4e23df7c7d1b5629577ac26c882f2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_288a0f3115e80199e7ff0bce1d1b901626d4e23df7c7d1b5629577ac26c882f2->enter($__internal_288a0f3115e80199e7ff0bce1d1b901626d4e23df7c7d1b5629577ac26c882f2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "navigation"));
+        $__internal_d34b09658c05f4b3528e7d0c0902f2d014b5ab563a9d6e4fb38c4673e9a6bcae = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d34b09658c05f4b3528e7d0c0902f2d014b5ab563a9d6e4fb38c4673e9a6bcae->enter($__internal_d34b09658c05f4b3528e7d0c0902f2d014b5ab563a9d6e4fb38c4673e9a6bcae_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "navigation"));
 
         // line 28
         echo "                <nav class=\"navbar sticky-top navbar-expand-lg navbar-light bg-light\">
@@ -139,87 +139,75 @@ class __TwigTemplate_5c444136e0c8aa60c5f668b7a4be291533955e4c6f75df03eb68fa2be9f
             echo "                                <li class=\"nav-item text-uppercase\">
                                     <a class=\"nav-link badge badge-success\" id=\"singUpBtn\" href=\"";
             // line 37
-            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("app_listCreate");
+            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("app_masterCreate");
             echo "\" style=\"color: white\">Create Listing</a>
-                                </li>
-                                <li class=\"nav-item text-uppercase\">
-                                    <a class=\"nav-link badge badge-info\" id=\"singUpBtn\" href=\"";
-            // line 40
-            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("app_listEdit");
-            echo "\" style=\"color: white\">Edit Listing</a>
-                                </li>
-                                <li class=\"nav-item text-uppercase\">
-                                    <a class=\"nav-link badge badge-danger\" id=\"singUpBtn\" href=\"";
-            // line 43
-            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("app_listDelete");
-            echo "\" style=\"color: white\">Delete Listing</a>
                                 </li>
                                 <li class=\"nav-item active\">
                                     <p class=\"nav-link\" style=\"color: black;\">Hello, <span class=\"text-uppercase\">";
-            // line 46
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 46, $this->getSourceContext()); })()), "user", array()), "username", array()), "html", null, true);
+            // line 40
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 40, $this->getSourceContext()); })()), "user", array()), "username", array()), "html", null, true);
             echo "</span></p>
                                 </li>
                                 <li class=\"nav-item text-uppercase\">
                                     <a class=\"nav-link badge badge-danger\" id=\"singUpBtn\" href=\"";
-            // line 49
+            // line 43
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("logout");
             echo "\" style=\"color: white\">Logout</a>
                                 </li>
                             ";
         }
-        // line 52
+        // line 46
         echo "                            ";
         if ($this->env->getExtension('Symfony\Bridge\Twig\Extension\SecurityExtension')->isGranted("ROLE_USER")) {
-            // line 53
+            // line 47
             echo "                            <li class=\"nav-item text-uppercase\">
                             <a class=\"nav-link badge badge-danger\" id=\"singUpBtn\" href=\"#\" style=\"color: white\">User Test</a>
                             </li>
                             ";
         }
-        // line 57
+        // line 51
         echo "                            ";
         if ($this->env->getExtension('Symfony\Bridge\Twig\Extension\SecurityExtension')->isGranted("ROLE_ADMIN")) {
-            // line 58
+            // line 52
             echo "                                <li class=\"nav-item text-uppercase\">
                                     <a class=\"nav-link badge badge-danger\" id=\"singUpBtn\" href=\"#\" style=\"color: white\">Admin Test</a>
                                 </li>
                             ";
         }
-        // line 62
+        // line 56
         echo "                        </ul>
                     </div>
                 </nav>
     </div>
             ";
         
-        $__internal_288a0f3115e80199e7ff0bce1d1b901626d4e23df7c7d1b5629577ac26c882f2->leave($__internal_288a0f3115e80199e7ff0bce1d1b901626d4e23df7c7d1b5629577ac26c882f2_prof);
+        $__internal_d34b09658c05f4b3528e7d0c0902f2d014b5ab563a9d6e4fb38c4673e9a6bcae->leave($__internal_d34b09658c05f4b3528e7d0c0902f2d014b5ab563a9d6e4fb38c4673e9a6bcae_prof);
 
         
-        $__internal_33025f03b9d59a55bb6d553f9a3ea5e2d808910abea8c43a91d8e2060f11eefd->leave($__internal_33025f03b9d59a55bb6d553f9a3ea5e2d808910abea8c43a91d8e2060f11eefd_prof);
+        $__internal_f091d047b5fd8d06efa56b249c7d9a35bb984a6dd2cc2bbbccb23d34f0116e4c->leave($__internal_f091d047b5fd8d06efa56b249c7d9a35bb984a6dd2cc2bbbccb23d34f0116e4c_prof);
 
     }
 
-    // line 69
+    // line 63
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_0d62301b685c4a06dfb590c30bbf694ce8857a3133430af4e460d0b2ed1264f1 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_0d62301b685c4a06dfb590c30bbf694ce8857a3133430af4e460d0b2ed1264f1->enter($__internal_0d62301b685c4a06dfb590c30bbf694ce8857a3133430af4e460d0b2ed1264f1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_ec72da61d3f8697066ac9c9e5095aa1b1f66ba03443a3f49210cfa957df0f441 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_ec72da61d3f8697066ac9c9e5095aa1b1f66ba03443a3f49210cfa957df0f441->enter($__internal_ec72da61d3f8697066ac9c9e5095aa1b1f66ba03443a3f49210cfa957df0f441_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        $__internal_3c44f55dcf81f873ce28ea485571c1aa71c009bff1c3a34d222a1b20191f5714 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_3c44f55dcf81f873ce28ea485571c1aa71c009bff1c3a34d222a1b20191f5714->enter($__internal_3c44f55dcf81f873ce28ea485571c1aa71c009bff1c3a34d222a1b20191f5714_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_cb4bce96c674be8970515be8b7f23d4ad58403eaaf7db162fd592ede0ffff119 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_cb4bce96c674be8970515be8b7f23d4ad58403eaaf7db162fd592ede0ffff119->enter($__internal_cb4bce96c674be8970515be8b7f23d4ad58403eaaf7db162fd592ede0ffff119_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 70
+        // line 64
         echo "    <!-- Scripts -->
     <script src=\"assets/js/core.min.js\"></script>
     <script src=\"assets/js/app.min.js\"></script>
     <script src=\"assets/js/script.min.js\"></script>
 ";
         
-        $__internal_3c44f55dcf81f873ce28ea485571c1aa71c009bff1c3a34d222a1b20191f5714->leave($__internal_3c44f55dcf81f873ce28ea485571c1aa71c009bff1c3a34d222a1b20191f5714_prof);
+        $__internal_cb4bce96c674be8970515be8b7f23d4ad58403eaaf7db162fd592ede0ffff119->leave($__internal_cb4bce96c674be8970515be8b7f23d4ad58403eaaf7db162fd592ede0ffff119_prof);
 
         
-        $__internal_0d62301b685c4a06dfb590c30bbf694ce8857a3133430af4e460d0b2ed1264f1->leave($__internal_0d62301b685c4a06dfb590c30bbf694ce8857a3133430af4e460d0b2ed1264f1_prof);
+        $__internal_ec72da61d3f8697066ac9c9e5095aa1b1f66ba03443a3f49210cfa957df0f441->leave($__internal_ec72da61d3f8697066ac9c9e5095aa1b1f66ba03443a3f49210cfa957df0f441_prof);
 
     }
 
@@ -230,7 +218,7 @@ class __TwigTemplate_5c444136e0c8aa60c5f668b7a4be291533955e4c6f75df03eb68fa2be9f
 
     public function getDebugInfo()
     {
-        return array (  213 => 70,  204 => 69,  190 => 62,  184 => 58,  181 => 57,  175 => 53,  172 => 52,  166 => 49,  160 => 46,  154 => 43,  148 => 40,  142 => 37,  139 => 36,  137 => 35,  128 => 28,  119 => 27,  97 => 11,  88 => 10,  70 => 6,  58 => 75,  56 => 69,  52 => 67,  50 => 27,  45 => 24,  43 => 10,  36 => 6,  29 => 1,);
+        return array (  201 => 64,  192 => 63,  178 => 56,  172 => 52,  169 => 51,  163 => 47,  160 => 46,  154 => 43,  148 => 40,  142 => 37,  139 => 36,  137 => 35,  128 => 28,  119 => 27,  97 => 11,  88 => 10,  70 => 6,  58 => 69,  56 => 63,  52 => 61,  50 => 27,  45 => 24,  43 => 10,  36 => 6,  29 => 1,);
     }
 
     public function getSourceContext()
@@ -271,13 +259,7 @@ class __TwigTemplate_5c444136e0c8aa60c5f668b7a4be291533955e4c6f75df03eb68fa2be9f
                         <ul class=\"nav justify-content-end main_menu ml-auto\">
                             {% if is_granted('IS_AUTHENTICATED_FULLY') %}
                                 <li class=\"nav-item text-uppercase\">
-                                    <a class=\"nav-link badge badge-success\" id=\"singUpBtn\" href=\"{{ path('app_listCreate') }}\" style=\"color: white\">Create Listing</a>
-                                </li>
-                                <li class=\"nav-item text-uppercase\">
-                                    <a class=\"nav-link badge badge-info\" id=\"singUpBtn\" href=\"{{ path('app_listEdit') }}\" style=\"color: white\">Edit Listing</a>
-                                </li>
-                                <li class=\"nav-item text-uppercase\">
-                                    <a class=\"nav-link badge badge-danger\" id=\"singUpBtn\" href=\"{{ path('app_listDelete') }}\" style=\"color: white\">Delete Listing</a>
+                                    <a class=\"nav-link badge badge-success\" id=\"singUpBtn\" href=\"{{ path('app_masterCreate') }}\" style=\"color: white\">Create Listing</a>
                                 </li>
                                 <li class=\"nav-item active\">
                                     <p class=\"nav-link\" style=\"color: black;\">Hello, <span class=\"text-uppercase\">{{ app.user.username }}</span></p>
