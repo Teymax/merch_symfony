@@ -50,14 +50,22 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                     return $this->mergeDefaults(array_replace($matches, array('_route' => 'list')), array (  '_controller' => 'App\\Controller\\ListController::list',));
                 }
 
-                // list_delete
-                if (0 === strpos($pathinfo, '/list-delete') && preg_match('#^/list\\-delete/(?P<listing_id>[^/]++)$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'list_delete')), array (  '_controller' => 'App\\Controller\\ListDeleteController::listDelete',));
-                }
+                if (0 === strpos($pathinfo, '/list-')) {
+                    // list_create
+                    if (0 === strpos($pathinfo, '/list-create') && preg_match('#^/list\\-create/(?P<master_id>[^/]++)$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'list_create')), array (  '_controller' => 'App\\Controller\\ListCreateController::listCreate',));
+                    }
 
-                // list_edit
-                if (0 === strpos($pathinfo, '/list-edit') && preg_match('#^/list\\-edit/(?P<listing_id>[^/]++)$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'list_edit')), array (  '_controller' => 'App\\Controller\\ListEditController::listEdit',));
+                    // list_delete
+                    if (0 === strpos($pathinfo, '/list-delete') && preg_match('#^/list\\-delete/(?P<listing_id>[^/]++)$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'list_delete')), array (  '_controller' => 'App\\Controller\\ListDeleteController::listDelete',));
+                    }
+
+                    // list_edit
+                    if (0 === strpos($pathinfo, '/list-edit') && preg_match('#^/list\\-edit/(?P<listing_id>[^/]++)$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'list_edit')), array (  '_controller' => 'App\\Controller\\ListEditController::listEdit',));
+                    }
+
                 }
 
                 // app_list

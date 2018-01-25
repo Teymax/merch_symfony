@@ -15,7 +15,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class ListController extends Controller
 {
     /**
-     * @Route("//list/{master_id}", name="list")
+     * @Route("/list/{master_id}", name="list")
      */
     public function list($master_id)
     {
@@ -25,6 +25,6 @@ class ListController extends Controller
              'master_id' => $master_id
             ]
         );
-        return $this->render('list/list.html.twig', ['posts' => $repository]);
+        return $this->render('list/list.html.twig', ['posts' => $repository, 'master' => $master_id ]);
     }
 }

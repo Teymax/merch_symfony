@@ -10,6 +10,7 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\MasterListing;
+use App\Entity\Listing;
 
 class MasterListDeleteController extends Controller
 {
@@ -20,6 +21,10 @@ class MasterListDeleteController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
         $master = $em->getRepository(MasterListing::class)->find($master_id);
+        $repository = $this->getDoctrine()->getRepository(Listing::class)->findBy(
+            [
+                'master_id' => $master_id
+            ]);
 
         if (!$master) {
             throw $this->createNotFoundException(
@@ -28,6 +33,9 @@ class MasterListDeleteController extends Controller
         }
         $em = $this->getDoctrine()->getManager();
         $em->remove($master);
+        foreach ($repository as $product) {
+            $em->remove($product);
+        }
         $em->flush();
         return $this->redirect('/master');
 

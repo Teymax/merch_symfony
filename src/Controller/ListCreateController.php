@@ -14,11 +14,16 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
+use Symfony\Component\Routing\Annotation\Route;
 
 class ListCreateController extends Controller
 {
-    public function listCreate(Request $request)
+    /**
+     * @Route("/list-create/{master_id}", name="list_create")
+     */
+    public function listCreate(Request $request, $master_id)
     {
+        $user = $this->getUser()->getUser_Id();
         $create = new Listing();
         $form = $this->createFormBuilder($create)
             ->add('title', TextType::class)
@@ -69,8 +74,8 @@ class ListCreateController extends Controller
             ->add('bulletOne', TextType::class)
             ->add('bulletTwo', TextType::class)
             ->add('description', TextType::class)
-            ->add('userId', HiddenType::class)
-            ->add('master_id', TextType::class)
+            ->add('userId', TextType::class, array('data' => $user))
+            ->add('master_id', TextType::class, array('data' => $master_id))
             ->add('created', DateTimeType::class, array('label' => false, 'attr'=>array('style'=>'display:none;'), 'data' => new \DateTime("now")))
             ->add('updated', DateTimeType::class, array('label' => false, 'attr'=>array('style'=>'display:none;'), 'data' => new \DateTime("now")))
             ->getForm();
@@ -82,7 +87,7 @@ class ListCreateController extends Controller
              $em = $this->getDoctrine()->getManager();
              $em->persist($create);
              $em->flush();
-            return $this->redirectToRoute('app_list');
+            return $this->redirect('/list/'. $master_id);
         }
 
         return $this->render('list/listCreate.html.twig', array(
