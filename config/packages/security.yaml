@@ -5,7 +5,9 @@ security:
             algorithm: bcrypt
             cost: 12
     # ...
-
+    access_control:
+        # require ROLE_ADMIN for /admin*
+        - { path: ^/admin, roles: ROLE_ADMIN }
     providers:
         our_db_provider:
             entity:

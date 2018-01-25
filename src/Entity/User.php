@@ -57,7 +57,10 @@ class User implements UserInterface, \Serializable
      * @ORM\Column(name="is_active", type="boolean")
      */
     private $isActive;
-
+    /**
+     * @ORM\Column(type="string", length=64)
+     */
+    private $roles = [];
     public function __construct()
     {
         $this->isActive = true;
@@ -131,9 +134,13 @@ class User implements UserInterface, \Serializable
 
     public function getRoles()
     {
-        return array('ROLE_USER');
+        $roles = $this->roles;
+        return explode( ' ', $roles);
     }
-
+    public function setRoles($roles)
+    {
+        $this->roles = $roles;
+    }
     public function eraseCredentials()
     {
     }
