@@ -57,6 +57,22 @@
                     </div>
                 </nav>
     </div>
+    {% for list in posts %}
+        <li>
+            <span>List ID: </span>  {{ list.listing_id }} <br>
+            <span>Title: </span> {{ list.title }} <br></a>
+            <span>Brand: </span>  {{ list.brand }} <br>
+            <span>Type: </span>  {{ list.type }} <br>
+            <span>Fit: </span>  {{ list.fit }} <br>
+            <span>Color: </span>  {{ list.color }} <br>
+            <span>Cost: </span>  {{ list.cost }} <br>
+            <span>Bullet One: </span>  {{ list.bulletOne }} <br>
+            <span>Bullet Two: </span>  {{ list.bulletOne }} <br>
+            <span>Description: </span>  {{ list.description }} <br>
+            <a href="{{ path('app_listEdit')}}/{{ list.listing_id}}">Edit</a>
+            <a href="{{ path('app_listDelete')}}/{{ list.listing_id }}">Delete</a>
+        </li>
+    {% endfor %}
             {% endblock %}
 
 

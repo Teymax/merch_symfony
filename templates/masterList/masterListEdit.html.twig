@@ -1,6 +1,14 @@
 {{ form_start(form) }}
+                    {{ form_row(form.type, { 'attr': {'class': 'form-control'} }) }}
+                    {{ form_row(form.fit, { 'attr': {'class': 'form-control'} }) }}
+                    {{ form_row(form.color, { 'attr': {'class': 'form-control'} }) }}
+                    {{ form_row(form.cost, { 'attr': {'class': 'form-control'} }) }}
+                    {{ form_row(form.brand, { 'attr': {'class': 'form-control'} }) }}
                     {{ form_row(form.title, { 'attr': {'class': 'form-control'} }) }}
-                    {{ form_row(form.filename, { 'attr': {'class': 'form-control'} }) }}
+                    {{ form_row(form.bulletOne, { 'attr': {'class': 'form-control'} }) }}
+                    {{ form_row(form.bulletTwo, { 'attr': {'class': 'form-control'} }) }}
+                    {{ form_row(form.description, { 'attr': {'class': 'form-control'} }) }}
                     {{ form_row(form.userId, { 'attr': {'id': 'user_ID'} }) }}
+                    {{ form_row(form.master_id, { 'attr': {'class': 'form-control'} }) }}
 <button type="submit" class="btn btn-info">Create!</button>
 {{ form_end(form) }}

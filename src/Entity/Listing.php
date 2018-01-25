@@ -123,7 +123,10 @@ class Listing
     }
     public function getFit()
     {
-        return $this->fit;
+        $obj = $this->fit;
+//        $json = json_encode($obj);
+        $arr = json_decode($obj,true);
+        return $arr;
     }
 
     public function setFit($fit)
@@ -132,7 +135,10 @@ class Listing
     }
     public function getColor()
     {
-        return $this->color;
+        $obj = $this->color;
+//        $json = json_encode($obj);
+        $arr = json_decode($obj,true);
+        return $arr;
     }
 
     public function setColor($color)

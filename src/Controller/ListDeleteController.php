@@ -7,14 +7,29 @@
  */
 
 namespace App\Controller;
-
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Routing\Annotation\Route;
+use App\Entity\Listing;
 
 class ListDeleteController extends Controller
 {
-    public function listDelete()
+    /**
+     * @Route("/list-delete/{listing_id}", name="list_delete")
+     */
+    public function listDelete($listing_id)
     {
-        return new Response('Delete Listing');
+        $em = $this->getDoctrine()->getManager();
+        $master = $em->getRepository(Listing::class)->find($listing_id);
+
+        if (!$master) {
+            throw $this->createNotFoundException(
+                'No product found for id '.$listing_id
+            );
+        }
+        $em = $this->getDoctrine()->getManager();
+        $em->remove($master);
+        $em->flush();
+        return $this->redirect('/list/'. $master->getMasterId());
+
     }
 }

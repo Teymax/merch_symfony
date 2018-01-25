@@ -8,14 +8,14 @@
 
 namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use App\Entity\MasterListing;
 use Symfony\Component\Routing\Annotation\Route;
+use App\Entity\MasterListing;
 
 class MasterListDeleteController extends Controller
 {
     /**
-     * @Route("/master-delete/{master_id}", name="list_delete")
-     */
+    * @Route("/master-delete/{master_id}", name="master_list_delete")
+    */
     public function MasterDelete($master_id)
     {
         $em = $this->getDoctrine()->getManager();

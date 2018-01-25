@@ -1,2 +1,7 @@
-            <a href="">View brochure (PDF)</a>
-            <img src="{{ asset('uploads/brochures/' ~ app_list.brochure) }}" width="189" height="255" alt="lorem">
+{{ form_start(form) }}
+                    {{ form_row(form.title, { 'attr': {'class': 'form-control'} }) }}
+                    {{ form_row(form.title, { 'attr': {'class': 'form-control'} }) }}
+                    {{ form_row(form.title, { 'attr': {'class': 'form-control'} }) }}
+                    {{ form_row(form.userId, { 'attr': {'id': 'user_ID'} }) }}
+<button type="submit" class="btn btn-info">Create!</button>
+{{ form_end(form) }}

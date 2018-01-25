@@ -43,6 +43,68 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
+        elseif (0 === strpos($pathinfo, '/l')) {
+            if (0 === strpos($pathinfo, '/list')) {
+                // list
+                if (preg_match('#^/list/(?P<master_id>[^/]++)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'list')), array (  '_controller' => 'App\\Controller\\ListController::list',));
+                }
+
+                // list_delete
+                if (0 === strpos($pathinfo, '/list-delete') && preg_match('#^/list\\-delete/(?P<listing_id>[^/]++)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'list_delete')), array (  '_controller' => 'App\\Controller\\ListDeleteController::listDelete',));
+                }
+
+                // list_edit
+                if (0 === strpos($pathinfo, '/list-edit') && preg_match('#^/list\\-edit/(?P<listing_id>[^/]++)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'list_edit')), array (  '_controller' => 'App\\Controller\\ListEditController::listEdit',));
+                }
+
+                // app_list
+                if ('/list' === $pathinfo) {
+                    return array (  '_controller' => 'App\\Controller\\ListController::list',  '_route' => 'app_list',);
+                }
+
+                if (0 === strpos($pathinfo, '/list-')) {
+                    // app_listCreate
+                    if ('/list-create' === $pathinfo) {
+                        return array (  '_controller' => 'App\\Controller\\ListCreateController::listCreate',  '_route' => 'app_listCreate',);
+                    }
+
+                    // app_listEdit
+                    if ('/list-edit' === $pathinfo) {
+                        return array (  '_controller' => 'App\\Controller\\ListEditController::listEdit',  '_route' => 'app_listEdit',);
+                    }
+
+                    // app_listDelete
+                    if ('/list-delete' === $pathinfo) {
+                        return array (  '_controller' => 'App\\Controller\\ListDeleteController::listDelete',  '_route' => 'app_listDelete',);
+                    }
+
+                }
+
+            }
+
+            elseif (0 === strpos($pathinfo, '/login')) {
+                // login
+                if ('/login' === $pathinfo) {
+                    return array (  '_controller' => 'App\\Controller\\SecurityController::login',  '_route' => 'login',);
+                }
+
+                // app_done
+                if ('/login' === $pathinfo) {
+                    return array (  '_controller' => 'App\\Controller\\SecutiyController::login',  '_route' => 'app_done',);
+                }
+
+            }
+
+            // logout
+            if ('/logout' === $pathinfo) {
+                return array('_route' => 'logout');
+            }
+
+        }
+
         elseif (0 === strpos($pathinfo, '/master')) {
             // list_show
             if ('/master' === $trimmedPathinfo) {
@@ -54,14 +116,14 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 return $ret;
             }
 
-            // list_delete
+            // master_list_delete
             if (0 === strpos($pathinfo, '/master-delete') && preg_match('#^/master\\-delete/(?P<master_id>[^/]++)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'list_delete')), array (  '_controller' => 'App\\Controller\\MasterListDeleteController::MasterDelete',));
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'master_list_delete')), array (  '_controller' => 'App\\Controller\\MasterListDeleteController::MasterDelete',));
             }
 
-            // list_edit
+            // master_list_edit
             if (0 === strpos($pathinfo, '/master-edit') && preg_match('#^/master\\-edit/(?P<master_id>[^/]++)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'list_edit')), array (  '_controller' => 'App\\Controller\\MasterListEditController::MasterEdit',));
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'master_list_edit')), array (  '_controller' => 'App\\Controller\\MasterListEditController::MasterEdit',));
             }
 
             // app_masterList
@@ -98,50 +160,6 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             // app_task
             if ('/register' === $pathinfo) {
                 return array (  '_controller' => 'App\\Controller\\RegisterController::registerAction',  '_route' => 'app_task',);
-            }
-
-        }
-
-        elseif (0 === strpos($pathinfo, '/l')) {
-            if (0 === strpos($pathinfo, '/login')) {
-                // login
-                if ('/login' === $pathinfo) {
-                    return array (  '_controller' => 'App\\Controller\\SecurityController::login',  '_route' => 'login',);
-                }
-
-                // app_done
-                if ('/login' === $pathinfo) {
-                    return array (  '_controller' => 'App\\Controller\\SecutiyController::login',  '_route' => 'app_done',);
-                }
-
-            }
-
-            // logout
-            if ('/logout' === $pathinfo) {
-                return array('_route' => 'logout');
-            }
-
-            // app_list
-            if ('/list' === $pathinfo) {
-                return array (  '_controller' => 'App\\Controller\\ListController::list',  '_route' => 'app_list',);
-            }
-
-            if (0 === strpos($pathinfo, '/list-')) {
-                // app_listCreate
-                if ('/list-create' === $pathinfo) {
-                    return array (  '_controller' => 'App\\Controller\\ListCreateController::listCreate',  '_route' => 'app_listCreate',);
-                }
-
-                // app_listEdit
-                if ('/list-edit' === $pathinfo) {
-                    return array (  '_controller' => 'App\\Controller\\ListEditController::listEdit',  '_route' => 'app_listEdit',);
-                }
-
-                // app_listDelete
-                if ('/list-delete' === $pathinfo) {
-                    return array (  '_controller' => 'App\\Controller\\ListDeleteController::listDelete',  '_route' => 'app_listDelete',);
-                }
-
             }
 
         }

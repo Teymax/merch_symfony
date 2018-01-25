@@ -19,7 +19,7 @@ use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 class MasterListEditController extends Controller
 {
     /**
-     * @Route("/master-edit/{master_id}", name="list_edit")
+     * @Route("/master-edit/{master_id}", name="master_list_edit")
      */
     public function MasterEdit(Request $request, MasterListing $master_id)
     {

@@ -60,7 +60,7 @@
     {% for master in posts %}
          <li>
              <span>Master ID: </span>  {{ master.master_id }} <br>
-          <span>title: </span>  {{ master.title }} <br>
+             <span>title: </span>  <a href="{{ path('app_list')}}/{{ master.master_id}}"> {{ master.title }} <br></a>
           <span>user ID: </span> {{ master.userId }} <br>
              <a href="{{ path('app_masterEdit')}}/{{ master.master_id}}">Edit</a>
              <a href="{{ path('app_masterDelete')}}/{{ master.master_id}}">Delete</a>
