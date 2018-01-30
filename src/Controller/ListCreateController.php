@@ -8,10 +8,12 @@
 
 namespace App\Controller;
 use App\Entity\Listing;
+use App\Entity\MasterListing;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 use Symfony\Component\Routing\Annotation\Route;
@@ -23,10 +25,12 @@ class ListCreateController extends Controller
      */
     public function listCreate(Request $request, $master_id)
     {
+        $em = $this->getDoctrine()->getManager();
+        $master = $em->getRepository(MasterListing::class)->find($master_id);
         $user = $this->getUser()->getUser_Id();
         $create = new Listing();
         $form = $this->createFormBuilder($create)
-            ->add('title', TextType::class)
+            ->add('title', TextType::class, array('label' => false))
             ->add('type', ChoiceType::class, array(
                 'choices'  => array(
                     'Anvil' => 'Anvil',
@@ -34,16 +38,21 @@ class ListCreateController extends Controller
                     'Long-Sleeve' => 'Long-Sleeve',
                     'Sweatshirt' => 'Sweatshirt',
                     'Hoodie' => 'Hoodie',
-                ),'multiple'=>false,'expanded'=>true
+                ),'multiple'=>false,'expanded'=>true, 'label' => false,
+                'data' => 'Anvil',
             ))
-            ->add('brand', TextType::class)
+            ->add('brand', TextType::class, array('label' => false))
 
             ->add('fit',  ChoiceType::class, array(
                 'choices'  => array(
                     'Men' => 'Men',
                     'Women' => 'Women',
                     'Youth' => 'Youth',
-                ), 'multiple'=>true,'expanded'=>true
+                ),
+                'multiple'=>true,
+                'expanded'=>true,
+                'required' => false,
+                'label' => false,
             ))
             ->add('color',  ChoiceType::class, array(
                 'choices'  => array(
@@ -68,12 +77,12 @@ class ListCreateController extends Controller
                     'pink' => '19',
                     'orange' => '20',
                     'purple' => '21',
-                ), 'multiple'=>true,'expanded'=>true
+                ), 'multiple'=>true,'expanded'=>true, 'label' => false,
             ))
-            ->add('cost', TextType::class)
-            ->add('bulletOne', TextType::class)
-            ->add('bulletTwo', TextType::class)
-            ->add('description', TextType::class)
+            ->add('cost', TextType::class, array('label' => false))
+            ->add('bulletOne', 	TextareaType::class, array('label' => false))
+            ->add('bulletTwo', 	TextareaType::class, array('label' => false))
+            ->add('description', 	TextareaType::class, array('label' => false))
             ->add('userId', HiddenType::class, array('data' => $user))
             ->add('master_id', HiddenType::class, array('data' => $master_id))
             ->add('created', DateTimeType::class, array('label' => false, 'attr'=>array('style'=>'display:none;'), 'data' => new \DateTime("now")))
@@ -91,7 +100,7 @@ class ListCreateController extends Controller
         }
 
         return $this->render('list/listCreate.html.twig', array(
-            'form' => $form->createView(),
+            'form' => $form->createView(), 'master' => $master
         ));
     }
 }

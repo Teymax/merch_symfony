@@ -12,18 +12,17 @@ class __TwigTemplate_e6f9b17383f23d8975a4ec4c137dd758cd619fc8a739d69a3afcadf453e
         $this->blocks = array(
             'title' => array($this, 'block_title'),
             'stylesheets' => array($this, 'block_stylesheets'),
-            'navigation' => array($this, 'block_navigation'),
             'javascripts' => array($this, 'block_javascripts'),
         );
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_48f2fe296d1524997fd1b3690d7fe6c5a44bebc60b508f429b4c29619ed6e299 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_48f2fe296d1524997fd1b3690d7fe6c5a44bebc60b508f429b4c29619ed6e299->enter($__internal_48f2fe296d1524997fd1b3690d7fe6c5a44bebc60b508f429b4c29619ed6e299_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "list/listCreate.html.twig"));
+        $__internal_f1e352e957e0c1d073eabaa7814696c685694190b0272b71958dfff2ad3d6ddc = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_f1e352e957e0c1d073eabaa7814696c685694190b0272b71958dfff2ad3d6ddc->enter($__internal_f1e352e957e0c1d073eabaa7814696c685694190b0272b71958dfff2ad3d6ddc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "list/listCreate.html.twig"));
 
-        $__internal_3b5924a3c75ed13a82adc5dad1ce6a8fafabdb6a36e00aa9c7c2ef9fd9f8de5e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_3b5924a3c75ed13a82adc5dad1ce6a8fafabdb6a36e00aa9c7c2ef9fd9f8de5e->enter($__internal_3b5924a3c75ed13a82adc5dad1ce6a8fafabdb6a36e00aa9c7c2ef9fd9f8de5e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "list/listCreate.html.twig"));
+        $__internal_fa2d9d7a45a95cafe24648a945d1fb81dcac636ff6e534eaa1fe6b1728032f14 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_fa2d9d7a45a95cafe24648a945d1fb81dcac636ff6e534eaa1fe6b1728032f14->enter($__internal_fa2d9d7a45a95cafe24648a945d1fb81dcac636ff6e534eaa1fe6b1728032f14_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "list/listCreate.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -44,108 +43,27 @@ class __TwigTemplate_e6f9b17383f23d8975a4ec4c137dd758cd619fc8a739d69a3afcadf453e
         echo "</head>
 <body>
 <div class=\"container-fluid\" id=\"main_container\">
-    ";
-        // line 26
-        $this->displayBlock('navigation', $context, $blocks);
-        // line 184
-        echo "
-
-";
-        // line 186
-        $this->displayBlock('javascripts', $context, $blocks);
-        // line 196
-        echo "</div>
-</body>
-</html>
-";
-        
-        $__internal_48f2fe296d1524997fd1b3690d7fe6c5a44bebc60b508f429b4c29619ed6e299->leave($__internal_48f2fe296d1524997fd1b3690d7fe6c5a44bebc60b508f429b4c29619ed6e299_prof);
-
-        
-        $__internal_3b5924a3c75ed13a82adc5dad1ce6a8fafabdb6a36e00aa9c7c2ef9fd9f8de5e->leave($__internal_3b5924a3c75ed13a82adc5dad1ce6a8fafabdb6a36e00aa9c7c2ef9fd9f8de5e_prof);
-
-    }
-
-    // line 5
-    public function block_title($context, array $blocks = array())
-    {
-        $__internal_f036023d3d87f007bd1209222c7eb639d6263003aa577b4cc7c3913dd3e81097 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_f036023d3d87f007bd1209222c7eb639d6263003aa577b4cc7c3913dd3e81097->enter($__internal_f036023d3d87f007bd1209222c7eb639d6263003aa577b4cc7c3913dd3e81097_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
-
-        $__internal_50078bf32b8806cba04575270e7d5852191b3a9437285af650f077af05524def = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_50078bf32b8806cba04575270e7d5852191b3a9437285af650f077af05524def->enter($__internal_50078bf32b8806cba04575270e7d5852191b3a9437285af650f077af05524def_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
-
-        echo "MerchHelper";
-        
-        $__internal_50078bf32b8806cba04575270e7d5852191b3a9437285af650f077af05524def->leave($__internal_50078bf32b8806cba04575270e7d5852191b3a9437285af650f077af05524def_prof);
-
-        
-        $__internal_f036023d3d87f007bd1209222c7eb639d6263003aa577b4cc7c3913dd3e81097->leave($__internal_f036023d3d87f007bd1209222c7eb639d6263003aa577b4cc7c3913dd3e81097_prof);
-
-    }
-
-    // line 9
-    public function block_stylesheets($context, array $blocks = array())
-    {
-        $__internal_3c060f19e10db204d34295953ba7bf9ce99d7b41f356b7c68acf0c64cf3e813c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_3c060f19e10db204d34295953ba7bf9ce99d7b41f356b7c68acf0c64cf3e813c->enter($__internal_3c060f19e10db204d34295953ba7bf9ce99d7b41f356b7c68acf0c64cf3e813c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
-
-        $__internal_d19b5a956c7a9b55f508881d621a5de890b139bcdb244b7580cd27af528b9312 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_d19b5a956c7a9b55f508881d621a5de890b139bcdb244b7580cd27af528b9312->enter($__internal_d19b5a956c7a9b55f508881d621a5de890b139bcdb244b7580cd27af528b9312_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
-
-        // line 10
-        echo "            <!-- Fonts -->
-            <link href=\"https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,300i\" rel=\"stylesheet\">
-
-            <!-- Styles -->
-            <link href=\"../assets/css/core.min.css\" rel=\"stylesheet\">
-            <link href=\"../assets/css/app.min.css\" rel=\"stylesheet\">
-            <link href=\"../assets/css/style.min.css\" rel=\"stylesheet\">
-            <link href=\"../assets/css/main.css\" rel=\"stylesheet\">
-
-            <!-- Favicons -->
-            <link rel=\"apple-touch-icon\" href=\"../assets/img/apple-touch-icon.png\">
-            <link rel=\"icon\" href=\"../assets/img/favicon.png\">
-    ";
-        
-        $__internal_d19b5a956c7a9b55f508881d621a5de890b139bcdb244b7580cd27af528b9312->leave($__internal_d19b5a956c7a9b55f508881d621a5de890b139bcdb244b7580cd27af528b9312_prof);
-
-        
-        $__internal_3c060f19e10db204d34295953ba7bf9ce99d7b41f356b7c68acf0c64cf3e813c->leave($__internal_3c060f19e10db204d34295953ba7bf9ce99d7b41f356b7c68acf0c64cf3e813c_prof);
-
-    }
-
-    // line 26
-    public function block_navigation($context, array $blocks = array())
-    {
-        $__internal_f58dcd47786bff92ea452097902d83f11a5052f5c9de018ff90b10220f78bd04 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_f58dcd47786bff92ea452097902d83f11a5052f5c9de018ff90b10220f78bd04->enter($__internal_f58dcd47786bff92ea452097902d83f11a5052f5c9de018ff90b10220f78bd04_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "navigation"));
-
-        $__internal_a448ef72faa61d3e2176da01bc4f80dec090d8f22ba6d1beba7f78ccce204049 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_a448ef72faa61d3e2176da01bc4f80dec090d8f22ba6d1beba7f78ccce204049->enter($__internal_a448ef72faa61d3e2176da01bc4f80dec090d8f22ba6d1beba7f78ccce204049_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "navigation"));
-
-        // line 27
-        echo "        <div class=\"p-3 mb-2 bg-success text-white container col-3\" id=\"logIn_form\" style=\"margin: 0 auto;\">
+        <div class=\"p-3 mb-2 bg-success text-white container col-3\" id=\"logIn_form\" style=\"margin: 0 auto;\">
                 <header>
                         <h2>Create List</h2>
                 </header>
                 <a class=\"nav-link badge badge-info\" id=\"singUpBtn\" onclick=\"history.back()\" href=\"#\" style=\"color: white\">Back</a>
                 <div class=\"form-group\">
                     ";
+        // line 32
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 32, $this->getSourceContext()); })()), 'form_start');
+        echo "
+                    ";
         // line 33
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 33, $this->getSourceContext()); })()), 'form_start');
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 33, $this->getSourceContext()); })()), "type", array()), 'row', array("attr" => array("class" => "form-control")));
         echo "
                     ";
         // line 34
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 34, $this->getSourceContext()); })()), "type", array()), 'row', array("attr" => array("class" => "form-control")));
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 34, $this->getSourceContext()); })()), "fit", array()), 'row', array("attr" => array("class" => "form-control")));
         echo "
                     ";
         // line 35
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 35, $this->getSourceContext()); })()), "fit", array()), 'row', array("attr" => array("class" => "form-control")));
-        echo "
-                    ";
-        // line 36
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 36, $this->getSourceContext()); })()), "color", array()), 'row', array("attr" => array("style" => "display: none")));
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 35, $this->getSourceContext()); })()), "color", array()), 'row', array("attr" => array("style" => "display: none")));
         echo "
                     <div id=\"colorpicker\">
                         <label class=\"custom-control custom-checkbox\" title=\"Dark Heather\">
@@ -194,7 +112,7 @@ class __TwigTemplate_e6f9b17383f23d8975a4ec4c137dd758cd619fc8a739d69a3afcadf453e
 
                         <label class=\"custom-control custom-checkbox\" title=\"Brown\">
                             <input type=\"checkbox\" class=\"custom-control-input color-check\" id=\"form_color_7\" name=\"form[color][]\" value=\"8\">
-                            <span class=\"custom-control-indicator\" style=\"background-color: #31261d\"></span>
+                            <span class=\"custom-control-indicator\" style=\"background-color: #381f18\"></span>
                             <span class=\"custom-control-description\"></span>
                         </label>
 
@@ -274,87 +192,180 @@ class __TwigTemplate_e6f9b17383f23d8975a4ec4c137dd758cd619fc8a739d69a3afcadf453e
                             <span class=\"custom-control-description\"></span>
                         </label>
 
-                        <label class=\"custom-control custom-checkbox\" title=\"Purple\">
+                        <label class=\"custom-control custom-checkbox\" title=\"Purple\" id=\"color_20\">
                             <input type=\"checkbox\" class=\"custom-control-input color-check\" id=\"form_color_20\" name=\"form[color][]\" value=\"21\">
                             <span class=\"custom-control-indicator\" style=\"background-color: #514689\"></span>
                             <span class=\"custom-control-description\"></span>
                         </label>
                     </div>
+                    <div id=\"colorpicker-longsleeve\" style=\"display: none;\">
+                        <label class=\"custom-control custom-checkbox\" title=\"Heather Grey\">
+                            <input type=\"checkbox\" class=\"custom-control-input color-check\" id=\"form_color_1\" name=\"form[color][]\" value=\"2\">
+                            <span class=\"custom-control-indicator\" style=\"background-color: #d4d8d9;\"></span>
+                            <span class=\"custom-control-description\"></span>
+                        </label>
+
+                        <label class=\"custom-control custom-checkbox\" title=\"Dark Heather\">
+                            <input type=\"checkbox\" class=\"custom-control-input color-check\" id=\"form_color_0\" name=\"form[color][]\" value=\"1\">
+                            <span class=\"custom-control-indicator\" style=\"background-color: #474d4d;\"></span>
+                            <span class=\"custom-control-description\"></span>
+                        </label>
+
+                        <label class=\"custom-control custom-checkbox\" title=\"Black\">
+                            <input type=\"checkbox\" class=\"custom-control-input color-check\" id=\"form_color_3\" name=\"form[color][]\" value=\"4\">
+                            <span class=\"custom-control-indicator\" style=\"background-color: #000000\"></span>
+                            <span class=\"custom-control-description\"></span>
+                        </label>
+
+                        <label class=\"custom-control custom-checkbox\" title=\"Navy\">
+                            <input type=\"checkbox\" class=\"custom-control-input color-check\" id=\"form_color_4\" name=\"form[color][]\" value=\"5\">
+                            <span class=\"custom-control-indicator\" style=\"background-color: #15232b\"></span>
+                            <span class=\"custom-control-description\"></span>
+                        </label>
+
+                        <label class=\"custom-control custom-checkbox\" title=\"Royal Blue\">
+                            <input type=\"checkbox\" class=\"custom-control-input color-check\" id=\"form_color_6\" name=\"form[color][]\" value=\"7\">
+                            <span class=\"custom-control-indicator\" style=\"background-color: #1C4086;\"></span>
+                            <span class=\"custom-control-description\"></span>
+                        </label>
+                    </div>
                     ";
-        // line 170
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 170, $this->getSourceContext()); })()), "cost", array()), 'row', array("attr" => array("class" => "form-control")));
+        // line 200
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 200, $this->getSourceContext()); })()), "cost", array()), 'row', array("attr" => array("class" => "form-control")));
         echo "
                     ";
-        // line 171
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 171, $this->getSourceContext()); })()), "brand", array()), 'row', array("attr" => array("class" => "form-control")));
+        // line 201
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 201, $this->getSourceContext()); })()), "brand", array()), 'row', array("attr" => array("class" => "form-control")));
         echo "
                     ";
-        // line 172
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 172, $this->getSourceContext()); })()), "title", array()), 'row', array("attr" => array("class" => "form-control")));
+        // line 202
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 202, $this->getSourceContext()); })()), "title", array()), 'row', array("attr" => array("class" => "form-control")));
         echo "
                     ";
-        // line 173
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 173, $this->getSourceContext()); })()), "bulletOne", array()), 'row', array("attr" => array("class" => "form-control")));
+        // line 203
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 203, $this->getSourceContext()); })()), "bulletOne", array()), 'row', array("attr" => array("class" => "form-control")));
         echo "
                     ";
-        // line 174
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 174, $this->getSourceContext()); })()), "bulletTwo", array()), 'row', array("attr" => array("class" => "form-control")));
+        // line 204
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 204, $this->getSourceContext()); })()), "bulletTwo", array()), 'row', array("attr" => array("class" => "form-control")));
         echo "
                     ";
-        // line 175
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 175, $this->getSourceContext()); })()), "description", array()), 'row', array("attr" => array("class" => "form-control")));
+        // line 205
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 205, $this->getSourceContext()); })()), "description", array()), 'row', array("attr" => array("class" => "form-control")));
         echo "
                     ";
-        // line 176
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 176, $this->getSourceContext()); })()), "userId", array()), 'row', array("attr" => array("id" => "user_ID")));
+        // line 206
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 206, $this->getSourceContext()); })()), "userId", array()), 'row', array("attr" => array("id" => "user_ID")));
         echo "
                     ";
-        // line 177
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 177, $this->getSourceContext()); })()), "master_id", array()), 'row', array("attr" => array("class" => "form-control")));
+        // line 207
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 207, $this->getSourceContext()); })()), "master_id", array()), 'row', array("attr" => array("class" => "form-control")));
         echo "
                         <button type=\"submit\" class=\"btn btn-info\">Create!</button>
                     ";
-        // line 179
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 179, $this->getSourceContext()); })()), 'form_end');
+        // line 209
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new Twig_Error_Runtime('Variable "form" does not exist.', 209, $this->getSourceContext()); })()), 'form_end');
         echo "
                 </div>
+            <div id=\"color-preview\">
+                <div id=\"tshirt-placeholder\" class=\"Anvil form_color_20\">
+                    <div id=\"preview\">
+                        <img src=\"";
+        // line 214
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl(("uploads/image/" . twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["master"]) || array_key_exists("master", $context) ? $context["master"] : (function () { throw new Twig_Error_Runtime('Variable "master" does not exist.', 214, $this->getSourceContext()); })()), "filename", array()))), "html", null, true);
+        echo "\">
+                    </div>
+                </div>
+            </div>
+
         </div>
 </div>
 ";
+        // line 221
+        $this->displayBlock('javascripts', $context, $blocks);
+        // line 228
+        echo "</div>
+</body>
+</html>
+";
         
-        $__internal_a448ef72faa61d3e2176da01bc4f80dec090d8f22ba6d1beba7f78ccce204049->leave($__internal_a448ef72faa61d3e2176da01bc4f80dec090d8f22ba6d1beba7f78ccce204049_prof);
+        $__internal_f1e352e957e0c1d073eabaa7814696c685694190b0272b71958dfff2ad3d6ddc->leave($__internal_f1e352e957e0c1d073eabaa7814696c685694190b0272b71958dfff2ad3d6ddc_prof);
 
         
-        $__internal_f58dcd47786bff92ea452097902d83f11a5052f5c9de018ff90b10220f78bd04->leave($__internal_f58dcd47786bff92ea452097902d83f11a5052f5c9de018ff90b10220f78bd04_prof);
+        $__internal_fa2d9d7a45a95cafe24648a945d1fb81dcac636ff6e534eaa1fe6b1728032f14->leave($__internal_fa2d9d7a45a95cafe24648a945d1fb81dcac636ff6e534eaa1fe6b1728032f14_prof);
 
     }
 
-    // line 186
+    // line 5
+    public function block_title($context, array $blocks = array())
+    {
+        $__internal_ef730467becb5a8ebecec8833ea0679fde79eb2ee4c1f1dd390f11645ec17baf = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_ef730467becb5a8ebecec8833ea0679fde79eb2ee4c1f1dd390f11645ec17baf->enter($__internal_ef730467becb5a8ebecec8833ea0679fde79eb2ee4c1f1dd390f11645ec17baf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+
+        $__internal_fdbbc221488c4c16ab9ac4d98512e7e92a22299355f87d2b454df442c25db488 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_fdbbc221488c4c16ab9ac4d98512e7e92a22299355f87d2b454df442c25db488->enter($__internal_fdbbc221488c4c16ab9ac4d98512e7e92a22299355f87d2b454df442c25db488_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+
+        echo "MerchHelper";
+        
+        $__internal_fdbbc221488c4c16ab9ac4d98512e7e92a22299355f87d2b454df442c25db488->leave($__internal_fdbbc221488c4c16ab9ac4d98512e7e92a22299355f87d2b454df442c25db488_prof);
+
+        
+        $__internal_ef730467becb5a8ebecec8833ea0679fde79eb2ee4c1f1dd390f11645ec17baf->leave($__internal_ef730467becb5a8ebecec8833ea0679fde79eb2ee4c1f1dd390f11645ec17baf_prof);
+
+    }
+
+    // line 9
+    public function block_stylesheets($context, array $blocks = array())
+    {
+        $__internal_c98e5b4adc55d5ca2c37d667e6019b01c62dac5bbfa1a26177a74b7a9bb33d59 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_c98e5b4adc55d5ca2c37d667e6019b01c62dac5bbfa1a26177a74b7a9bb33d59->enter($__internal_c98e5b4adc55d5ca2c37d667e6019b01c62dac5bbfa1a26177a74b7a9bb33d59_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+
+        $__internal_9bf27d94b8fc210764f9659d59d234c9d692fe16caf277487973be0ef18af6e8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_9bf27d94b8fc210764f9659d59d234c9d692fe16caf277487973be0ef18af6e8->enter($__internal_9bf27d94b8fc210764f9659d59d234c9d692fe16caf277487973be0ef18af6e8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+
+        // line 10
+        echo "            <!-- Fonts -->
+            <link href=\"https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,300i\" rel=\"stylesheet\">
+
+            <!-- Styles -->
+            <link href=\"../assets/css/core.min.css\" rel=\"stylesheet\">
+            <link href=\"../assets/css/app.min.css\" rel=\"stylesheet\">
+            <link href=\"../assets/css/style.min.css\" rel=\"stylesheet\">
+            <link href=\"../assets/css/main.css\" rel=\"stylesheet\">
+
+            <!-- Favicons -->
+            <link rel=\"apple-touch-icon\" href=\"../assets/img/apple-touch-icon.png\">
+            <link rel=\"icon\" href=\"../assets/img/favicon.png\">
+    ";
+        
+        $__internal_9bf27d94b8fc210764f9659d59d234c9d692fe16caf277487973be0ef18af6e8->leave($__internal_9bf27d94b8fc210764f9659d59d234c9d692fe16caf277487973be0ef18af6e8_prof);
+
+        
+        $__internal_c98e5b4adc55d5ca2c37d667e6019b01c62dac5bbfa1a26177a74b7a9bb33d59->leave($__internal_c98e5b4adc55d5ca2c37d667e6019b01c62dac5bbfa1a26177a74b7a9bb33d59_prof);
+
+    }
+
+    // line 221
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_c85978a7cd9625caa205c4835db6d2b379ce67d5eff206521cc8ea742ae3f475 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_c85978a7cd9625caa205c4835db6d2b379ce67d5eff206521cc8ea742ae3f475->enter($__internal_c85978a7cd9625caa205c4835db6d2b379ce67d5eff206521cc8ea742ae3f475_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_db22635b753a5b69817fc8387994f8f548df7653baa2b0d6fc38ceb6a8e33820 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_db22635b753a5b69817fc8387994f8f548df7653baa2b0d6fc38ceb6a8e33820->enter($__internal_db22635b753a5b69817fc8387994f8f548df7653baa2b0d6fc38ceb6a8e33820_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        $__internal_56a015cb2dba6f9f65f972d3ae3f952b0983f6fec379198e77c613a982e3540f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_56a015cb2dba6f9f65f972d3ae3f952b0983f6fec379198e77c613a982e3540f->enter($__internal_56a015cb2dba6f9f65f972d3ae3f952b0983f6fec379198e77c613a982e3540f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_7df2873e61db36a13ea390e946ba0672c487251275f35b6ac05eb57e8f5fba1c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_7df2873e61db36a13ea390e946ba0672c487251275f35b6ac05eb57e8f5fba1c->enter($__internal_7df2873e61db36a13ea390e946ba0672c487251275f35b6ac05eb57e8f5fba1c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 187
+        // line 222
         echo "        <!-- Scripts -->
         <script src=\"../assets/js/core.min.js\"></script>
-        <script type=\"text/javascript\">
-            ";
-        // line 191
-        echo "            ";
-        // line 192
-        echo "        </script>
         <script src=\"../assets/js/app.min.js\"></script>
         <script src=\"../assets/js/script.min.js\"></script>
+    <script src=\"../assets/js/script.js\"></script>
 ";
         
-        $__internal_56a015cb2dba6f9f65f972d3ae3f952b0983f6fec379198e77c613a982e3540f->leave($__internal_56a015cb2dba6f9f65f972d3ae3f952b0983f6fec379198e77c613a982e3540f_prof);
+        $__internal_7df2873e61db36a13ea390e946ba0672c487251275f35b6ac05eb57e8f5fba1c->leave($__internal_7df2873e61db36a13ea390e946ba0672c487251275f35b6ac05eb57e8f5fba1c_prof);
 
         
-        $__internal_c85978a7cd9625caa205c4835db6d2b379ce67d5eff206521cc8ea742ae3f475->leave($__internal_c85978a7cd9625caa205c4835db6d2b379ce67d5eff206521cc8ea742ae3f475_prof);
+        $__internal_db22635b753a5b69817fc8387994f8f548df7653baa2b0d6fc38ceb6a8e33820->leave($__internal_db22635b753a5b69817fc8387994f8f548df7653baa2b0d6fc38ceb6a8e33820_prof);
 
     }
 
@@ -363,9 +374,14 @@ class __TwigTemplate_e6f9b17383f23d8975a4ec4c137dd758cd619fc8a739d69a3afcadf453e
         return "list/listCreate.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  349 => 192,  347 => 191,  342 => 187,  333 => 186,  318 => 179,  313 => 177,  309 => 176,  305 => 175,  301 => 174,  297 => 173,  293 => 172,  289 => 171,  285 => 170,  148 => 36,  144 => 35,  140 => 34,  136 => 33,  128 => 27,  119 => 26,  97 => 10,  88 => 9,  70 => 5,  57 => 196,  55 => 186,  51 => 184,  49 => 26,  44 => 23,  42 => 9,  35 => 5,  29 => 1,);
+        return array (  358 => 222,  349 => 221,  327 => 10,  318 => 9,  300 => 5,  287 => 228,  285 => 221,  275 => 214,  267 => 209,  262 => 207,  258 => 206,  254 => 205,  250 => 204,  246 => 203,  242 => 202,  238 => 201,  234 => 200,  66 => 35,  62 => 34,  58 => 33,  54 => 32,  43 => 23,  41 => 9,  34 => 5,  28 => 1,);
     }
 
     public function getSourceContext()
@@ -395,7 +411,6 @@ class __TwigTemplate_e6f9b17383f23d8975a4ec4c137dd758cd619fc8a739d69a3afcadf453e
 </head>
 <body>
 <div class=\"container-fluid\" id=\"main_container\">
-    {% block navigation %}
         <div class=\"p-3 mb-2 bg-success text-white container col-3\" id=\"logIn_form\" style=\"margin: 0 auto;\">
                 <header>
                         <h2>Create List</h2>
@@ -453,7 +468,7 @@ class __TwigTemplate_e6f9b17383f23d8975a4ec4c137dd758cd619fc8a739d69a3afcadf453e
 
                         <label class=\"custom-control custom-checkbox\" title=\"Brown\">
                             <input type=\"checkbox\" class=\"custom-control-input color-check\" id=\"form_color_7\" name=\"form[color][]\" value=\"8\">
-                            <span class=\"custom-control-indicator\" style=\"background-color: #31261d\"></span>
+                            <span class=\"custom-control-indicator\" style=\"background-color: #381f18\"></span>
                             <span class=\"custom-control-description\"></span>
                         </label>
 
@@ -533,9 +548,40 @@ class __TwigTemplate_e6f9b17383f23d8975a4ec4c137dd758cd619fc8a739d69a3afcadf453e
                             <span class=\"custom-control-description\"></span>
                         </label>
 
-                        <label class=\"custom-control custom-checkbox\" title=\"Purple\">
+                        <label class=\"custom-control custom-checkbox\" title=\"Purple\" id=\"color_20\">
                             <input type=\"checkbox\" class=\"custom-control-input color-check\" id=\"form_color_20\" name=\"form[color][]\" value=\"21\">
                             <span class=\"custom-control-indicator\" style=\"background-color: #514689\"></span>
+                            <span class=\"custom-control-description\"></span>
+                        </label>
+                    </div>
+                    <div id=\"colorpicker-longsleeve\" style=\"display: none;\">
+                        <label class=\"custom-control custom-checkbox\" title=\"Heather Grey\">
+                            <input type=\"checkbox\" class=\"custom-control-input color-check\" id=\"form_color_1\" name=\"form[color][]\" value=\"2\">
+                            <span class=\"custom-control-indicator\" style=\"background-color: #d4d8d9;\"></span>
+                            <span class=\"custom-control-description\"></span>
+                        </label>
+
+                        <label class=\"custom-control custom-checkbox\" title=\"Dark Heather\">
+                            <input type=\"checkbox\" class=\"custom-control-input color-check\" id=\"form_color_0\" name=\"form[color][]\" value=\"1\">
+                            <span class=\"custom-control-indicator\" style=\"background-color: #474d4d;\"></span>
+                            <span class=\"custom-control-description\"></span>
+                        </label>
+
+                        <label class=\"custom-control custom-checkbox\" title=\"Black\">
+                            <input type=\"checkbox\" class=\"custom-control-input color-check\" id=\"form_color_3\" name=\"form[color][]\" value=\"4\">
+                            <span class=\"custom-control-indicator\" style=\"background-color: #000000\"></span>
+                            <span class=\"custom-control-description\"></span>
+                        </label>
+
+                        <label class=\"custom-control custom-checkbox\" title=\"Navy\">
+                            <input type=\"checkbox\" class=\"custom-control-input color-check\" id=\"form_color_4\" name=\"form[color][]\" value=\"5\">
+                            <span class=\"custom-control-indicator\" style=\"background-color: #15232b\"></span>
+                            <span class=\"custom-control-description\"></span>
+                        </label>
+
+                        <label class=\"custom-control custom-checkbox\" title=\"Royal Blue\">
+                            <input type=\"checkbox\" class=\"custom-control-input color-check\" id=\"form_color_6\" name=\"form[color][]\" value=\"7\">
+                            <span class=\"custom-control-indicator\" style=\"background-color: #1C4086;\"></span>
                             <span class=\"custom-control-description\"></span>
                         </label>
                     </div>
@@ -550,20 +596,22 @@ class __TwigTemplate_e6f9b17383f23d8975a4ec4c137dd758cd619fc8a739d69a3afcadf453e
                         <button type=\"submit\" class=\"btn btn-info\">Create!</button>
                     {{ form_end(form) }}
                 </div>
+            <div id=\"color-preview\">
+                <div id=\"tshirt-placeholder\" class=\"Anvil form_color_20\">
+                    <div id=\"preview\">
+                        <img src=\"{{ asset('uploads/image/' ~ master.filename) }}\">
+                    </div>
+                </div>
+            </div>
+
         </div>
 </div>
-{% endblock %}
-
-
 {% block javascripts %}
         <!-- Scripts -->
         <script src=\"../assets/js/core.min.js\"></script>
-        <script type=\"text/javascript\">
-            {#document.getElementById('form_userId').value = {{ app.user.user_id }};#}
-            {#document.getElementById('form_master_id').value = {{ app.user.user_id }};#}
-        </script>
         <script src=\"../assets/js/app.min.js\"></script>
         <script src=\"../assets/js/script.min.js\"></script>
+    <script src=\"../assets/js/script.js\"></script>
 {% endblock %}
 </div>
 </body>

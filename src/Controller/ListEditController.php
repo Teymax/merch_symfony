@@ -8,6 +8,7 @@
 
 namespace App\Controller;
 
+use App\Entity\MasterListing;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\Listing;
@@ -27,7 +28,7 @@ class ListEditController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
         $listing = $em->getRepository(Listing::class)->find($listing_id);
-
+        $master = $em->getRepository(MasterListing::class)->find($listing->getMasterId());
         if (!$listing) {
             throw $this->createNotFoundException(
                 'No product found for id '.$listing_id
@@ -98,7 +99,7 @@ class ListEditController extends Controller
         }
 
         return $this->render('list/listEdit.html.twig', [
-            'form' => $form->createView()
+            'form' => $form->createView(), 'master' => $master, 'listing' => $listing
         ]);
     }
 }

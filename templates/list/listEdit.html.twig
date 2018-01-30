@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html"; charset=utf-8" />
-    <title>{% block title %}MerchHelper | List Edit{% endblock %}</title>
+    <title>{% block title %}MerchHelper{% endblock %}</title>
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -23,19 +23,16 @@
 </head>
 <body>
 <div class="container-fluid" id="main_container">
-    {% block navigation %}
     <div class="p-3 mb-2 bg-success text-white container col-3" id="logIn_form" style="margin: 0 auto;">
         <header>
-            <h2>List Edit</h2>
+            <h2>Create List</h2>
         </header>
-
-            <a class="nav-link badge badge-info" id="singUpBtn" onclick="history.back()" href="#" style="color: white">Back</a>
-
+        <a class="nav-link badge badge-info" id="singUpBtn" onclick="history.back()" href="#" style="color: white">Back</a>
         <div class="form-group">
             {{ form_start(form) }}
             {{ form_row(form.type, { 'attr': {'class': 'form-control'} }) }}
             {{ form_row(form.fit, { 'attr': {'class': 'form-control'} }) }}
-            {{ form_row(form.color, { 'attr': {'class': 'form-control'} }) }}
+            {{ form_row(form.color, { 'attr': {'style': 'display: none'} }) }}
             <div id="colorpicker">
                 <label class="custom-control custom-checkbox" title="Dark Heather">
                     <input type="checkbox" class="custom-control-input color-check" id="form_color_0" name="form[color][]" value="1">
@@ -83,7 +80,7 @@
 
                 <label class="custom-control custom-checkbox" title="Brown">
                     <input type="checkbox" class="custom-control-input color-check" id="form_color_7" name="form[color][]" value="8">
-                    <span class="custom-control-indicator" style="background-color: #31261d"></span>
+                    <span class="custom-control-indicator" style="background-color: #381f18"></span>
                     <span class="custom-control-description"></span>
                 </label>
 
@@ -163,9 +160,71 @@
                     <span class="custom-control-description"></span>
                 </label>
 
-                <label class="custom-control custom-checkbox" title="Purple">
+                <label class="custom-control custom-checkbox" title="Purple" id="color_20">
                     <input type="checkbox" class="custom-control-input color-check" id="form_color_20" name="form[color][]" value="21">
                     <span class="custom-control-indicator" style="background-color: #514689"></span>
+                    <span class="custom-control-description"></span>
+                </label>
+            </div>
+            <div id="colorpicker-longsleeve" style="display: none;">
+                <label class="custom-control custom-checkbox" title="Heather Blue">
+                    <input type="checkbox" class="custom-control-input color-check" id="form_color_2" name="form[color][]" value="3">
+                    <span class="custom-control-indicator" style="background-color: #767ae0;"></span>
+                    <span class="custom-control-description"></span>
+                </label>
+
+                <label class="custom-control custom-checkbox" title="Dark Heather">
+                    <input type="checkbox" class="custom-control-input color-check" id="form_color_0" name="form[color][]" value="1">
+                    <span class="custom-control-indicator" style="background-color: #474d4d;"></span>
+                    <span class="custom-control-description"></span>
+                </label>
+
+                <label class="custom-control custom-checkbox" title="Black">
+                    <input type="checkbox" class="custom-control-input color-check" id="form_color_3" name="form[color][]" value="4">
+                    <span class="custom-control-indicator" style="background-color: #000000"></span>
+                    <span class="custom-control-description"></span>
+                </label>
+
+                <label class="custom-control custom-checkbox" title="Navy">
+                    <input type="checkbox" class="custom-control-input color-check" id="form_color_4" name="form[color][]" value="5">
+                    <span class="custom-control-indicator" style="background-color: #15232b"></span>
+                    <span class="custom-control-description"></span>
+                </label>
+
+                <label class="custom-control custom-checkbox" title="Royal Blue">
+                    <input type="checkbox" class="custom-control-input color-check" name="color[]" value="royal">
+                    <span class="custom-control-indicator" style="background-color: #1C4086;"></span>
+                    <span class="custom-control-description"></span>
+                </label>
+            </div>
+            <div id="colorpicker-longsleeve" style="display: none;">
+                <label class="custom-control custom-checkbox" title="Heather Grey">
+                    <input type="checkbox" class="custom-control-input color-check" id="form_color_1" name="form[color][]" value="2">
+                    <span class="custom-control-indicator" style="background-color: #d4d8d9;"></span>
+                    <span class="custom-control-description"></span>
+                </label>
+
+                <label class="custom-control custom-checkbox" title="Dark Heather">
+                    <input type="checkbox" class="custom-control-input color-check" id="form_color_0" name="form[color][]" value="1">
+                    <span class="custom-control-indicator" style="background-color: #474d4d;"></span>
+                    <span class="custom-control-description"></span>
+                </label>
+
+                <label class="custom-control custom-checkbox" title="Black">
+                    <input type="checkbox" class="custom-control-input color-check" id="form_color_3" name="form[color][]" value="4">
+                    <span class="custom-control-indicator" style="background-color: #000000"></span>
+                    <span class="custom-control-description"></span>
+                </label>
+
+                <label class="custom-control custom-checkbox" title="Navy">
+                    <input type="checkbox" class="custom-control-input color-check" id="form_color_4" name="form[color][]" value="5">
+                    <span class="custom-control-indicator" style="background-color: #15232b"></span>
+                    <span class="custom-control-description"></span>
+                </label>
+
+                <label class="custom-control custom-checkbox" title="Royal Blue">
+                    <input type="checkbox" class="custom-control-input color-check" id="form_color_6" name="form[color][]" value="7">
+                    <span class="custom-control-indicator" style="background-color: #1C4086;"></span>
                     <span class="custom-control-description"></span>
                 </label>
             </div>
@@ -177,19 +236,28 @@
             {{ form_row(form.description, { 'attr': {'class': 'form-control'} }) }}
             {{ form_row(form.userId, { 'attr': {'id': 'user_ID'} }) }}
             {{ form_row(form.master_id, { 'attr': {'class': 'form-control'} }) }}
-            <button type="submit" class="btn btn-info">Save!</button>
+            <button type="submit" class="btn btn-info">Edit!</button>
             {{ form_end(form) }}
         </div>
+        <div id="color-preview">
+            <div id="tshirt-placeholder" class="{{ listing.type }} form_color_2">
+                <div id="preview">
+                    <img src="{{ asset('uploads/image/' ~ master.filename) }}">
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
-{% endblock %}
-
-
 {% block javascripts %}
     <!-- Scripts -->
+
+    <script type="text/javascript">
+    </script>
     <script src="../assets/js/core.min.js"></script>
     <script src="../assets/js/app.min.js"></script>
     <script src="../assets/js/script.min.js"></script>
+    <script src="../assets/js/script.js"></script>
 {% endblock %}
 </div>
 </body>

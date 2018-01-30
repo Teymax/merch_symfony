@@ -5,7 +5,7 @@ html, body {
 	height: 100%;
 }
 /*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
 	#main_container {
 	height: 100%;
 	}
@@ -31,4 +31,73 @@ html, body {
 	height: 100%;
 	}
 }
+#color-preview > #tshirt-placeholder {
+	width: 446px;
+	height: 470px;
+	background-position-y: -50px;
+}
+#color-preview > #tshirt-placeholder.Anvil {
+	background-image: url("../img/anvil.jpg");
+}
+#color-preview > #tshirt-placeholder.Premium {
+	background-image: url("../img/premium.jpg");
+}
+#color-preview > #tshirt-placeholder.Long-Sleeve {
+	background-image: url("../img/longsleeve.jpg");
+}
+#color-preview > #tshirt-placeholder.Sweatshirt {
+	background-image: url("../img/sweatshirt.jpg");
+}
+#color-preview > #tshirt-placeholder.Hoodie {
+	background-image: url("../img/hoodie.jpg");
+}
 
+/* 21 colors */
+/* anvil + premium */
+#color-preview > #tshirt-placeholder.form_color_3          {background-position-x: 0px;}
+#color-preview > #tshirt-placeholder.form_color_4           {background-position-x: -446px;}
+#color-preview > #tshirt-placeholder.form_color_5         {background-position-x: -892px;}
+#color-preview > #tshirt-placeholder.form_color_6          {background-position-x: -1338px;}
+#color-preview > #tshirt-placeholder.form_color_7          {background-position-x: -1784px;}
+#color-preview > #tshirt-placeholder.form_color_8          {background-position-x: -2230px;}
+#color-preview > #tshirt-placeholder.form_color_9            {background-position-x: -2676px;}
+#color-preview > #tshirt-placeholder.form_color_10        {background-position-x: -3122px;}
+#color-preview > #tshirt-placeholder.form_color_11          {background-position-x: -3568px;}
+#color-preview > #tshirt-placeholder.form_color_12          {background-position-x: -4014px;}
+#color-preview > #tshirt-placeholder.form_color_13     {background-position-x: -4460px;}
+#color-preview > #tshirt-placeholder.form_color_14       {background-position-x: -4906px;}
+#color-preview > #tshirt-placeholder.form_color_15          {background-position-x: -5352px;}
+#color-preview > #tshirt-placeholder.form_color_16          {background-position-x: -5798px;}
+#color-preview > #tshirt-placeholder.form_color_17      {background-position-x: -6244px;}
+#color-preview > #tshirt-placeholder.form_color_18           {background-position-x: -6690px;}
+#color-preview > #tshirt-placeholder.form_color_19         {background-position-x: -7136px;}
+#color-preview > #tshirt-placeholder.form_color_20         {background-position-x: -7582px;}
+#color-preview > #tshirt-placeholder.form_color_2    {background-position-x: -8028px;}
+#color-preview > #tshirt-placeholder.form_color_1    {background-position-x: -8474px;}
+#color-preview > #tshirt-placeholder.form_color_0    {background-position-x: -8920px;}
+
+
+/* only 5 colors */
+/* longsleeve */
+#color-preview > #tshirt-placeholder.longsleeve.form_color_1    {background-position-x: 0px;}
+#color-preview > #tshirt-placeholder.longsleeve.form_color_0    {background-position-x: -446px;}
+#color-preview > #tshirt-placeholder.longsleeve.form_color_3           {background-position-x: -892px;}
+#color-preview > #tshirt-placeholder.longsleeve.form_color_4            {background-position-x: -1338px;}
+#color-preview > #tshirt-placeholder.longsleeve.form_color_6           {background-position-x: -1784px;}
+
+/* sweatshirt */
+#color-preview > #tshirt-placeholder.sweatshirt.form_color_1    {background-position-x: 0px;}
+#color-preview > #tshirt-placeholder.sweatshirt.form_color_0    {background-position-x: -446px;}
+#color-preview > #tshirt-placeholder.sweatshirt.form_color_3           {background-position-x: -892px;}
+#color-preview > #tshirt-placeholder.sweatshirt.form_color_4            {background-position-x: -1338px;}
+#color-preview > #tshirt-placeholder.sweatshirt.form_color_6           {background-position-x: -1784px;}
+
+/* hoodie */
+#color-preview > #tshirt-placeholder.hoodie.form_color_1    {background-position-x: 0px;}
+#color-preview > #tshirt-placeholder.hoodie.form_color_0    {background-position-x: -446px;}
+#color-preview > #tshirt-placeholder.hoodie.form_color_3           {background-position-x: -892px;}
+#color-preview > #tshirt-placeholder.hoodie.form_color_4            {background-position-x: -1338px;}
+#color-preview > #tshirt-placeholder.hoodie.form_color_6           {background-position-x: -1784px;}
+
+#color-preview > #tshirt-placeholder > #preview {width: 167px; height: 200px; background:transparent; position: relative; left: 138px; top: 89px;}
+#preview > img {width: 167px;height: 200px;}
