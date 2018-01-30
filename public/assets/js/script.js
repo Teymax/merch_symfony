@@ -91,10 +91,10 @@ function add_to_list() {
 
         var data_color = '';
 
-        if(data_apparel_type == 'longsleeve' || data_apparel_type == 'sweatshirt' || data_apparel_type == 'hoodie')
-            data_colors = '"'+$.map($('#colorpicker-longsleeve :checkbox[name=color\\[\\]]:checked'), function(n, i){return n.value;}).join(',')+'"';
+        if(data_apparel_type == 'Long-Sleeve' || data_apparel_type == 'Sweatshirt' || data_apparel_type == 'Hoodie')
+            data_colors = '"'+$.map($('#colorpicker-longsleeve :checkbox[name=form\\[color\\]\\[\\]]:checked'), function(n, i){return n.value;}).join(',')+'"';
         else
-            data_colors = '"'+$.map($('#colorpicker :checkbox[name=color\\[\\]]:checked'), function(n, i){return n.value;}).join(',')+'"';
+            data_colors = '"'+$.map($('#colorpicker :checkbox[name=form\\[color\\]\\[\\]]:checked'), function(n, i){return n.value;}).join(',')+'"';
 
         var data_sizes = '"'+$.map($(':checkbox[name=size\\[\\]]:checked'), function(n, i){return n.value;}).join(',')+'"';
         var data_price = $("#price").val();
@@ -193,38 +193,65 @@ $(".btn#bullet1-load").click(function() {
 $(".btn#bullet2-load").click(function() {
     $("#bullet2").text(bullet_placeholders[Math.floor(Math.random()*bullet_placeholders.length)]);
 });
+$( document ).ready(function() {
+    if ($('input[type=radio]:checked').attr('id') == 'form_type_0') {
+        $("#tshirt-placeholder").removeClass().addClass('Anvil');
+        $("#colorpicker-longsleeve").hide();
+        $("#colorpicker").show();
+        shirtType = 'Anvil';
+    }
+    else if ($('input[type=radio]:checked').attr('id') == 'form_type_1') {
+        $("#tshirt-placeholder").removeClass().addClass('Premium');
+        $("#colorpicker-longsleeve").hide();
+        $("#colorpicker").show();
+        shirtType = 'Premium';
+    }
+    else if ($('input[type=radio]:checked').attr('id') == 'form_type_2') {
+        $("#tshirt-placeholder").removeClass().addClass('Long-Sleeve');
+        $("#colorpicker-longsleeve").show();
+        $("#colorpicker").hide();
+        shirtType = 'Long-Sleeve';
+    }
+    else if ($('input[type=radio]:checked').attr('id') == 'form_type_3') {
+        $("#tshirt-placeholder").removeClass().addClass('Sweatshirt');
+        $("#colorpicker-longsleeve").show();
+        $("#colorpicker").hide();
+        shirtType = 'Sweatshirt';
+    }
+    else if ($('input[type=radio]:checked').attr('id') == 'form_type_4') {
+        $("#tshirt-placeholder").removeClass().addClass('Hoodie');
+        $("#colorpicker-longsleeve").show();
+        $("#colorpicker").hide();
+        shirtType = 'Hoodie';
+    }
+});
 
 $('input[type=radio]').change(function() {
     if (this.id == 'form_type_0') {
-        $("#price").val('19.99');
         $("#tshirt-placeholder").removeClass().addClass('Anvil');
         $("#colorpicker-longsleeve").hide();
         $("#colorpicker").show();
         shirtType = 'Anvil';
     }
     else if (this.id == 'form_type_1') {
-        $("#price").val('21.99');
         $("#tshirt-placeholder").removeClass().addClass('Premium');
         $("#colorpicker-longsleeve").hide();
         $("#colorpicker").show();
         shirtType = 'Premium';
     }
     else if (this.id == 'form_type_2') {
-        $("#price").val('26.99');
         $("#tshirt-placeholder").removeClass().addClass('Long-Sleeve');
         $("#colorpicker-longsleeve").show();
         $("#colorpicker").hide();
         shirtType = 'Long-Sleeve';
     }
     else if (this.id == 'form_type_3') {
-        $("#price").val('35.99');
         $("#tshirt-placeholder").removeClass().addClass('Sweatshirt');
         $("#colorpicker-longsleeve").show();
         $("#colorpicker").hide();
         shirtType = 'Sweatshirt';
     }
     else if (this.id == 'form_type_4') {
-        $("#price").val('39.99');
         $("#tshirt-placeholder").removeClass().addClass('Hoodie');
         $("#colorpicker-longsleeve").show();
         $("#colorpicker").hide();

@@ -3,24 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="67393e52-def7-4304-93c1-7600d300baf2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/app.min.css" afterPath="$PROJECT_DIR$/public/assets/css/app.min.css" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/main.css" afterPath="$PROJECT_DIR$/public/assets/css/main.css" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ListCreateController.php" afterPath="$PROJECT_DIR$/src/Controller/ListCreateController.php" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/script.js" afterPath="$PROJECT_DIR$/public/assets/js/script.js" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ListEditController.php" afterPath="$PROJECT_DIR$/src/Controller/ListEditController.php" />
-      <change beforePath="$PROJECT_DIR$/templates/list/listCreate.html.twig" afterPath="$PROJECT_DIR$/templates/list/listCreate.html.twig" />
       <change beforePath="$PROJECT_DIR$/templates/list/listEdit.html.twig" afterPath="$PROJECT_DIR$/templates/list/listEdit.html.twig" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/4/Z/uDef9nJlaFfjcp9ILG1u" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/4/Z/uDef9nJlaFfjcp9ILG1u" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/5/1/E9ZOlvRQSZ4yge9sAZA7" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/5/1/E9ZOlvRQSZ4yge9sAZA7" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/5/L/9CwYH1-meAgUJWcUxPBL" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/5/L/9CwYH1-meAgUJWcUxPBL" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/F/X/1Q8DeKXbna3g4jXDbuaD" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/F/X/1Q8DeKXbna3g4jXDbuaD" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/I/P/Q7hZRu0uFX+s3zMo2V+j" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/I/P/Q7hZRu0uFX+s3zMo2V+j" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/J/S/7Hsq-xDfo8geGePrnt1T" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/J/S/7Hsq-xDfo8geGePrnt1T" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/N/9/9Z-+vUUFCsSroQmvIBtT" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/N/9/9Z-+vUUFCsSroQmvIBtT" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/Y/Q/WrAbNek2wQXaZdkCpdb7" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/Y/Q/WrAbNek2wQXaZdkCpdb7" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/86/86776e85085d3cd943981a7d684f23f1a99354f0ac97487e035b4cbf6da0656d.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/86/86776e85085d3cd943981a7d684f23f1a99354f0ac97487e035b4cbf6da0656d.php" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/c8/c84c385985f0ab0bcba74ceebc796c752276f07f3caf280ee92f465b829409b9.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/c8/c84c385985f0ab0bcba74ceebc796c752276f07f3caf280ee92f465b829409b9.php" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/dc/dcee5af7c895647eb39d50114659951c285e24f0142c38fd4a127fee3dca4ed4.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/dc/dcee5af7c895647eb39d50114659951c285e24f0142c38fd4a127fee3dca4ed4.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,75 +25,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/assets/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="227" column="63" lean-forward="false" selection-start-line="227" selection-start-column="63" selection-end-line="227" selection-end-column="63" />
+            <state relative-caret-position="305">
+              <caret line="85" column="63" lean-forward="false" selection-start-line="85" selection-start-column="63" selection-end-line="85" selection-end-column="63" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listCreate.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/list/listCreate.html.twig">
+      <file leaf-file-name="listEdit.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/list/listEdit.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="168" column="20" lean-forward="false" selection-start-line="168" selection-start-column="20" selection-end-line="198" selection-end-column="26" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#2;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#3;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#4;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="527">
+              <caret line="43" column="133" lean-forward="false" selection-start-line="43" selection-start-column="133" selection-end-line="43" selection-end-column="133" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listEdit.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/list/listEdit.html.twig">
+      <file leaf-file-name="ListEditController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/ListEditController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="861">
-              <caret line="229" column="18" lean-forward="false" selection-start-line="229" selection-start-column="18" selection-end-line="229" selection-end-column="18" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#3;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#4;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#5;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#6;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#7;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#8;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#9;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#10;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#11;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#12;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#13;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#14;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#15;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#16;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#17;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#18;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#19;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#20;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#2;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#3;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#4;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#1;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#2;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#3;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#4;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="510">
+              <caret line="79" column="68" lean-forward="false" selection-start-line="79" selection-start-column="68" selection-end-line="79" selection-end-column="68" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -118,8 +66,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>admin</find>
-      <find>acc</find>
       <find>master</find>
       <find>create</find>
       <find>f5f6fa</find>
@@ -142,12 +88,14 @@
       <find>Heather</find>
       <find>BlackBlack</find>
       <find>anvil</find>
-      <find>Royal</find>
       <find>Heather Grey</find>
       <find>Dark Heather</find>
       <find>Black</find>
       <find>Navy</find>
       <find>royal</find>
+      <find>leng</find>
+      <find>pick a</find>
+      <find>Royal</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -201,10 +149,10 @@
         <option value="$PROJECT_DIR$/public/assets/css/app.min.css" />
         <option value="$PROJECT_DIR$/src/Controller/ListCreateController.php" />
         <option value="$PROJECT_DIR$/public/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/src/Controller/ListEditController.php" />
-        <option value="$PROJECT_DIR$/public/assets/js/script.js" />
         <option value="$PROJECT_DIR$/templates/list/listCreate.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/ListEditController.php" />
         <option value="$PROJECT_DIR$/templates/list/listEdit.html.twig" />
+        <option value="$PROJECT_DIR$/public/assets/js/script.js" />
       </list>
     </option>
   </component>
@@ -286,7 +234,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/translation" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -448,15 +396,15 @@
       <workItem from="1516863817384" duration="16033000" />
       <workItem from="1516949721709" duration="13098000" />
       <workItem from="1517208563788" duration="25284000" />
-      <workItem from="1517312455040" duration="18539000" />
+      <workItem from="1517312455040" duration="21245000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176480000" />
+    <option name="totallyTimeSpent" value="179186000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -799,80 +747,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ListEditController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="e#119#148#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="227" column="63" lean-forward="false" selection-start-line="227" selection-start-column="63" selection-end-line="227" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/list/listCreate.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="168" column="20" lean-forward="false" selection-start-line="168" selection-start-column="20" selection-end-line="198" selection-end-column="26" />
+        <state relative-caret-position="17">
+          <caret line="34" column="78" lean-forward="false" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="78" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#2;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#3;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#4;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#label#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#label#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#label#2;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#label#3;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#label#4;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/list/listEdit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="861">
-          <caret line="229" column="18" lean-forward="false" selection-start-line="229" selection-start-column="18" selection-end-line="229" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#3;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#4;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#5;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#6;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#7;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#8;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#9;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#10;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#11;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#12;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#13;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#14;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#15;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#16;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#17;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#18;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#19;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#20;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#2;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#3;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#4;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#1;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#2;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#3;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#4;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="527">
+          <caret line="43" column="133" lean-forward="false" selection-start-line="43" selection-start-column="133" selection-end-line="43" selection-end-column="133" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ListEditController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="79" column="68" lean-forward="false" selection-start-line="79" selection-start-column="68" selection-end-line="79" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="85" column="63" lean-forward="false" selection-start-line="85" selection-start-column="63" selection-end-line="85" selection-end-column="63" />
+          <folding />
         </state>
       </provider>
     </entry>

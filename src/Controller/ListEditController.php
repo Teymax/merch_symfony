@@ -77,8 +77,8 @@ class ListEditController extends Controller
                     'pink' => '19',
                     'orange' => '20',
                     'purple' => '21',
-                ), 'multiple'=>true,'expanded'=>true
-            ), array('data' => $listing->getColor()))
+                ), 'multiple'=>true,'expanded'=>true, 'data' => null
+            ))
             ->add('cost', TextType::class, array('data' => $listing->getCost()))
             ->add('bulletOne', TextType::class, array('data' => $listing->getBulletOne()))
             ->add('bulletTwo', TextType::class, array('data' => $listing->getBulletTwo()))
