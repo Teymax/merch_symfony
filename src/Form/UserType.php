@@ -20,6 +20,7 @@ class UserType extends AbstractType
             ->add('username', TextType::class)
             ->add('regDate', HiddenType::class, array('data' => date("Y-m-d H:i:s")))
             ->add('roles', HiddenType::class, array('data' => "ROLE_USER"))
+            ->add('accountType', HiddenType::class, array('data' => "free"))
             ->add('plainPassword', RepeatedType::class, array(
                 'type' => PasswordType::class,
                 'first_options'  => array('label' => 'Password'),

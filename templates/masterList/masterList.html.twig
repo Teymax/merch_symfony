@@ -12,14 +12,14 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,300i" rel="stylesheet">
 
         <!-- Styles -->
-        <link href="assets/css/core.min.css" rel="stylesheet">
-        <link href="assets/css/app.min.css" rel="stylesheet">
-        <link href="assets/css/style.min.css" rel="stylesheet">
-        <link href="assets/css/main.css" rel="stylesheet">
+        <link href="../assets/css/core.min.css" rel="stylesheet">
+        <link href="../assets/css/app.min.css" rel="stylesheet">
+        <link href="../assets/css/style.min.css" rel="stylesheet">
+        <link href="../assets/css/main.css" rel="stylesheet">
 
         <!-- Favicons -->
-        <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-        <link rel="icon" href="assets/img/favicon.png">
+        <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+        <link rel="icon" href="../assets/img/favicon.png">
     {% endblock %}
 </head>
 <body>
@@ -43,37 +43,42 @@
                                     <a class="nav-link badge badge-danger" id="singUpBtn" href="{{ path('logout') }}" style="color: white">Logout</a>
                                 </li>
                             {% endif %}
-                            {% if is_granted('ROLE_USER') %}
-                            <li class="nav-item text-uppercase">
-                            <a class="nav-link badge badge-danger" id="singUpBtn" href="#" style="color: white">User Test</a>
-                            </li>
-                            {% endif %}
-                            {% if is_granted('ROLE_ADMIN') %}
-                                <li class="nav-item text-uppercase">
-                                    <a class="nav-link badge badge-danger" id="singUpBtn" href="#" style="color: white">Admin Test</a>
-                                </li>
-                            {% endif %}
                         </ul>
                     </div>
                 </nav>
-    </div>
-    {% for master in posts %}
-         <li>
-             <span>Master ID: </span>  {{ master.master_id }} <br>
-             <span>title: </span>  <a href="{{ path('app_list')}}/{{ master.master_id}}"> {{ master.title }} <br></a>
-          <span>user ID: </span> {{ master.userId }} <br>
-             <a href="{{ path('app_masterEdit')}}/{{ master.master_id}}">Edit</a>
-             <a href="{{ path('app_masterDelete')}}/{{ master.master_id}}">Delete</a>
-         </li>
-    {% endfor %}
             {% endblock %}
+        <div class="container-fluid">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>User ID</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for master in posts %}
+                    <tr>
+                        <th scope="row">{{ master.master_id }}</th>
+                        <td> {{ master.title }}</td>
+                        <td>{{ master.userId }}</td>
+                        <td><a class="badge badge-info" href="{{ path('app_list')}}/{{ master.master_id}}">View</a></td>
+                        <td><a class="badge badge-info" href="{{ path('app_masterEdit')}}/{{ master.master_id}}">Edit</a></td>
+                        <td><a class="badge badge-danger" href="{{ path('app_masterDelete')}}/{{ master.master_id}}">Delete</a></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
 
 
 {% block javascripts %}
     <!-- Scripts -->
-    <script src="assets/js/core.min.js"></script>
-    <script src="assets/js/app.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
+    <script src="../assets/js/core.min.js"></script>
+    <script src="../assets/js/app.min.js"></script>
+    <script src="../assets/js/script.min.js"></script>
 {% endblock %}
     </div>
 </body>

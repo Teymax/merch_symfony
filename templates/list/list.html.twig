@@ -12,14 +12,14 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,300i" rel="stylesheet">
 
         <!-- Styles -->
-        <link href="assets/css/core.min.css" rel="stylesheet">
-        <link href="assets/css/app.min.css" rel="stylesheet">
-        <link href="assets/css/style.min.css" rel="stylesheet">
-        <link href="assets/css/main.css" rel="stylesheet">
+        <link href="../assets/css/core.min.css" rel="stylesheet">
+        <link href="../assets/css/app.min.css" rel="stylesheet">
+        <link href="../assets/css/style.min.css" rel="stylesheet">
+        <link href="../assets/css/main.css" rel="stylesheet">
 
         <!-- Favicons -->
-        <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-        <link rel="icon" href="assets/img/favicon.png">
+        <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+        <link rel="icon" href="../assets/img/favicon.png">
     {% endblock %}
 </head>
 <body>
@@ -34,6 +34,9 @@
                         <ul class="nav justify-content-end main_menu ml-auto">
                             {% if is_granted('IS_AUTHENTICATED_FULLY') %}
                                 <li class="nav-item text-uppercase">
+                                    <a class="nav-link badge badge-info" id="singUpBtn" onclick="history.back()" href="#" style="color: white">Back</a>
+                                </li>
+                                <li class="nav-item text-uppercase">
                                     <a class="nav-link badge badge-success" id="singUpBtn" href="{{ path('app_listCreate') }}/{{ master }}" style="color: white">Create Listing</a>
                                 </li>
                                 <li class="nav-item active">
@@ -43,44 +46,193 @@
                                     <a class="nav-link badge badge-danger" id="singUpBtn" href="{{ path('logout') }}" style="color: white">Logout</a>
                                 </li>
                             {% endif %}
-                            {% if is_granted('ROLE_USER') %}
-                            <li class="nav-item text-uppercase">
-                            <a class="nav-link badge badge-danger" id="singUpBtn" href="#" style="color: white">User Test</a>
-                            </li>
-                            {% endif %}
-                            {% if is_granted('ROLE_ADMIN') %}
-                                <li class="nav-item text-uppercase">
-                                    <a class="nav-link badge badge-danger" id="singUpBtn" href="#" style="color: white">Admin Test</a>
-                                </li>
-                            {% endif %}
                         </ul>
                     </div>
                 </nav>
+        <div class="container-fluid">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Brand</th>
+                    <th>Type</th>
+                    <th>Fit</th>
+                    <th>Color</th>
+                    <th>Cost</th>
+                    <th>Bullet One</th>
+                    <th>Bullet Two</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for list in posts %}
+                    <tr>
+                        <th scope="row">{{ list.listing_id }}</th>
+                        <td>{{ list.title }}</td>
+                        <td>{{ list.brand }}</td>
+                        <td>{{ list.type }}</td>
+                        <td>
+                        {% for fit in list.fit %}
+                            {{ fit }}
+                        {% endfor %}
+                        </td>
+                        <td>
+                        {% for color in list.color %}
+                            {% if color == 1 %}
+                                    <label class="custom-control custom-checkbox" title="Dark Heather">
+                                        <input type="checkbox" class="custom-control-input color-check" name="color[]" value="dark_heather">
+                                        <span class="custom-control-indicator" style="background-color: #474d4d;"></span>
+                                        <span class="custom-control-description"></span>
+                                    </label>
+                            {% elseif color == 2 %}
+                            <label class="custom-control" title="Heather Grey">
+                                <input type="checkbox" class="custom-control-input color-check" name="color[]" value="heather_grey">
+                                <span class="custom-control-indicator" style="background-color: #d4d8d9;"></span>
+                                <span class="custom-control-description"></span>
+                            </label>
+                            {% elseif color == 3 %}
+                                <label class="custom-control" title="Heather Blue">
+                                    <input type="checkbox" class="custom-control-input color-check" name="color[]" value="heather_blue">
+                                    <span class="custom-control-indicator" style="background-color: #767ae0;"></span>
+                                    <span class="custom-control-description"></span>
+                                </label>
+                            {% elseif color == 4 %}
+                                <label class="custom-control" title="Black">
+                                    <input type="checkbox" class="custom-control-input color-check" name="color[]" value="black">
+                                    <span class="custom-control-indicator" style="background-color: #000000"></span>
+                                    <span class="custom-control-description"></span>
+                                </label>
+
+                            {% elseif color == 5 %}
+                                <label class="custom-control" title="Navy">
+                                    <input type="checkbox" class="custom-control-input color-check" name="color[]" value="navy">
+                                    <span class="custom-control-indicator" style="background-color: #15232b"></span>
+                                    <span class="custom-control-description"></span>
+                                </label>
+                            {% elseif color == 6 %}
+                                <label class="custom-control" title="Silver">
+                                    <input type="checkbox" class="custom-control-input color-check" name="color[]" value="silver">
+                                    <span class="custom-control-indicator" style="background-color: #cfd1d1"></span>
+                                    <span class="custom-control-description"></span>
+                                </label>
+                            {% elseif color == 7 %}
+                                <label class="custom-control" title="Royal Blue">
+                                    <input type="checkbox" class="custom-control-input color-check" name="color[]" value="royal">
+                                    <span class="custom-control-indicator" style="background-color: #1c4086"></span>
+                                    <span class="custom-control-description"></span>
+                                </label>
+                            {% elseif color == 8 %}
+                                <label class="custom-control" title="Brown">
+                                    <input type="checkbox" class="custom-control-input color-check" name="color[]" value="brown">
+                                    <span class="custom-control-indicator" style="background-color: #31261d"></span>
+                                    <span class="custom-control-description"></span>
+                                </label>
+                            {% elseif color == 9 %}
+                                <label class="custom-control" title="Slate">
+                                    <input type="checkbox" class="custom-control-input color-check" name="color[]" value="slate">
+                                    <span class="custom-control-indicator" style="background-color: #818189"></span>
+                                    <span class="custom-control-description"></span>
+                                </label>
+                            {% elseif color == 10 %}
+                                <label class="custom-control" title="Red">
+                                    <input type="checkbox" class="custom-control-input color-check" name="color[]" value="red">
+                                    <span class="custom-control-indicator" style="background-color: #b71111"></span>
+                                    <span class="custom-control-description"></span>
+                                </label>
+                            {% elseif color == 11 %}
+                                <label class="custom-control" title="Apshalt">
+                                    <input type="checkbox" class="custom-control-input color-check" name="color[]" value="asphalt">
+                                    <span class="custom-control-indicator" style="background-color: #3f3e3c"></span>
+                                    <span class="custom-control-description"></span>
+                                </label>
+                            {% elseif color == 12 %}
+                                <label class="custom-control" title="Grass">
+                                    <input type="checkbox" class="custom-control-input color-check" name="color[]" value="grass">
+                                    <span class="custom-control-indicator" style="background-color: #5e9444"></span>
+                                    <span class="custom-control-description"></span>
+                                </label>
+                            {% elseif color == 13 %}
+                                <label class="custom-control" title="Olive">
+                                    <input type="checkbox" class="custom-control-input color-check" name="color[]" value="olive">
+                                    <span class="custom-control-indicator" style="background-color: #4a4f26"></span>
+                                    <span class="custom-control-description"></span>
+                                </label>
+                            {% elseif color == 14 %}
+                                <label class="custom-control" title="Kellygreen">
+                                    <input type="checkbox" class="custom-control-input color-check" name="color[]" value="kelly_green">
+                                    <span class="custom-control-indicator" style="background-color: #006136"></span>
+                                    <span class="custom-control-description"></span>
+                                </label>
+                            {% elseif color == 15 %}
+                                <label class="custom-control" title="Babyblue">
+                                    <input type="checkbox" class="custom-control-input color-check" name="color[]" value="baby_blue">
+                                    <span class="custom-control-indicator" style="background-color: #8fb8db"></span>
+                                    <span class="custom-control-description"></span>
+                                </label>
+                            {% elseif color == 16 %}
+                                <label class="custom-control" title="White">
+                                    <input type="checkbox" class="custom-control-input color-check" name="color[]" value="white">
+                                    <span class="custom-control-indicator" style="background-color: #ffffff"></span>
+                                    <span class="custom-control-description"></span>
+                                </label>
+
+                            {% elseif color == 17 %}
+                                <label class="custom-control" title="Lemon">
+                                    <input type="checkbox" class="custom-control-input color-check" name="color[]" value="lemon">
+                                    <span class="custom-control-indicator" style="background-color: #f0e87b"></span>
+                                    <span class="custom-control-description"></span>
+                                </label>
+                            {% elseif color == 18 %}
+                                <label class="custom-control" title="Cranberry">
+                                    <input type="checkbox" class="custom-control-input color-check" name="color[]" value="cranberry">
+                                    <span class="custom-control-indicator" style="background-color: #6e0a25"></span>
+                                    <span class="custom-control-description"></span>
+                                </label>
+                            {% elseif color == 19 %}
+                                <label class="custom-control" title="Pink">
+                                    <input type="checkbox" class="custom-control-input color-check" name="color[]" value="pink">
+                                    <span class="custom-control-indicator" style="background-color: #f8a3bc"></span>
+                                    <span class="custom-control-description"></span>
+                                </label>
+                            {% elseif color == 20 %}
+                                <label class="custom-control" title="Orange">
+                                    <input type="checkbox" class="custom-control-input color-check" name="color[]" value="orange">
+                                    <span class="custom-control-indicator" style="background-color: #ff5c39"></span>
+                                    <span class="custom-control-description"></span>
+                                </label>
+                            {% elseif color == 21 %}
+                                <label class="custom-control" title="Purple">
+                                    <input type="checkbox" class="custom-control-input color-check" name="color[]" value="purple">
+                                    <span class="custom-control-indicator" style="background-color: #514689"></span>
+                                    <span class="custom-control-description"></span>
+                                </label>
+                            {% else %}
+                                {{ color }}
+                            {% endif %}
+
+                        {% endfor %}
+                        </td>
+                        <td>{{ list.cost }}</td>
+                        <td>{{ list.bulletOne }}</td>
+                        <td>{{ list.bulletTwo }}</td>
+                        <td>{{ list.description }}</td>
+                        <td><a class="badge badge-info" href="{{ path('app_listEdit')}}/{{ list.listing_id}}">Edit</a></td>
+                        <td><a class="badge badge-danger" href="{{ path('app_listDelete')}}/{{ list.listing_id }}">Delete</a></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
     </div>
-    {% for list in posts %}
-        <li>
-            <span>List ID: </span>  {{ list.listing_id }} <br>
-            <span>Title: </span> {{ list.title }} <br></a>
-            <span>Brand: </span>  {{ list.brand }} <br>
-            <span>Type: </span>  {{ list.type }} <br>
-            <span>Fit: </span>  {{ list.fit }} <br>
-            <span>Color: </span>  {{ list.color }} <br>
-            <span>Cost: </span>  {{ list.cost }} <br>
-            <span>Bullet One: </span>  {{ list.bulletOne }} <br>
-            <span>Bullet Two: </span>  {{ list.bulletOne }} <br>
-            <span>Description: </span>  {{ list.description }} <br>
-            <a href="{{ path('app_listEdit')}}/{{ list.listing_id}}">Edit</a>
-            <a href="{{ path('app_listDelete')}}/{{ list.listing_id }}">Delete</a>
-        </li>
-    {% endfor %}
             {% endblock %}
 
 
 {% block javascripts %}
     <!-- Scripts -->
-    <script src="assets/js/core.min.js"></script>
-    <script src="assets/js/app.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
+    <script src="../assets/js/core.min.js"></script>
+    <script src="../assets/js/app.min.js"></script>
+    <script src="../assets/js/script.min.js"></script>
 {% endblock %}
     </div>
 </body>

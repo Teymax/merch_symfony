@@ -1,0 +1,102 @@
+<!-- app/Resources/views/base.html.twig -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html"; charset=utf-8" />
+    <title>{% block title %}MerchHelper{% endblock %}</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    {% block stylesheets %}
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,300i" rel="stylesheet">
+
+        <!-- Styles -->
+        <link href="assets/css/core.min.css" rel="stylesheet">
+        <link href="assets/css/app.min.css" rel="stylesheet">
+        <link href="assets/css/style.min.css" rel="stylesheet">
+        <link href="assets/css/main.css" rel="stylesheet">
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+        <link rel="icon" href="assets/img/favicon.png">
+    {% endblock %}
+</head>
+<body>
+    <div class="container-fluid" id="main_container">
+            {% block navigation %}
+                <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Merch Helper</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse col" id="navbarSupportedContent">
+                        <ul class="nav justify-content-end main_menu ml-auto">
+                            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                                <li class="nav-item active">
+                                    <p class="nav-link" style="color: black;">Hello, <span class="text-uppercase">{{ app.user.username }}</span></p>
+                                </li>
+                                <li class="nav-item text-uppercase">
+                                    <a class="nav-link badge badge-danger" id="singUpBtn" href="{{ path('logout') }}" style="color: white">Logout</a>
+                                </li>
+                            {% endif %}
+                            {% if is_granted('ROLE_USER') %}
+                            <li class="nav-item text-uppercase">
+                            <a class="nav-link badge badge-danger" id="singUpBtn" href="#" style="color: white">User Test</a>
+                            </li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </nav>
+        <div class="container-fluid">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Registration Date</th>
+                    <th>Listing Count</th>
+                    <th>Account Type</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                {% for users in user %}
+                <tr>
+                    <th scope="row">{{ users.user_Id }}</th>
+                    <td>{{ users.username }}</td>
+                    <td>{{ users.email }}</td>
+                    <td>{{ users.regDate }}</td>
+                    <td>{% for key,value in count %}
+                        {% if key == users.user_Id %}
+                          {{ value }}
+                        {% endif %}
+                        {% endfor %}
+                    </td>
+                    <td>{{ users.accountType }}</td>
+                    {#{% for color in list.color %}#}
+                    {% if users.accountType == 'free' %}
+                    <td><a class="nav-link badge badge-info" id="singUpBtn" href='{{ path('app_adminEdit') }}/{{ users.user_Id }}' style="color: white">Update to PRO</a></td>
+                    {% elseif users.accountType == 'pro' %}
+                        <td><a class="nav-link badge badge-danger" id="singUpBtn" href="{{ path('app_adminEdit') }}/{{ users.user_Id }}" style="color: white">Update to Free</a></td>
+                    {% endif %}
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+            {% endblock %}
+
+
+{% block javascripts %}
+    <!-- Scripts -->
+    <script src="assets/js/core.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+{% endblock %}
+    </div>
+</body>
+</html>

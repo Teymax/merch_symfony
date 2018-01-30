@@ -83,7 +83,7 @@ class ListEditController extends Controller
             ->add('bulletTwo', TextType::class, array('data' => $listing->getBulletTwo()))
             ->add('description', TextType::class, array('data' => $listing->getDescription()))
             ->add('userId', HiddenType::class, array('data' => $listing->getUserId()))
-            ->add('master_id', TextType::class, array('data' => $listing->getMasterId()))
+            ->add('master_id', HiddenType::class, array('data' => $listing->getMasterId()))
             ->add('created', DateTimeType::class, array('label' => false, 'attr'=>array('style'=>'display:none;'), 'data' => $listing->getCreated()))
             ->add('updated', DateTimeType::class, array('label' => false, 'attr'=>array('style'=>'display:none;'), 'data' => new \DateTime("now")))
             ->getForm();
@@ -97,7 +97,7 @@ class ListEditController extends Controller
             return $this->redirect('/list/'. $listing->getMasterId());
         }
 
-        return $this->render('masterList/masterListEdit.html.twig', [
+        return $this->render('list/listEdit.html.twig', [
             'form' => $form->createView()
         ]);
     }

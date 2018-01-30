@@ -74,8 +74,8 @@ class ListCreateController extends Controller
             ->add('bulletOne', TextType::class)
             ->add('bulletTwo', TextType::class)
             ->add('description', TextType::class)
-            ->add('userId', TextType::class, array('data' => $user))
-            ->add('master_id', TextType::class, array('data' => $master_id))
+            ->add('userId', HiddenType::class, array('data' => $user))
+            ->add('master_id', HiddenType::class, array('data' => $master_id))
             ->add('created', DateTimeType::class, array('label' => false, 'attr'=>array('style'=>'display:none;'), 'data' => new \DateTime("now")))
             ->add('updated', DateTimeType::class, array('label' => false, 'attr'=>array('style'=>'display:none;'), 'data' => new \DateTime("now")))
             ->getForm();

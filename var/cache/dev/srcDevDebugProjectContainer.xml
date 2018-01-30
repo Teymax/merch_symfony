@@ -320,6 +320,9 @@
     <service id="App\Controller\AdminController" class="App\Controller\AdminController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
     </service>
+    <service id="App\Controller\AdminEditController" class="App\Controller\AdminEditController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+    </service>
     <service id="App\Controller\ListController" class="App\Controller\ListController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
     </service>
@@ -385,7 +388,7 @@
     </service>
     <service id="argument_resolver.service" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver" public="false">
       <tag name="controller.argument_value_resolver" priority="-50"/>
-      <argument type="service" id="service_locator.RP25DgZ"/>
+      <argument type="service" id="service_locator.o94LOPn"/>
     </service>
     <service id="argument_resolver.default" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver" public="false">
       <tag name="controller.argument_value_resolver" priority="-100"/>
@@ -1803,14 +1806,6 @@
       </call>
       <call method="addListener">
         <argument>kernel.request</argument>
-        <argument type="collection">
-          <argument type="service" id="debug.debug_handlers_listener"/>
-          <argument>configure</argument>
-        </argument>
-        <argument>2048</argument>
-      </call>
-      <call method="addListener">
-        <argument>console.command</argument>
         <argument type="collection">
           <argument type="service" id="debug.debug_handlers_listener"/>
           <argument>configure</argument>
@@ -3644,6 +3639,8 @@
     </service>
     <service id="instanceof.Symfony\Bundle\FrameworkBundle\Controller\Controller.0.App\Controller\AdminController" class="App\Controller\AdminController" public="false" autowire="true" abstract="true"/>
     <service id="abstract.instanceof.App\Controller\AdminController" class="App\Controller\AdminController" public="false" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id="instanceof.Symfony\Bundle\FrameworkBundle\Controller\Controller.0.App\Controller\AdminEditController" class="App\Controller\AdminEditController" public="false" autowire="true" abstract="true"/>
+    <service id="abstract.instanceof.App\Controller\AdminEditController" class="App\Controller\AdminEditController" public="false" autowire="true" autoconfigure="true" abstract="true"/>
     <service id="instanceof.Symfony\Bundle\FrameworkBundle\Controller\Controller.0.App\Controller\ListController" class="App\Controller\ListController" public="false" autowire="true" abstract="true"/>
     <service id="abstract.instanceof.App\Controller\ListController" class="App\Controller\ListController" public="false" autowire="true" autoconfigure="true" abstract="true"/>
     <service id="instanceof.Symfony\Bundle\FrameworkBundle\Controller\Controller.0.App\Controller\ListCreateController" class="App\Controller\ListCreateController" public="false" autowire="true" abstract="true"/>
@@ -3770,6 +3767,14 @@
         <argument>make:voter</argument>
       </call>
     </service>
+    <service id="service_locator.daqHRrW" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection"/>
+    </service>
+    <service id="service_locator.EJp1StY" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection"/>
+    </service>
     <service id="service_locator.TERv3uW" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection"/>
@@ -3798,7 +3803,7 @@
         <argument key="authUtils" type="service" id="security.authentication_utils" on-invalid="ignore"/>
       </argument>
     </service>
-    <service id="service_locator.RP25DgZ" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id="service_locator.o94LOPn" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\RegisterController:registerAction" type="service" id="service_locator.mGYU9oQ"/>

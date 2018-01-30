@@ -14,6 +14,8 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
+use Symfony\Component\HttpFoundation\File\File;
+
 
 class MasterListCreateController extends Controller
 {
@@ -31,10 +33,9 @@ class MasterListCreateController extends Controller
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $create = $form->getData();
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($create);
-            $em->flush();
+            /**
+             * @var File $file
+             */
             $file = $create->getFilename();
             // Generate a unique name for the file before saving it
             $fileName = md5(uniqid()).'.'.$file->guessExtension();
@@ -47,6 +48,10 @@ class MasterListCreateController extends Controller
             // Update the 'brochure' property to store the PDF file name
             // instead of its contents
             $create->setFilename($fileName);
+            $create = $form->getData();
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($create);
+            $em->flush();
             return $this->redirectToRoute('app_masterList');
         }
 

@@ -40,6 +40,11 @@ class User implements UserInterface, \Serializable
      */
     private $regDate;
     /**
+     * @ORM\Column(type="string", length=255, unique=true)
+     * @Assert\NotBlank()
+     */
+    private $accountType;
+    /**
      * @Assert\NotBlank()
      * @Assert\Length(max=4096)
      */
@@ -95,6 +100,24 @@ class User implements UserInterface, \Serializable
     public function setUsername($username)
     {
         $this->username = $username;
+    }
+    public function getAccountType()
+    {
+        return $this->accountType;
+    }
+
+    public function setAccountType($accountType)
+    {
+        $this->accountType = $accountType;
+    }
+    public function getListCount()
+    {
+        return $this->listCount;
+    }
+
+    public function setListCount($listCount)
+    {
+        $this->listCount = $listCount;
     }
 
     public function getPlainPassword()

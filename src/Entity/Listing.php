@@ -123,9 +123,8 @@ class Listing
     }
     public function getFit()
     {
-        $obj = $this->fit;
-//        $json = json_encode($obj);
-        $arr = json_decode($obj,true);
+        $fit = $this->fit;
+        $arr  = explode(' ,', $fit);
         return $arr;
     }
 
@@ -135,9 +134,8 @@ class Listing
     }
     public function getColor()
     {
-        $obj = $this->color;
-//        $json = json_encode($obj);
-        $arr = json_decode($obj,true);
+        $fit = $this->color;
+        $arr  = explode(' ,', $fit);
         return $arr;
     }
 

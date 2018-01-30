@@ -8,17 +8,31 @@
 
 namespace App\Controller;
 
+use App\Entity\Listing;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpFoundation\Request;
+use App\Entity\User;
 
 class AdminController extends Controller
 {
     /**
      * @Route("/admin")
      */
-    public function admin()
+    public function admin(Request $request)
     {
-        return new Response('<html><body>Admin page!</body></html>');
+        $repository = $this->getDoctrine()->getRepository(User::class)->findAll();
+        $count = count ($repository);
+        $arr = array();
+        for ($i=0; $i < $count; $i++) {
+            $user =$repository[$i]->getUser_Id();
+            $list = $this->getDoctrine()->getRepository(Listing::class)->findBy(
+                ['user_id' => $user
+                ]
+            );
+            $arr += [ $user => count($list) ];
+
+        }
+        return $this->render('admin/admin.html.twig', ['user' => $repository, 'count' => $arr]);
     }
 }

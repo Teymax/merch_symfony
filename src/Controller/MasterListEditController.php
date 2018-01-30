@@ -15,6 +15,7 @@ use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
+use Symfony\Component\HttpFoundation\File\File;
 
 class MasterListEditController extends Controller
 {
@@ -41,10 +42,11 @@ class MasterListEditController extends Controller
 
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
+
+            /**
+             * @var File $file
+             */
             $create = $form->getData();
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($create);
-            $em->flush();
             $file = $create->getFilename();
             // Generate a unique name for the file before saving it
             $fileName = md5(uniqid()).'.'.$file->guessExtension();
@@ -58,11 +60,14 @@ class MasterListEditController extends Controller
             // instead of its contents
             $create->setFilename($fileName);
 
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($create);
+            $em->flush();
             return $this->redirectToRoute('app_masterList');
         }
 
         return $this->render('masterList/masterListEdit.html.twig', [
-            'form' => $form->createView()
+            'form' => $form->createView(), 'master'=>$master
         ]);
     }
 

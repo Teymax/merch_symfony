@@ -1,14 +1,57 @@
-{{ form_start(form) }}
-                    {{ form_row(form.type, { 'attr': {'class': 'form-control'} }) }}
-                    {{ form_row(form.fit, { 'attr': {'class': 'form-control'} }) }}
-                    {{ form_row(form.color, { 'attr': {'class': 'form-control'} }) }}
-                    {{ form_row(form.cost, { 'attr': {'class': 'form-control'} }) }}
-                    {{ form_row(form.brand, { 'attr': {'class': 'form-control'} }) }}
-                    {{ form_row(form.title, { 'attr': {'class': 'form-control'} }) }}
-                    {{ form_row(form.bulletOne, { 'attr': {'class': 'form-control'} }) }}
-                    {{ form_row(form.bulletTwo, { 'attr': {'class': 'form-control'} }) }}
-                    {{ form_row(form.description, { 'attr': {'class': 'form-control'} }) }}
-                    {{ form_row(form.userId, { 'attr': {'id': 'user_ID'} }) }}
-                    {{ form_row(form.master_id, { 'attr': {'class': 'form-control'} }) }}
-<button type="submit" class="btn btn-info">Create!</button>
-{{ form_end(form) }}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html"; charset=utf-8" />
+    <title>{% block title %}MerchHelper | Master Listing Edit{% endblock %}</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    {% block stylesheets %}
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,300i" rel="stylesheet">
+
+        <!-- Styles -->
+        <link href="../assets/css/core.min.css" rel="stylesheet">
+        <link href="../assets/css/app.min.css" rel="stylesheet">
+        <link href="../assets/css/style.min.css" rel="stylesheet">
+        <link href="../assets/css/main.css" rel="stylesheet">
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+        <link rel="icon" href="../assets/img/favicon.png">
+    {% endblock %}
+</head>
+<body>
+<div class="container-fluid" id="main_container">
+    {% block navigation %}
+    <div class="p-3 mb-2 bg-success text-white container col-3" id="logIn_form" style="margin: 0 auto;">
+        <header>
+            <h2>Master Listing Edit</h2>
+        </header>
+
+            <a class="nav-link badge badge-info" id="singUpBtn" onclick="history.back()" href="#" style="color: white">Back</a>
+        <img src="{{ asset('uploads/image/' ~ master.filename) }}">
+        <div class="form-group">
+            {{ form_start(form) }}
+            {{ form_row(form.title, { 'attr': {'class': 'form-control'} }) }}
+            {{ form_row(form.title, { 'attr': {'class': 'form-control'} }) }}
+            {{ form_row(form.title, { 'attr': {'class': 'form-control'} }) }}
+            {{ form_row(form.userId, { 'attr': {'class': 'form-control'} }) }}
+            {{ form_row(form.filename, { 'attr': {'class': 'form-control'} }) }}
+            <button type="submit" class="btn btn-info">Save</button>
+            {{ form_end(form) }}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block javascripts %}
+    <!-- Scripts -->
+    <script src="../assets/js/core.min.js"></script>
+    <script src="../assets/js/app.min.js"></script>
+    <script src="../assets/js/script.min.js"></script>
+{% endblock %}
+</div>
+</body>
+</html>

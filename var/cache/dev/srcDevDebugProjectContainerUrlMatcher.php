@@ -36,9 +36,19 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 return array (  '_controller' => 'App\\Controller\\AdminController::admin',  '_route' => 'app_admin_admin',);
             }
 
+            // admin_edit
+            if (0 === strpos($pathinfo, '/admin-edit') && preg_match('#^/admin\\-edit/(?P<user_id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_edit')), array (  '_controller' => 'App\\Controller\\AdminEditController::adminEdit',));
+            }
+
             // app_admin
             if ('/admin' === $pathinfo) {
                 return array (  '_controller' => 'App\\Controller\\AdminController::admin',  '_route' => 'app_admin',);
+            }
+
+            // app_adminEdit
+            if ('/admin-edit' === $pathinfo) {
+                return array (  '_controller' => 'App\\Controller\\AdminEditController::adminEdit',  '_route' => 'app_adminEdit',);
             }
 
         }

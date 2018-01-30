@@ -13,6 +13,9 @@ app_done:
 app_admin:
     path: /admin
     controller: App\Controller\AdminController::admin
+app_adminEdit:
+        path: /admin-edit
+        controller: App\Controller\AdminEditController::adminEdit
 app_list:
     path: /list
     controller: App\Controller\ListController::list
