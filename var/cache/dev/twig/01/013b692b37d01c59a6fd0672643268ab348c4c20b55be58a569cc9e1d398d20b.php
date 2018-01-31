@@ -19,11 +19,11 @@ class __TwigTemplate_5c444136e0c8aa60c5f668b7a4be291533955e4c6f75df03eb68fa2be9f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_1ae0b3d307da4fe1778b6bf080d77e13f80fb695f91ba688320ea1df2d58e3eb = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_1ae0b3d307da4fe1778b6bf080d77e13f80fb695f91ba688320ea1df2d58e3eb->enter($__internal_1ae0b3d307da4fe1778b6bf080d77e13f80fb695f91ba688320ea1df2d58e3eb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "list/list.html.twig"));
+        $__internal_430fdaef1506bb64df0df23fbb30c2f527c29098962555155866b0e44a96fe64 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_430fdaef1506bb64df0df23fbb30c2f527c29098962555155866b0e44a96fe64->enter($__internal_430fdaef1506bb64df0df23fbb30c2f527c29098962555155866b0e44a96fe64_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "list/list.html.twig"));
 
-        $__internal_7a6224c3c3e2598c4699dcd15f8a5b77b4172d866fd59650bc6cd3e0703c8c96 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_7a6224c3c3e2598c4699dcd15f8a5b77b4172d866fd59650bc6cd3e0703c8c96->enter($__internal_7a6224c3c3e2598c4699dcd15f8a5b77b4172d866fd59650bc6cd3e0703c8c96_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "list/list.html.twig"));
+        $__internal_29a6f29dcb343835e297ab416771ada94c5e3bfba34db6add6a6e9cb561cc1c1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_29a6f29dcb343835e297ab416771ada94c5e3bfba34db6add6a6e9cb561cc1c1->enter($__internal_29a6f29dcb343835e297ab416771ada94c5e3bfba34db6add6a6e9cb561cc1c1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "list/list.html.twig"));
 
         // line 1
         echo "<!-- app/Resources/views/base.html.twig -->
@@ -62,101 +62,113 @@ class __TwigTemplate_5c444136e0c8aa60c5f668b7a4be291533955e4c6f75df03eb68fa2be9f
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("app_masterList");
             echo "\" style=\"color: white\" >Back</a>
                     </li>
-                ";
+                    ";
             // line 37
-            if (((isset($context["listCount"]) || array_key_exists("listCount", $context) ? $context["listCount"] : (function () { throw new Twig_Error_Runtime('Variable "listCount" does not exist.', 37, $this->getSourceContext()); })()) < 25)) {
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable((isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new Twig_Error_Runtime('Variable "user" does not exist.', 37, $this->getSourceContext()); })()));
+            foreach ($context['_seq'] as $context["_key"] => $context["users"]) {
                 // line 38
-                echo "                    <li class=\"nav-item badge-success\" style=\"height: 33px;\">
+                echo "                    ";
+                if ((((isset($context["listCount"]) || array_key_exists("listCount", $context) ? $context["listCount"] : (function () { throw new Twig_Error_Runtime('Variable "listCount" does not exist.', 38, $this->getSourceContext()); })()) < 5) || (twig_get_attribute($this->env, $this->getSourceContext(), $context["users"], "accountType", array()) == "pro"))) {
+                    // line 39
+                    echo "
+                    <li class=\"nav-item badge-success\" style=\"height: 33px;\">
                         <a class=\"nav-link\" href=\"";
-                // line 39
-                echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("app_listCreate");
-                echo "/";
-                echo twig_escape_filter($this->env, (isset($context["master"]) || array_key_exists("master", $context) ? $context["master"] : (function () { throw new Twig_Error_Runtime('Variable "master" does not exist.', 39, $this->getSourceContext()); })()), "html", null, true);
-                echo "\" style=\"color: white\">Create Listing</a>
+                    // line 41
+                    echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("app_listCreate");
+                    echo "/";
+                    echo twig_escape_filter($this->env, (isset($context["master"]) || array_key_exists("master", $context) ? $context["master"] : (function () { throw new Twig_Error_Runtime('Variable "master" does not exist.', 41, $this->getSourceContext()); })()), "html", null, true);
+                    echo "\" style=\"color: white\">Create Listing</a>
                     </li>
                 ";
+                }
+                // line 44
+                echo "                ";
             }
-            // line 42
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['users'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 45
             echo "                    <li class=\"nav-item\" style=\"height: 33px;\">
                         <p class=\"nav-link\">Hello, ";
-            // line 43
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 43, $this->getSourceContext()); })()), "user", array()), "username", array()), "html", null, true);
+            // line 46
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 46, $this->getSourceContext()); })()), "user", array()), "username", array()), "html", null, true);
             echo "</p>
                     </li>
                     <li class=\"nav-item \" style=\"height: 33px;\">
                         <a class=\"nav-link\" href=\"";
-            // line 46
+            // line 49
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("logout");
             echo "\" style=\"color: white\">Logout</a>
                     </li>
                 ";
-            // line 48
+            // line 51
             if ($this->env->getExtension('Symfony\Bridge\Twig\Extension\SecurityExtension')->isGranted("ROLE_ADMIN")) {
-                // line 49
+                // line 52
                 echo "                    <li class=\"nav-item \" style=\"height: 33px;\">
                         <a class=\"nav-link badge-danger\" href=\"";
-                // line 50
+                // line 53
                 echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("app_admin");
                 echo "\" style=\"color: white\">Admin</a>
                     </li>
                 ";
             }
-            // line 53
+            // line 56
             echo "                ";
         }
-        // line 54
+        // line 57
         echo "            </ul>
         </div>
     </div>
 </nav>
 <div class=\"container-fluid\" id=\"listing-creator\" style=\"margin-top: 10px;\">
             ";
-        // line 59
+        // line 62
         $this->displayBlock('navigation', $context, $blocks);
-        // line 240
+        // line 246
         echo "
 
 ";
-        // line 242
-        $this->displayBlock('javascripts', $context, $blocks);
         // line 248
+        $this->displayBlock('javascripts', $context, $blocks);
+        // line 254
         echo "    </div>
 </body>
 </html>";
         
-        $__internal_1ae0b3d307da4fe1778b6bf080d77e13f80fb695f91ba688320ea1df2d58e3eb->leave($__internal_1ae0b3d307da4fe1778b6bf080d77e13f80fb695f91ba688320ea1df2d58e3eb_prof);
+        $__internal_430fdaef1506bb64df0df23fbb30c2f527c29098962555155866b0e44a96fe64->leave($__internal_430fdaef1506bb64df0df23fbb30c2f527c29098962555155866b0e44a96fe64_prof);
 
         
-        $__internal_7a6224c3c3e2598c4699dcd15f8a5b77b4172d866fd59650bc6cd3e0703c8c96->leave($__internal_7a6224c3c3e2598c4699dcd15f8a5b77b4172d866fd59650bc6cd3e0703c8c96_prof);
+        $__internal_29a6f29dcb343835e297ab416771ada94c5e3bfba34db6add6a6e9cb561cc1c1->leave($__internal_29a6f29dcb343835e297ab416771ada94c5e3bfba34db6add6a6e9cb561cc1c1_prof);
 
     }
 
     // line 6
     public function block_title($context, array $blocks = array())
     {
-        $__internal_8ad9d7bcc3b5ff29368598eaecd30cf640b42d55b20605877a95bad3624961e1 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_8ad9d7bcc3b5ff29368598eaecd30cf640b42d55b20605877a95bad3624961e1->enter($__internal_8ad9d7bcc3b5ff29368598eaecd30cf640b42d55b20605877a95bad3624961e1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_842ed80ae820c7c9493190347851b4417ffd954a7550aaae3b8cdc7eb9ef54e4 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_842ed80ae820c7c9493190347851b4417ffd954a7550aaae3b8cdc7eb9ef54e4->enter($__internal_842ed80ae820c7c9493190347851b4417ffd954a7550aaae3b8cdc7eb9ef54e4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        $__internal_f23fd0a5ef697914b77f8a3a19ad9343fb674b698ce6dd9d50eaeb6d318d4d84 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f23fd0a5ef697914b77f8a3a19ad9343fb674b698ce6dd9d50eaeb6d318d4d84->enter($__internal_f23fd0a5ef697914b77f8a3a19ad9343fb674b698ce6dd9d50eaeb6d318d4d84_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_2479ad187083c6fb19d469c2ab75c06458c55aa03db51396d640fab35857b7da = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_2479ad187083c6fb19d469c2ab75c06458c55aa03db51396d640fab35857b7da->enter($__internal_2479ad187083c6fb19d469c2ab75c06458c55aa03db51396d640fab35857b7da_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "MerchByAmazon | Listing";
         
-        $__internal_f23fd0a5ef697914b77f8a3a19ad9343fb674b698ce6dd9d50eaeb6d318d4d84->leave($__internal_f23fd0a5ef697914b77f8a3a19ad9343fb674b698ce6dd9d50eaeb6d318d4d84_prof);
+        $__internal_2479ad187083c6fb19d469c2ab75c06458c55aa03db51396d640fab35857b7da->leave($__internal_2479ad187083c6fb19d469c2ab75c06458c55aa03db51396d640fab35857b7da_prof);
 
         
-        $__internal_8ad9d7bcc3b5ff29368598eaecd30cf640b42d55b20605877a95bad3624961e1->leave($__internal_8ad9d7bcc3b5ff29368598eaecd30cf640b42d55b20605877a95bad3624961e1_prof);
+        $__internal_842ed80ae820c7c9493190347851b4417ffd954a7550aaae3b8cdc7eb9ef54e4->leave($__internal_842ed80ae820c7c9493190347851b4417ffd954a7550aaae3b8cdc7eb9ef54e4_prof);
 
     }
 
     // line 10
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_b28afcff9ba73152d045e298314a1e7143001bcaa42c7c93b7e4df6391c86cea = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_b28afcff9ba73152d045e298314a1e7143001bcaa42c7c93b7e4df6391c86cea->enter($__internal_b28afcff9ba73152d045e298314a1e7143001bcaa42c7c93b7e4df6391c86cea_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_3ffcbd1f6aa86f8954a638c352712f327973a6d8a869943027f4dfb75d5f77ee = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_3ffcbd1f6aa86f8954a638c352712f327973a6d8a869943027f4dfb75d5f77ee->enter($__internal_3ffcbd1f6aa86f8954a638c352712f327973a6d8a869943027f4dfb75d5f77ee_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        $__internal_f29bac1e95bdfe54d24019f633bc631e24f9c680e54100be391dc1e39bac67df = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f29bac1e95bdfe54d24019f633bc631e24f9c680e54100be391dc1e39bac67df->enter($__internal_f29bac1e95bdfe54d24019f633bc631e24f9c680e54100be391dc1e39bac67df_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_976c4def0b9bf5d7ab008d51d29aa24753070726070abfb4dd31bdb62edd4389 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_976c4def0b9bf5d7ab008d51d29aa24753070726070abfb4dd31bdb62edd4389->enter($__internal_976c4def0b9bf5d7ab008d51d29aa24753070726070abfb4dd31bdb62edd4389_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 11
         echo "        <!-- Fonts -->
@@ -172,32 +184,45 @@ class __TwigTemplate_5c444136e0c8aa60c5f668b7a4be291533955e4c6f75df03eb68fa2be9f
         <link rel=\"icon\" href=\"../assets/img/favicon.png\">
     ";
         
-        $__internal_f29bac1e95bdfe54d24019f633bc631e24f9c680e54100be391dc1e39bac67df->leave($__internal_f29bac1e95bdfe54d24019f633bc631e24f9c680e54100be391dc1e39bac67df_prof);
+        $__internal_976c4def0b9bf5d7ab008d51d29aa24753070726070abfb4dd31bdb62edd4389->leave($__internal_976c4def0b9bf5d7ab008d51d29aa24753070726070abfb4dd31bdb62edd4389_prof);
 
         
-        $__internal_b28afcff9ba73152d045e298314a1e7143001bcaa42c7c93b7e4df6391c86cea->leave($__internal_b28afcff9ba73152d045e298314a1e7143001bcaa42c7c93b7e4df6391c86cea_prof);
+        $__internal_3ffcbd1f6aa86f8954a638c352712f327973a6d8a869943027f4dfb75d5f77ee->leave($__internal_3ffcbd1f6aa86f8954a638c352712f327973a6d8a869943027f4dfb75d5f77ee_prof);
 
     }
 
-    // line 59
+    // line 62
     public function block_navigation($context, array $blocks = array())
     {
-        $__internal_13a6fed0da50a69f4f26e124c8db8043d8088c1a928540b50a725969e424a5d7 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_13a6fed0da50a69f4f26e124c8db8043d8088c1a928540b50a725969e424a5d7->enter($__internal_13a6fed0da50a69f4f26e124c8db8043d8088c1a928540b50a725969e424a5d7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "navigation"));
+        $__internal_053c8f31db1ab98188483b3fd79129d31777b5fd28116ec459e3de7265d1ed03 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_053c8f31db1ab98188483b3fd79129d31777b5fd28116ec459e3de7265d1ed03->enter($__internal_053c8f31db1ab98188483b3fd79129d31777b5fd28116ec459e3de7265d1ed03_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "navigation"));
 
-        $__internal_762efde1f5b0541213f104a898b1256bc70c2d8acca5db33839816890e4c5ef2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_762efde1f5b0541213f104a898b1256bc70c2d8acca5db33839816890e4c5ef2->enter($__internal_762efde1f5b0541213f104a898b1256bc70c2d8acca5db33839816890e4c5ef2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "navigation"));
+        $__internal_04234e4a73124e30116a4dad3e1a042d8e71b933a731017947994f7ebb64a3d7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_04234e4a73124e30116a4dad3e1a042d8e71b933a731017947994f7ebb64a3d7->enter($__internal_04234e4a73124e30116a4dad3e1a042d8e71b933a731017947994f7ebb64a3d7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "navigation"));
 
-        // line 60
+        // line 63
         echo "        <div class=\"container-fluid\">
             ";
-        // line 61
-        if (((isset($context["listCount"]) || array_key_exists("listCount", $context) ? $context["listCount"] : (function () { throw new Twig_Error_Runtime('Variable "listCount" does not exist.', 61, $this->getSourceContext()); })()) >= 25)) {
-            // line 62
-            echo "                <div class=\"row\">Contact the administrator to improve your account</div>
-            ";
-        }
         // line 64
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new Twig_Error_Runtime('Variable "user" does not exist.', 64, $this->getSourceContext()); })()));
+        foreach ($context['_seq'] as $context["_key"] => $context["users"]) {
+            // line 65
+            echo "
+            ";
+            // line 66
+            if ((((isset($context["listCount"]) || array_key_exists("listCount", $context) ? $context["listCount"] : (function () { throw new Twig_Error_Runtime('Variable "listCount" does not exist.', 66, $this->getSourceContext()); })()) >= 25) || (twig_get_attribute($this->env, $this->getSourceContext(), $context["users"], "accountType", array()) == "free"))) {
+                // line 67
+                echo "                <div class=\"row\">Contact the administrator to improve your account</div>
+            ";
+            }
+            // line 69
+            echo "            ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['users'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 70
         echo "            <table class=\"table\">
                 <thead>
                 <tr>
@@ -215,35 +240,35 @@ class __TwigTemplate_5c444136e0c8aa60c5f668b7a4be291533955e4c6f75df03eb68fa2be9f
                 </thead>
                 <tbody>
                 ";
-        // line 80
+        // line 86
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["posts"]) || array_key_exists("posts", $context) ? $context["posts"] : (function () { throw new Twig_Error_Runtime('Variable "posts" does not exist.', 80, $this->getSourceContext()); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["posts"]) || array_key_exists("posts", $context) ? $context["posts"] : (function () { throw new Twig_Error_Runtime('Variable "posts" does not exist.', 86, $this->getSourceContext()); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["list"]) {
-            // line 81
+            // line 87
             echo "                    <tr>
                         <th scope=\"row\">";
-            // line 82
+            // line 88
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["list"], "listing_id", array()), "html", null, true);
             echo "</th>
                         <td>";
-            // line 83
+            // line 89
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["list"], "title", array()), "html", null, true);
             echo "</td>
                         <td>";
-            // line 84
+            // line 90
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["list"], "brand", array()), "html", null, true);
             echo "</td>
                         <td>";
-            // line 85
+            // line 91
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["list"], "type", array()), "html", null, true);
             echo "</td>
                         <td>
                         ";
-            // line 87
+            // line 93
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), $context["list"], "fit", array()));
             foreach ($context['_seq'] as $context["_key"] => $context["fit"]) {
-                // line 88
+                // line 94
                 echo "                            ";
                 echo twig_escape_filter($this->env, $context["fit"], "html", null, true);
                 echo "
@@ -252,45 +277,45 @@ class __TwigTemplate_5c444136e0c8aa60c5f668b7a4be291533955e4c6f75df03eb68fa2be9f
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['fit'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 90
+            // line 96
             echo "                        </td>
                         <td>
                         ";
-            // line 92
+            // line 98
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), $context["list"], "color", array()));
             foreach ($context['_seq'] as $context["_key"] => $context["color"]) {
-                // line 93
+                // line 99
                 echo "                            ";
                 if (($context["color"] == 1)) {
-                    // line 94
+                    // line 100
                     echo "                                    <label class=\"custom-control custom-checkbox\" title=\"Dark Heather\">
                                         <input type=\"checkbox\" class=\"custom-control-input color-check\" name=\"color[]\" value=\"dark_heather\">
                                         <span class=\"custom-control-indicator\" style=\"background-color: #474d4d;\"></span>
                                         <span class=\"custom-control-description\"></span>
                                     </label>
                             ";
-                } elseif ((                // line 99
+                } elseif ((                // line 105
 $context["color"] == 2)) {
-                    // line 100
+                    // line 106
                     echo "                            <label class=\"custom-control\" title=\"Heather Grey\">
                                 <input type=\"checkbox\" class=\"custom-control-input color-check\" name=\"color[]\" value=\"heather_grey\">
                                 <span class=\"custom-control-indicator\" style=\"background-color: #d4d8d9;\"></span>
                                 <span class=\"custom-control-description\"></span>
                             </label>
                             ";
-                } elseif ((                // line 105
+                } elseif ((                // line 111
 $context["color"] == 3)) {
-                    // line 106
+                    // line 112
                     echo "                                <label class=\"custom-control\" title=\"Heather Blue\">
                                     <input type=\"checkbox\" class=\"custom-control-input color-check\" name=\"color[]\" value=\"heather_blue\">
                                     <span class=\"custom-control-indicator\" style=\"background-color: #767ae0;\"></span>
                                     <span class=\"custom-control-description\"></span>
                                 </label>
                             ";
-                } elseif ((                // line 111
+                } elseif ((                // line 117
 $context["color"] == 4)) {
-                    // line 112
+                    // line 118
                     echo "                                <label class=\"custom-control\" title=\"Black\">
                                     <input type=\"checkbox\" class=\"custom-control-input color-check\" name=\"color[]\" value=\"black\">
                                     <span class=\"custom-control-indicator\" style=\"background-color: #000000\"></span>
@@ -298,108 +323,108 @@ $context["color"] == 4)) {
                                 </label>
 
                             ";
-                } elseif ((                // line 118
+                } elseif ((                // line 124
 $context["color"] == 5)) {
-                    // line 119
+                    // line 125
                     echo "                                <label class=\"custom-control\" title=\"Navy\">
                                     <input type=\"checkbox\" class=\"custom-control-input color-check\" name=\"color[]\" value=\"navy\">
                                     <span class=\"custom-control-indicator\" style=\"background-color: #15232b\"></span>
                                     <span class=\"custom-control-description\"></span>
                                 </label>
                             ";
-                } elseif ((                // line 124
+                } elseif ((                // line 130
 $context["color"] == 6)) {
-                    // line 125
+                    // line 131
                     echo "                                <label class=\"custom-control\" title=\"Silver\">
                                     <input type=\"checkbox\" class=\"custom-control-input color-check\" name=\"color[]\" value=\"silver\">
                                     <span class=\"custom-control-indicator\" style=\"background-color: #cfd1d1\"></span>
                                     <span class=\"custom-control-description\"></span>
                                 </label>
                             ";
-                } elseif ((                // line 130
+                } elseif ((                // line 136
 $context["color"] == 7)) {
-                    // line 131
+                    // line 137
                     echo "                                <label class=\"custom-control\" title=\"Royal Blue\">
                                     <input type=\"checkbox\" class=\"custom-control-input color-check\" name=\"color[]\" value=\"royal\">
                                     <span class=\"custom-control-indicator\" style=\"background-color: #1c4086\"></span>
                                     <span class=\"custom-control-description\"></span>
                                 </label>
                             ";
-                } elseif ((                // line 136
+                } elseif ((                // line 142
 $context["color"] == 8)) {
-                    // line 137
+                    // line 143
                     echo "                                <label class=\"custom-control\" title=\"Brown\">
                                     <input type=\"checkbox\" class=\"custom-control-input color-check\" name=\"color[]\" value=\"brown\">
                                     <span class=\"custom-control-indicator\" style=\"background-color: #31261d\"></span>
                                     <span class=\"custom-control-description\"></span>
                                 </label>
                             ";
-                } elseif ((                // line 142
+                } elseif ((                // line 148
 $context["color"] == 9)) {
-                    // line 143
+                    // line 149
                     echo "                                <label class=\"custom-control\" title=\"Slate\">
                                     <input type=\"checkbox\" class=\"custom-control-input color-check\" name=\"color[]\" value=\"slate\">
                                     <span class=\"custom-control-indicator\" style=\"background-color: #818189\"></span>
                                     <span class=\"custom-control-description\"></span>
                                 </label>
                             ";
-                } elseif ((                // line 148
+                } elseif ((                // line 154
 $context["color"] == 10)) {
-                    // line 149
+                    // line 155
                     echo "                                <label class=\"custom-control\" title=\"Red\">
                                     <input type=\"checkbox\" class=\"custom-control-input color-check\" name=\"color[]\" value=\"red\">
                                     <span class=\"custom-control-indicator\" style=\"background-color: #b71111\"></span>
                                     <span class=\"custom-control-description\"></span>
                                 </label>
                             ";
-                } elseif ((                // line 154
+                } elseif ((                // line 160
 $context["color"] == 11)) {
-                    // line 155
+                    // line 161
                     echo "                                <label class=\"custom-control\" title=\"Apshalt\">
                                     <input type=\"checkbox\" class=\"custom-control-input color-check\" name=\"color[]\" value=\"asphalt\">
                                     <span class=\"custom-control-indicator\" style=\"background-color: #3f3e3c\"></span>
                                     <span class=\"custom-control-description\"></span>
                                 </label>
                             ";
-                } elseif ((                // line 160
+                } elseif ((                // line 166
 $context["color"] == 12)) {
-                    // line 161
+                    // line 167
                     echo "                                <label class=\"custom-control\" title=\"Grass\">
                                     <input type=\"checkbox\" class=\"custom-control-input color-check\" name=\"color[]\" value=\"grass\">
                                     <span class=\"custom-control-indicator\" style=\"background-color: #5e9444\"></span>
                                     <span class=\"custom-control-description\"></span>
                                 </label>
                             ";
-                } elseif ((                // line 166
+                } elseif ((                // line 172
 $context["color"] == 13)) {
-                    // line 167
+                    // line 173
                     echo "                                <label class=\"custom-control\" title=\"Olive\">
                                     <input type=\"checkbox\" class=\"custom-control-input color-check\" name=\"color[]\" value=\"olive\">
                                     <span class=\"custom-control-indicator\" style=\"background-color: #4a4f26\"></span>
                                     <span class=\"custom-control-description\"></span>
                                 </label>
                             ";
-                } elseif ((                // line 172
+                } elseif ((                // line 178
 $context["color"] == 14)) {
-                    // line 173
+                    // line 179
                     echo "                                <label class=\"custom-control\" title=\"Kellygreen\">
                                     <input type=\"checkbox\" class=\"custom-control-input color-check\" name=\"color[]\" value=\"kelly_green\">
                                     <span class=\"custom-control-indicator\" style=\"background-color: #006136\"></span>
                                     <span class=\"custom-control-description\"></span>
                                 </label>
                             ";
-                } elseif ((                // line 178
+                } elseif ((                // line 184
 $context["color"] == 15)) {
-                    // line 179
+                    // line 185
                     echo "                                <label class=\"custom-control\" title=\"Babyblue\">
                                     <input type=\"checkbox\" class=\"custom-control-input color-check\" name=\"color[]\" value=\"baby_blue\">
                                     <span class=\"custom-control-indicator\" style=\"background-color: #8fb8db\"></span>
                                     <span class=\"custom-control-description\"></span>
                                 </label>
                             ";
-                } elseif ((                // line 184
+                } elseif ((                // line 190
 $context["color"] == 16)) {
-                    // line 185
+                    // line 191
                     echo "                                <label class=\"custom-control\" title=\"White\">
                                     <input type=\"checkbox\" class=\"custom-control-input color-check\" name=\"color[]\" value=\"white\">
                                     <span class=\"custom-control-indicator\" style=\"background-color: #ffffff\"></span>
@@ -407,45 +432,45 @@ $context["color"] == 16)) {
                                 </label>
 
                             ";
-                } elseif ((                // line 191
+                } elseif ((                // line 197
 $context["color"] == 17)) {
-                    // line 192
+                    // line 198
                     echo "                                <label class=\"custom-control\" title=\"Lemon\">
                                     <input type=\"checkbox\" class=\"custom-control-input color-check\" name=\"color[]\" value=\"lemon\">
                                     <span class=\"custom-control-indicator\" style=\"background-color: #f0e87b\"></span>
                                     <span class=\"custom-control-description\"></span>
                                 </label>
                             ";
-                } elseif ((                // line 197
+                } elseif ((                // line 203
 $context["color"] == 18)) {
-                    // line 198
+                    // line 204
                     echo "                                <label class=\"custom-control\" title=\"Cranberry\">
                                     <input type=\"checkbox\" class=\"custom-control-input color-check\" name=\"color[]\" value=\"cranberry\">
                                     <span class=\"custom-control-indicator\" style=\"background-color: #6e0a25\"></span>
                                     <span class=\"custom-control-description\"></span>
                                 </label>
                             ";
-                } elseif ((                // line 203
+                } elseif ((                // line 209
 $context["color"] == 19)) {
-                    // line 204
+                    // line 210
                     echo "                                <label class=\"custom-control\" title=\"Pink\">
                                     <input type=\"checkbox\" class=\"custom-control-input color-check\" name=\"color[]\" value=\"pink\">
                                     <span class=\"custom-control-indicator\" style=\"background-color: #f8a3bc\"></span>
                                     <span class=\"custom-control-description\"></span>
                                 </label>
                             ";
-                } elseif ((                // line 209
+                } elseif ((                // line 215
 $context["color"] == 20)) {
-                    // line 210
+                    // line 216
                     echo "                                <label class=\"custom-control\" title=\"Orange\">
                                     <input type=\"checkbox\" class=\"custom-control-input color-check\" name=\"color[]\" value=\"orange\">
                                     <span class=\"custom-control-indicator\" style=\"background-color: #ff5c39\"></span>
                                     <span class=\"custom-control-description\"></span>
                                 </label>
                             ";
-                } elseif ((                // line 215
+                } elseif ((                // line 221
 $context["color"] == 21)) {
-                    // line 216
+                    // line 222
                     echo "                                <label class=\"custom-control\" title=\"Purple\">
                                     <input type=\"checkbox\" class=\"custom-control-input color-check\" name=\"color[]\" value=\"purple\">
                                     <span class=\"custom-control-indicator\" style=\"background-color: #514689\"></span>
@@ -453,45 +478,45 @@ $context["color"] == 21)) {
                                 </label>
                             ";
                 } else {
-                    // line 222
+                    // line 228
                     echo "                                ";
                     echo twig_escape_filter($this->env, $context["color"], "html", null, true);
                     echo "
                             ";
                 }
-                // line 224
+                // line 230
                 echo "
                         ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['color'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 226
+            // line 232
             echo "                        </td>
                         <td>";
-            // line 227
+            // line 233
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["list"], "cost", array()), "html", null, true);
             echo "</td>
                         <td>";
-            // line 228
+            // line 234
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["list"], "bulletOne", array()), "html", null, true);
             echo "</td>
                         <td>";
-            // line 229
+            // line 235
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["list"], "bulletTwo", array()), "html", null, true);
             echo "</td>
                         <td>";
-            // line 230
+            // line 236
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["list"], "description", array()), "html", null, true);
             echo "</td>
                         <td><a class=\"badge badge-info\" href=\"";
-            // line 231
+            // line 237
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("app_listEdit");
             echo "/";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["list"], "listing_id", array()), "html", null, true);
             echo "\">Edit</a></td>
                         <td><a class=\"badge badge-danger\" href=\"";
-            // line 232
+            // line 238
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("app_listDelete");
             echo "/";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["list"], "listing_id", array()), "html", null, true);
@@ -502,40 +527,40 @@ $context["color"] == 21)) {
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['list'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 235
+        // line 241
         echo "                </tbody>
             </table>
         </div>
     </div>
             ";
         
-        $__internal_762efde1f5b0541213f104a898b1256bc70c2d8acca5db33839816890e4c5ef2->leave($__internal_762efde1f5b0541213f104a898b1256bc70c2d8acca5db33839816890e4c5ef2_prof);
+        $__internal_04234e4a73124e30116a4dad3e1a042d8e71b933a731017947994f7ebb64a3d7->leave($__internal_04234e4a73124e30116a4dad3e1a042d8e71b933a731017947994f7ebb64a3d7_prof);
 
         
-        $__internal_13a6fed0da50a69f4f26e124c8db8043d8088c1a928540b50a725969e424a5d7->leave($__internal_13a6fed0da50a69f4f26e124c8db8043d8088c1a928540b50a725969e424a5d7_prof);
+        $__internal_053c8f31db1ab98188483b3fd79129d31777b5fd28116ec459e3de7265d1ed03->leave($__internal_053c8f31db1ab98188483b3fd79129d31777b5fd28116ec459e3de7265d1ed03_prof);
 
     }
 
-    // line 242
+    // line 248
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_2f700b3a1330914162feb731564e279592a8f1746906ae05a55cf0756ba52130 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_2f700b3a1330914162feb731564e279592a8f1746906ae05a55cf0756ba52130->enter($__internal_2f700b3a1330914162feb731564e279592a8f1746906ae05a55cf0756ba52130_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_f589f9f2ef0d8b6e67ce71c19dacb6b45b139a739df4dbf82e3bf4ffe9d0262a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_f589f9f2ef0d8b6e67ce71c19dacb6b45b139a739df4dbf82e3bf4ffe9d0262a->enter($__internal_f589f9f2ef0d8b6e67ce71c19dacb6b45b139a739df4dbf82e3bf4ffe9d0262a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        $__internal_2d5dd97ca79b8a19aff5ba839e7a22d5b3f1d9cf76870d8a47a49c93e4777e71 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_2d5dd97ca79b8a19aff5ba839e7a22d5b3f1d9cf76870d8a47a49c93e4777e71->enter($__internal_2d5dd97ca79b8a19aff5ba839e7a22d5b3f1d9cf76870d8a47a49c93e4777e71_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_3a0e31843445998cd8c5d4ceccae194a7f65f6a0f926906881dd47517c1139ff = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_3a0e31843445998cd8c5d4ceccae194a7f65f6a0f926906881dd47517c1139ff->enter($__internal_3a0e31843445998cd8c5d4ceccae194a7f65f6a0f926906881dd47517c1139ff_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 243
+        // line 249
         echo "    <!-- Scripts -->
     <script src=\"../assets/js/core.min.js\"></script>
     <script src=\"../assets/js/app.min.js\"></script>
     <script src=\"../assets/js/script.min.js\"></script>
 ";
         
-        $__internal_2d5dd97ca79b8a19aff5ba839e7a22d5b3f1d9cf76870d8a47a49c93e4777e71->leave($__internal_2d5dd97ca79b8a19aff5ba839e7a22d5b3f1d9cf76870d8a47a49c93e4777e71_prof);
+        $__internal_3a0e31843445998cd8c5d4ceccae194a7f65f6a0f926906881dd47517c1139ff->leave($__internal_3a0e31843445998cd8c5d4ceccae194a7f65f6a0f926906881dd47517c1139ff_prof);
 
         
-        $__internal_2f700b3a1330914162feb731564e279592a8f1746906ae05a55cf0756ba52130->leave($__internal_2f700b3a1330914162feb731564e279592a8f1746906ae05a55cf0756ba52130_prof);
+        $__internal_f589f9f2ef0d8b6e67ce71c19dacb6b45b139a739df4dbf82e3bf4ffe9d0262a->leave($__internal_f589f9f2ef0d8b6e67ce71c19dacb6b45b139a739df4dbf82e3bf4ffe9d0262a_prof);
 
     }
 
@@ -551,7 +576,7 @@ $context["color"] == 21)) {
 
     public function getDebugInfo()
     {
-        return array (  529 => 243,  520 => 242,  506 => 235,  495 => 232,  489 => 231,  485 => 230,  481 => 229,  477 => 228,  473 => 227,  470 => 226,  463 => 224,  457 => 222,  449 => 216,  447 => 215,  440 => 210,  438 => 209,  431 => 204,  429 => 203,  422 => 198,  420 => 197,  413 => 192,  411 => 191,  403 => 185,  401 => 184,  394 => 179,  392 => 178,  385 => 173,  383 => 172,  376 => 167,  374 => 166,  367 => 161,  365 => 160,  358 => 155,  356 => 154,  349 => 149,  347 => 148,  340 => 143,  338 => 142,  331 => 137,  329 => 136,  322 => 131,  320 => 130,  313 => 125,  311 => 124,  304 => 119,  302 => 118,  294 => 112,  292 => 111,  285 => 106,  283 => 105,  276 => 100,  274 => 99,  267 => 94,  264 => 93,  260 => 92,  256 => 90,  247 => 88,  243 => 87,  238 => 85,  234 => 84,  230 => 83,  226 => 82,  223 => 81,  219 => 80,  201 => 64,  197 => 62,  195 => 61,  192 => 60,  183 => 59,  162 => 11,  153 => 10,  135 => 6,  123 => 248,  121 => 242,  117 => 240,  115 => 59,  108 => 54,  105 => 53,  99 => 50,  96 => 49,  94 => 48,  89 => 46,  83 => 43,  80 => 42,  72 => 39,  69 => 38,  67 => 37,  62 => 35,  59 => 34,  57 => 33,  45 => 23,  43 => 10,  36 => 6,  29 => 1,);
+        return array (  554 => 249,  545 => 248,  531 => 241,  520 => 238,  514 => 237,  510 => 236,  506 => 235,  502 => 234,  498 => 233,  495 => 232,  488 => 230,  482 => 228,  474 => 222,  472 => 221,  465 => 216,  463 => 215,  456 => 210,  454 => 209,  447 => 204,  445 => 203,  438 => 198,  436 => 197,  428 => 191,  426 => 190,  419 => 185,  417 => 184,  410 => 179,  408 => 178,  401 => 173,  399 => 172,  392 => 167,  390 => 166,  383 => 161,  381 => 160,  374 => 155,  372 => 154,  365 => 149,  363 => 148,  356 => 143,  354 => 142,  347 => 137,  345 => 136,  338 => 131,  336 => 130,  329 => 125,  327 => 124,  319 => 118,  317 => 117,  310 => 112,  308 => 111,  301 => 106,  299 => 105,  292 => 100,  289 => 99,  285 => 98,  281 => 96,  272 => 94,  268 => 93,  263 => 91,  259 => 90,  255 => 89,  251 => 88,  248 => 87,  244 => 86,  226 => 70,  220 => 69,  216 => 67,  214 => 66,  211 => 65,  207 => 64,  204 => 63,  195 => 62,  174 => 11,  165 => 10,  147 => 6,  135 => 254,  133 => 248,  129 => 246,  127 => 62,  120 => 57,  117 => 56,  111 => 53,  108 => 52,  106 => 51,  101 => 49,  95 => 46,  92 => 45,  86 => 44,  78 => 41,  74 => 39,  71 => 38,  67 => 37,  62 => 35,  59 => 34,  57 => 33,  45 => 23,  43 => 10,  36 => 6,  29 => 1,);
     }
 
     public function getSourceContext()
@@ -592,11 +617,14 @@ $context["color"] == 21)) {
                     <li class=\"nav-item \" style=\"height: 33px;\">
                         <a class=\"nav-link\" href=\"{{ path('app_masterList') }}\" style=\"color: white\" >Back</a>
                     </li>
-                {% if listCount <25 %}
+                    {% for users in user %}
+                    {% if listCount <5 or users.accountType == 'pro' %}
+
                     <li class=\"nav-item badge-success\" style=\"height: 33px;\">
                         <a class=\"nav-link\" href=\"{{ path('app_listCreate') }}/{{ master }}\" style=\"color: white\">Create Listing</a>
                     </li>
                 {% endif %}
+                {% endfor %}
                     <li class=\"nav-item\" style=\"height: 33px;\">
                         <p class=\"nav-link\">Hello, {{ app.user.username }}</p>
                     </li>
@@ -616,9 +644,12 @@ $context["color"] == 21)) {
 <div class=\"container-fluid\" id=\"listing-creator\" style=\"margin-top: 10px;\">
             {% block navigation %}
         <div class=\"container-fluid\">
-            {% if listCount >=25 %}
+            {% for users in user %}
+
+            {% if listCount >=25 or users.accountType == 'free' %}
                 <div class=\"row\">Contact the administrator to improve your account</div>
             {% endif %}
+            {% endfor %}
             <table class=\"table\">
                 <thead>
                 <tr>
