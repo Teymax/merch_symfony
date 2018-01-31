@@ -63,7 +63,7 @@
         <div class="container-fluid">
             {% for users in user %}
 
-            {% if listCount >=25 or users.accountType == 'free' %}
+            {% if listCount >=25 and users.accountType == 'free' %}
                 <div class="row">Contact the administrator to improve your account</div>
             {% endif %}
             {% endfor %}

@@ -33,7 +33,7 @@
             <ul class="navbar-nav ml-auto">
                 {% if is_granted('IS_AUTHENTICATED_FULLY') %}
                 {% for users in user %}
-                {% if listCount <5 or users.accountType == 'pro' %}
+                {% if masterCount <25 or users.accountType == 'pro' %}
                         <li class="nav-item badge-success">
                             <a class="nav-link" href="{{ path('app_masterCreate') }}" style="color: white">Create Master Listing</a>
                         </li>
@@ -60,7 +60,7 @@
         <div class="container-fluid">
             {% for users in user %}
 
-                {% if listCount >=25 or users.accountType == 'free' %}
+                {% if masterCount >=25 and users.accountType == 'free' %}
                     <div class="row">Contact the administrator to improve your account</div>
                 {% endif %}
             {% endfor %}
