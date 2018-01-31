@@ -23,31 +23,43 @@
     {% endblock %}
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">MerchByAmazon Registeration</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ path('index') }}">Back <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 <div class="container-fluid" id="main_container">
     {% block navigation %}
-    <div class="p-3 mb-2 bg-success text-white container col-3" id="logIn_form" style="margin: 0 auto;">
-        <header>
-            <h2>Login</h2>
-        </header>
+    <div class="p-3 mb-2 text-white container col-3" id="logIn_form" style="margin: 0 auto;">
             <div class="form-group">
                 {% if error %}
                     <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
                 {% endif %}
 
                 <form action="{{ path('login') }}" method="post">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" class="form-group" name="_username" value="{{ last_username }}" />
-
-                    <label for="password">Password:</label>
-                    <input type="password" class="form-group" id="password" name="_password" />
+                    <label  style="font-size: 1rem; font-weight: 400; line-height: 1.5; color: #212529; text-align: left;" for="username">Username:</label>
+                    <input type="text" id="username" class="form-control" name="_username" value="{{ last_username }}" />
+                    </br>
+                    <label  style="font-size: 1rem; font-weight: 400; line-height: 1.5; color: #212529; text-align: left;"  for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" name="_password" />
 
                     {#
                         If you want to control the URL the user
                         is redirected to on success (more details below)
                         <input type="hidden" name="_target_path" value="/account" />
                     #}
-
-                    <button type="submit" class="btn btn-info">login</button>
+                    </br>
+                    <button type="submit" class="btn btn-info">Login</button>
                 </form>
             </div>
     </div>

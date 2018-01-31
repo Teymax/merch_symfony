@@ -158,7 +158,12 @@ class User implements UserInterface, \Serializable
     public function getRoles()
     {
         $roles = $this->roles;
-        return explode( ' ', $roles);
+        if (is_string($roles) == true ) {
+            return explode(' ', $roles);
+        }
+        elseif (is_array($roles) == true) {
+            return $roles;
+        }
     }
     public function setRoles($roles)
     {
