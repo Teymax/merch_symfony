@@ -33,8 +33,8 @@ class MasterListEditController extends Controller
             );
         }
         $form = $this->createFormBuilder($master)
-            ->add('title', TextType::class, array('data' => $master->getTitle()))
-            ->add('filename', FileType::class, array('label' => 'Upload (PNG file)', 'data_class' => null))
+            ->add('title', TextType::class, array('data' => $master->getTitle(), 'label' => false))
+            ->add('filename', FileType::class, array('label' => 'Upload (PNG file)', 'data_class' => null, 'label' => false))
             ->add('userId', HiddenType::class, array('data' => $master->getUserId()))
             ->add('created', DateTimeType::class, array('label' => false, 'attr'=>array('style'=>'display:none;'), 'data' => $master->getCreated()))
             ->add('updated', DateTimeType::class, array('label' => false, 'attr'=>array('style'=>'display:none;'), 'data' => new \DateTime("now")))

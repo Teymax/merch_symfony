@@ -1,230 +1,334 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <meta http-equiv="Content-Type" content="text/html"; charset=utf-8" />
-        <title>{% block title %}MerchHelper{% endblock %}</title>
-        <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html"; charset=utf-8" />
+    <title>{% block title %}MerchByAmazon | Listing Creator{% endblock %}</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
     {% block stylesheets %}
-            <!-- Fonts -->
-            <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,300i" rel="stylesheet">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,300i" rel="stylesheet">
 
-            <!-- Styles -->
-            <link href="../assets/css/core.min.css" rel="stylesheet">
-            <link href="../assets/css/app.min.css" rel="stylesheet">
-            <link href="../assets/css/style.min.css" rel="stylesheet">
-            <link href="../assets/css/main.css" rel="stylesheet">
+        <!-- Styles -->
+        <link href="../assets/css/core.min.css" rel="stylesheet">
+        <link href="../assets/css/app.min.css" rel="stylesheet">
+        <link href="../assets/css/main.css" rel="stylesheet">
 
-            <!-- Favicons -->
-            <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
-            <link rel="icon" href="../assets/img/favicon.png">
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+        <link rel="icon" href="../assets/img/favicon.png">
     {% endblock %}
 </head>
 <body>
-<div class="container-fluid" id="main_container">
-        <div class="p-3 mb-2 bg-success text-white container col-3" id="logIn_form" style="margin: 0 auto;">
-                <header>
-                        <h2>Create List</h2>
-                </header>
-                <a class="nav-link badge badge-info" id="singUpBtn" onclick="history.back()" href="#" style="color: white">Back</a>
-                <div class="form-group">
-                    {{ form_start(form) }}
-                    {{ form_row(form.type, { 'attr': {'class': 'form-control'} }) }}
-                    {{ form_row(form.fit, { 'attr': {'class': 'form-control'} }) }}
-                    {{ form_row(form.color, { 'attr': {'style': 'display: none'} }) }}
-                    <div id="colorpicker">
-                        <label class="custom-control custom-checkbox" title="Dark Heather">
-                            <input type="checkbox" class="custom-control-input color-check" id="form_color_0" name="form[color][]" value="1">
-                            <span class="custom-control-indicator" style="background-color: #474d4d;"></span>
-                            <span class="custom-control-description"></span>
-                        </label>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">MerchByAmazon Listing Creator</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ path('app_list') }}/{{ master.master_id }}">Back <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid" id="listing-creator">
+    {{ form_start(form) }}
+    <div class="row">
+        <div class="col-md-4 offset-md-8">
+            <br>
+        </div>
 
-                        <label class="custom-control custom-checkbox" title="Heather Grey">
-                            <input type="checkbox" class="custom-control-input color-check" id="form_color_1" name="form[color][]" value="2">
-                            <span class="custom-control-indicator" style="background-color: #d4d8d9;"></span>
-                            <span class="custom-control-description"></span>
-                        </label>
+        <div class="col-md-8" >
+            <h3>Listing</h3><br>
 
-                        <label class="custom-control custom-checkbox" title="Heather Blue">
-                            <input type="checkbox" class="custom-control-input color-check" id="form_color_2" name="form[color][]" value="3">
-                            <span class="custom-control-indicator" style="background-color: #767ae0;"></span>
-                            <span class="custom-control-description"></span>
-                        </label>
+            <div class="form-check form-check-inline">
+                {{ form_widget(form.type, { 'attr': {'class': 'form-check form-check-inline'} }) }}
+            </div>
 
-                        <label class="custom-control custom-checkbox" title="Black">
-                            <input type="checkbox" class="custom-control-input color-check" id="form_color_3" name="form[color][]" value="4">
-                            <span class="custom-control-indicator" style="background-color: #000000"></span>
-                            <span class="custom-control-description"></span>
-                        </label>
+            <span style="color:#dddddd;">|</span>
+            &nbsp;&nbsp;
 
-                        <label class="custom-control custom-checkbox" title="Navy">
-                            <input type="checkbox" class="custom-control-input color-check" id="form_color_4" name="form[color][]" value="5">
-                            <span class="custom-control-indicator" style="background-color: #15232b"></span>
-                            <span class="custom-control-description"></span>
-                        </label>
+            <div class="form-check form-check-inline">
+                {{ form_row(form.fit, { 'attr': {'class': 'form-check form-check-inline'} }) }}
+            </div>
 
-                        <label class="custom-control custom-checkbox" title="Silver">
-                            <input type="checkbox" class="custom-control-input color-check" id="form_color_5" name="form[color][]" value="6">
-                            <span class="custom-control-indicator" style="background-color: #cfd1d1"></span>
-                            <span class="custom-control-description"></span>
-                        </label>
+            <br>
 
-                        <br>
-
-                        <label class="custom-control custom-checkbox" title="Royal Blue">
-                            <input type="checkbox" class="custom-control-input color-check" id="form_color_6" name="form[color][]" value="7">
-                            <span class="custom-control-indicator" style="background-color: #1c4086"></span>
-                            <span class="custom-control-description"></span>
-                        </label>
-
-                        <label class="custom-control custom-checkbox" title="Brown">
-                            <input type="checkbox" class="custom-control-input color-check" id="form_color_7" name="form[color][]" value="8">
-                            <span class="custom-control-indicator" style="background-color: #381f18"></span>
-                            <span class="custom-control-description"></span>
-                        </label>
-
-                        <label class="custom-control custom-checkbox" title="Slate">
-                            <input type="checkbox" class="custom-control-input color-check" id="form_color_8" name="form[color][]" value="9">
-                            <span class="custom-control-indicator" style="background-color: #818189"></span>
-                            <span class="custom-control-description"></span>
-                        </label>
-
-                        <label class="custom-control custom-checkbox" title="Red">
-                            <input type="checkbox" class="custom-control-input color-check" id="form_color_9" name="form[color][]" value="10">
-                            <span class="custom-control-indicator" style="background-color: #b71111"></span>
-                            <span class="custom-control-description"></span>
-                        </label>
-
-                        <label class="custom-control custom-checkbox" title="Apshalt">
-                            <input type="checkbox" class="custom-control-input color-check" id="form_color_10" name="form[color][]" value="11">
-                            <span class="custom-control-indicator" style="background-color: #3f3e3c"></span>
-                            <span class="custom-control-description"></span>
-                        </label>
-
-                        <label class="custom-control custom-checkbox" title="Grass">
-                            <input type="checkbox" class="custom-control-input color-check" id="form_color_11" name="form[color][]" value="12">
-                            <span class="custom-control-indicator" style="background-color: #5e9444"></span>
-                            <span class="custom-control-description"></span>
-                        </label>
-
-                        <br>
-
-                        <label class="custom-control custom-checkbox" title="Olive">
-                            <input type="checkbox" class="custom-control-input color-check" id="form_color_12" name="form[color][]" value="13">
-                            <span class="custom-control-indicator" style="background-color: #4a4f26"></span>
-                            <span class="custom-control-description"></span>
-                        </label>
-
-                        <label class="custom-control custom-checkbox" title="Kellygreen">
-                            <input type="checkbox" class="custom-control-input color-check" id="form_color_13" name="form[color][]" value="14">
-                            <span class="custom-control-indicator" style="background-color: #006136"></span>
-                            <span class="custom-control-description"></span>
-                        </label>
-
-                        <label class="custom-control custom-checkbox" title="Babyblue">
-                            <input type="checkbox" class="custom-control-input color-check" id="form_color_14" name="form[color][]" value="15">
-                            <span class="custom-control-indicator" style="background-color: #8fb8db"></span>
-                            <span class="custom-control-description"></span>
-                        </label>
-
-                        <label class="custom-control custom-checkbox" title="White">
-                            <input type="checkbox" class="custom-control-input color-check" id="form_color_15" name="form[color][]" value="16">
-                            <span class="custom-control-indicator" style="background-color: #ffffff"></span>
-                            <span class="custom-control-description"></span>
-                        </label>
-
-                        <label class="custom-control custom-checkbox" title="Lemon">
-                            <input type="checkbox" class="custom-control-input color-check" id="form_color_16" name="form[color][]" value="17">
-                            <span class="custom-control-indicator" style="background-color: #f0e87b"></span>
-                            <span class="custom-control-description"></span>
-                        </label>
-
-                        <label class="custom-control custom-checkbox" title="Cranberry">
-                            <input type="checkbox" class="custom-control-input color-check" id="form_color_17" name="form[color][]" value="18">
-                            <span class="custom-control-indicator" style="background-color: #6e0a25"></span>
-                            <span class="custom-control-description"></span>
-                        </label>
-
-                        <br>
-
-                        <label class="custom-control custom-checkbox" title="Pink">
-                            <input type="checkbox" class="custom-control-input color-check" id="form_color_18" name="form[color][]" value="19">
-                            <span class="custom-control-indicator" style="background-color: #f8a3bc"></span>
-                            <span class="custom-control-description"></span>
-                        </label>
-
-                        <label class="custom-control custom-checkbox" title="Orange">
-                            <input type="checkbox" class="custom-control-input color-check" id="form_color_19" name="form[color][]" value="20">
-                            <span class="custom-control-indicator" style="background-color: #ff5c39"></span>
-                            <span class="custom-control-description"></span>
-                        </label>
-
-                        <label class="custom-control custom-checkbox" title="Purple" id="color_20">
-                            <input type="checkbox" class="custom-control-input color-check" id="form_color_20" name="form[color][]" value="21">
-                            <span class="custom-control-indicator" style="background-color: #514689"></span>
-                            <span class="custom-control-description"></span>
-                        </label>
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="input-group">
+                        <span class="input-group-addon">$</span>
+                        <!--<input type="text" class="form-control" aria-label="Text input with checkbox">-->
+                        {{ form_row(form.cost, { 'attr': {'class': 'form-control'} }) }}
+                        <small class="invalid-feedback">Price can't be empty. &emsp;</small>
                     </div>
-                    <div id="colorpicker-longsleeve" style="display: none;">
-                        <label class="custom-control custom-checkbox" title="Heather Grey">
-                            <input type="checkbox" class="custom-control-input color-check" id="form_color_1" name="form[color][]" value="2">
-                            <span class="custom-control-indicator" style="background-color: #d4d8d9;"></span>
-                            <span class="custom-control-description"></span>
-                        </label>
-
-                        <label class="custom-control custom-checkbox" title="Dark Heather">
-                            <input type="checkbox" class="custom-control-input color-check" id="form_color_0" name="form[color][]" value="1">
-                            <span class="custom-control-indicator" style="background-color: #474d4d;"></span>
-                            <span class="custom-control-description"></span>
-                        </label>
-
-                        <label class="custom-control custom-checkbox" title="Black">
-                            <input type="checkbox" class="custom-control-input color-check" id="form_color_3" name="form[color][]" value="4">
-                            <span class="custom-control-indicator" style="background-color: #000000"></span>
-                            <span class="custom-control-description"></span>
-                        </label>
-
-                        <label class="custom-control custom-checkbox" title="Navy">
-                            <input type="checkbox" class="custom-control-input color-check" id="form_color_4" name="form[color][]" value="5">
-                            <span class="custom-control-indicator" style="background-color: #15232b"></span>
-                            <span class="custom-control-description"></span>
-                        </label>
-
-                        <label class="custom-control custom-checkbox" title="Royal Blue">
-                            <input type="checkbox" class="custom-control-input color-check" id="form_color_6" name="form[color][]" value="7">
-                            <span class="custom-control-indicator" style="background-color: #1C4086;"></span>
-                            <span class="custom-control-description"></span>
-                        </label>
-                    </div>
-                    {{ form_row(form.cost, { 'attr': {'class': 'form-control'} }) }}
-                    {{ form_row(form.brand, { 'attr': {'class': 'form-control'} }) }}
-                    {{ form_row(form.title, { 'attr': {'class': 'form-control'} }) }}
-                    {{ form_row(form.bulletOne, { 'attr': {'class': 'form-control'} }) }}
-                    {{ form_row(form.bulletTwo, { 'attr': {'class': 'form-control'} }) }}
-                    {{ form_row(form.description, { 'attr': {'class': 'form-control'} }) }}
-                    {{ form_row(form.userId, { 'attr': {'id': 'user_ID'} }) }}
-                    {{ form_row(form.master_id, { 'attr': {'class': 'form-control'} }) }}
-                        <button type="submit" class="btn btn-info">Create!</button>
-                    {{ form_end(form) }}
                 </div>
-            <div id="color-preview">
-                <div id="tshirt-placeholder" class="Anvil form_color_20">
-                    <div id="preview">
-                        <img src="{{ asset('uploads/image/' ~ master.filename) }}">
-                    </div>
+                <div class="col-md-4">
+                    {{ form_row(form.brand, { 'attr': {'class': 'form-control'} }) }}
+                    <small class="invalid-feedback">Brand can't be empty. &emsp;</small>
+                    <small class="form-inline-text text-muted allowed-chars">50 of 50 characters left</small><small id="check-brand-link"> &nbsp;&nbsp;&nbsp; <a href="#" target="_blank">Check Brand</a></small><br><br>
+                </div>
+                <div class="col-md-6">
+
+                    {{ form_row(form.title, { 'attr': {'class': 'form-control listing-field '} }) }}
+
+                    <small class="invalid-feedback">Title can't be empty. &emsp;</small>
+                    <small class="form-text text-muted allowed-chars">60 of 60 characters left</small><br>
                 </div>
             </div>
 
+
+            {{ form_row(form.bulletOne, { 'attr': {'class': 'form-control'} }) }}
+
+            <small class="form-text text-muted allowed-chars">255 of 255 characters left</small><br>
+
+
+            {{ form_row(form.bulletTwo, { 'attr': {'class': 'form-control'} }) }}
+
+            <small class="form-text text-muted allowed-chars">255 of 255 characters left</small><br>
+
+
+            {{ form_row(form.description, { 'attr': {'class': 'form-control'} }) }}
+
+
+            <div class="row">
+                <div class="col-md-2">
+                    {{ form_row(form.userId, { 'attr': {'id': 'user_ID'} }) }}
+                    {{ form_row(form.master_id, { 'attr': {'class': 'form-control'} }) }}
+                    <button class="btn btn-primary" type="submit" id="add-to-list">Add to list</button>
+                </div>
+            </div>
         </div>
+        <div class="col-md-4">
+            <div class="row" style="padding-left:20px;">
+                <!-- Colorpicker Anvil & Premium -->
+                <div id="colorpicker">
+                    {{ form_row(form.color, { 'attr': {'style': 'display: none'} }) }}
+                    <label class="custom-control custom-checkbox" title="Dark Heather">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_0" name="form[color][]" value="1">
+                        <span class="custom-control-indicator" style="background-color: #474d4d;"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <label class="custom-control custom-checkbox" title="Heather Grey">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_1" name="form[color][]" value="2">
+                        <span class="custom-control-indicator" style="background-color: #d4d8d9;"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <label class="custom-control custom-checkbox" title="Heather Blue">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_2" name="form[color][]" value="3">
+                        <span class="custom-control-indicator" style="background-color: #767ae0;"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <label class="custom-control custom-checkbox" title="Black">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_3" name="form[color][]" value="4">
+                        <span class="custom-control-indicator" style="background-color: #000000"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <label class="custom-control custom-checkbox" title="Navy">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_4" name="form[color][]" value="5">
+                        <span class="custom-control-indicator" style="background-color: #15232b"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <label class="custom-control custom-checkbox" title="Silver">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_5" name="form[color][]" value="6">
+                        <span class="custom-control-indicator" style="background-color: #cfd1d1"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <br>
+
+                    <label class="custom-control custom-checkbox" title="Royal Blue">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_6" name="form[color][]" value="7">
+                        <span class="custom-control-indicator" style="background-color: #1c4086"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <label class="custom-control custom-checkbox" title="Brown">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_7" name="form[color][]" value="8">
+                        <span class="custom-control-indicator" style="background-color: #381f18"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <label class="custom-control custom-checkbox" title="Slate">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_8" name="form[color][]" value="9">
+                        <span class="custom-control-indicator" style="background-color: #818189"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <label class="custom-control custom-checkbox" title="Red">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_9" name="form[color][]" value="10">
+                        <span class="custom-control-indicator" style="background-color: #b71111"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <label class="custom-control custom-checkbox" title="Apshalt">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_10" name="form[color][]" value="11">
+                        <span class="custom-control-indicator" style="background-color: #3f3e3c"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <label class="custom-control custom-checkbox" title="Grass">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_11" name="form[color][]" value="12">
+                        <span class="custom-control-indicator" style="background-color: #5e9444"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <br>
+
+                    <label class="custom-control custom-checkbox" title="Olive">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_12" name="form[color][]" value="13">
+                        <span class="custom-control-indicator" style="background-color: #4a4f26"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <label class="custom-control custom-checkbox" title="Kellygreen">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_13" name="form[color][]" value="14">
+                        <span class="custom-control-indicator" style="background-color: #006136"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <label class="custom-control custom-checkbox" title="Babyblue">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_14" name="form[color][]" value="15">
+                        <span class="custom-control-indicator" style="background-color: #8fb8db"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <label class="custom-control custom-checkbox" title="White">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_15" name="form[color][]" value="16">
+                        <span class="custom-control-indicator" style="background-color: #ffffff"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <label class="custom-control custom-checkbox" title="Lemon">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_16" name="form[color][]" value="17">
+                        <span class="custom-control-indicator" style="background-color: #f0e87b"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <label class="custom-control custom-checkbox" title="Cranberry">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_17" name="form[color][]" value="18">
+                        <span class="custom-control-indicator" style="background-color: #6e0a25"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <br>
+
+                    <label class="custom-control custom-checkbox" title="Pink">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_18" name="form[color][]" value="19">
+                        <span class="custom-control-indicator" style="background-color: #f8a3bc"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <label class="custom-control custom-checkbox" title="Orange">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_19" name="form[color][]" value="20">
+                        <span class="custom-control-indicator" style="background-color: #ff5c39"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <label class="custom-control custom-checkbox" title="Purple" id="color_20">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_20" name="form[color][]" value="21">
+                        <span class="custom-control-indicator" style="background-color: #514689"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+                </div>
+                <div id="colorpicker-longsleeve" style="display: none;">
+                    <label class="custom-control custom-checkbox" title="Heather Blue">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_2" name="form[color][]" value="3">
+                        <span class="custom-control-indicator" style="background-color: #767ae0;"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <label class="custom-control custom-checkbox" title="Dark Heather">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_0" name="form[color][]" value="1">
+                        <span class="custom-control-indicator" style="background-color: #474d4d;"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <label class="custom-control custom-checkbox" title="Black">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_3" name="form[color][]" value="4">
+                        <span class="custom-control-indicator" style="background-color: #000000"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <label class="custom-control custom-checkbox" title="Navy">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_4" name="form[color][]" value="5">
+                        <span class="custom-control-indicator" style="background-color: #15232b"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <label class="custom-control custom-checkbox" title="Royal Blue">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_6" name="form[color][]" value="7">
+                        <span class="custom-control-indicator" style="background-color: #1C4086;"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+                </div>
+                <div id="colorpicker-longsleeve" style="display: none;">
+                    <label class="custom-control custom-checkbox" title="Heather Grey">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_1" name="form[color][]" value="2">
+                        <span class="custom-control-indicator" style="background-color: #d4d8d9;"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <label class="custom-control custom-checkbox" title="Dark Heather">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_0" name="form[color][]" value="1">
+                        <span class="custom-control-indicator" style="background-color: #474d4d;"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <label class="custom-control custom-checkbox" title="Black">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_3" name="form[color][]" value="4">
+                        <span class="custom-control-indicator" style="background-color: #000000"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <label class="custom-control custom-checkbox" title="Navy">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_4" name="form[color][]" value="5">
+                        <span class="custom-control-indicator" style="background-color: #15232b"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+
+                    <label class="custom-control custom-checkbox" title="Royal Blue">
+                        <input type="checkbox" class="custom-control-input color-check" id="form_color_6" name="form[color][]" value="7">
+                        <span class="custom-control-indicator" style="background-color: #1C4086;"></span>
+                        <span class="custom-control-description"></span>
+                    </label>
+                </div>    </div>
+            <br>
+
+            <div class="row">
+                <div id="color-preview">
+                    <div id="tshirt-placeholder" class="Anvil form_color_2">
+                        <div id="preview">
+                            <img src="{{ asset('uploads/image/' ~ master.filename) }}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ form_end(form) }}
+        </div>        </div>
+
 </div>
+
 {% block javascripts %}
-        <!-- Scripts -->
-        <script src="../assets/js/core.min.js"></script>
-        <script src="../assets/js/app.min.js"></script>
-        <script src="../assets/js/script.min.js"></script>
+    <!-- Scripts -->
+
+    <script type="text/javascript">
+    </script>
+    <script src="../assets/js/core.min.js"></script>
+    <script src="../assets/js/app.min.js"></script>
+    <script src="../assets/js/script.min.js"></script>
     <script src="../assets/js/script.js"></script>
 {% endblock %}
-</div>
+
 </body>
 </html>

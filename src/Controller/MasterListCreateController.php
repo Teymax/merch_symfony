@@ -23,8 +23,8 @@ class MasterListCreateController extends Controller
     {
         $create = new MasterListing();
         $form = $this->createFormBuilder($create)
-            ->add('title', TextType::class)
-           ->add('filename', FileType::class, array('label' => 'Upload (PNG file)'))
+            ->add('title', TextType::class, array('label' => false))
+           ->add('filename', FileType::class, array('label' => false))
             ->add('userId', HiddenType::class)
             ->add('created', DateTimeType::class, array('label' => false, 'attr'=>array('style'=>'display:none;'), 'data' => new \DateTime("now")))
             ->add('updated', DateTimeType::class, array('label' => false, 'attr'=>array('style'=>'display:none;'), 'data' => new \DateTime("now")))

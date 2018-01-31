@@ -23,31 +23,37 @@
     {% endblock %}
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">MerchByAmazon Listing</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                    <li class="nav-item " style="height: 33px;">
+                        <a class="nav-link" href="{{ path('app_masterList') }}" style="color: white" >Back</a>
+                    </li>
+
+                    <li class="nav-item" style="height: 33px;">
+                        <p class="nav-link">Hello, {{ app.user.username }}</p>
+                    </li>
+                    <li class="nav-item " style="height: 33px;">
+                        <a class="nav-link" href="{{ path('logout') }}" style="color: white">Logout</a>
+                    </li>
+                    {% if is_granted('ROLE_ADMIN') %}
+                        <li class="nav-item " style="height: 33px;">
+                            <a class="nav-link badge-danger" href="{{ path('app_admin') }}" style="color: white">Admin</a>
+                        </li>
+                    {% endif %}
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</nav>
     <div class="container-fluid" id="main_container">
             {% block navigation %}
-                <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#">Merch Helper</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse col" id="navbarSupportedContent">
-                        <ul class="nav justify-content-end main_menu ml-auto">
-                            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
-                                <li class="nav-item active">
-                                    <p class="nav-link" style="color: black;">Hello, <span class="text-uppercase">{{ app.user.username }}</span></p>
-                                </li>
-                                <li class="nav-item text-uppercase">
-                                    <a class="nav-link badge badge-danger" id="singUpBtn" href="{{ path('logout') }}" style="color: white">Logout</a>
-                                </li>
-                            {% endif %}
-                            {% if is_granted('ROLE_USER') %}
-                            <li class="nav-item text-uppercase">
-                            <a class="nav-link badge badge-danger" id="singUpBtn" href="#" style="color: white">User Test</a>
-                            </li>
-                            {% endif %}
-                        </ul>
-                    </div>
-                </nav>
         <div class="container-fluid">
             <table class="table">
                 <thead>

@@ -12,18 +12,17 @@ class __TwigTemplate_9b0591c6412b5bb31b8c7b29bbd2269b2ff00c59bd3b7aea6501ae53ba3
         $this->blocks = array(
             'title' => array($this, 'block_title'),
             'stylesheets' => array($this, 'block_stylesheets'),
-            'navigation' => array($this, 'block_navigation'),
             'javascripts' => array($this, 'block_javascripts'),
         );
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_6faa70feadf731a9642748b5ce9e3841208b888f337a316f558e959d5faa7bd2 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_6faa70feadf731a9642748b5ce9e3841208b888f337a316f558e959d5faa7bd2->enter($__internal_6faa70feadf731a9642748b5ce9e3841208b888f337a316f558e959d5faa7bd2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "masterList/masterList.html.twig"));
+        $__internal_f475d049be7c1c5a2c5cb69a98a12a6e32815697703baa8018126a9cbf2784e4 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_f475d049be7c1c5a2c5cb69a98a12a6e32815697703baa8018126a9cbf2784e4->enter($__internal_f475d049be7c1c5a2c5cb69a98a12a6e32815697703baa8018126a9cbf2784e4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "masterList/masterList.html.twig"));
 
-        $__internal_2108d5173d93df807a98e83aaa5cd2fcab1cf8dea54c70d21a34a03ecf69a716 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_2108d5173d93df807a98e83aaa5cd2fcab1cf8dea54c70d21a34a03ecf69a716->enter($__internal_2108d5173d93df807a98e83aaa5cd2fcab1cf8dea54c70d21a34a03ecf69a716_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "masterList/masterList.html.twig"));
+        $__internal_76197c76a569f41f4b8cc9281c0124bf7ebfa147065b1cbdf82455d253656071 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_76197c76a569f41f4b8cc9281c0124bf7ebfa147065b1cbdf82455d253656071->enter($__internal_76197c76a569f41f4b8cc9281c0124bf7ebfa147065b1cbdf82455d253656071_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "masterList/masterList.html.twig"));
 
         // line 1
         echo "<!-- app/Resources/views/base.html.twig -->
@@ -44,12 +43,58 @@ class __TwigTemplate_9b0591c6412b5bb31b8c7b29bbd2269b2ff00c59bd3b7aea6501ae53ba3
         // line 24
         echo "</head>
 <body>
-    <div class=\"container-fluid\" id=\"main_container\">
-            ";
-        // line 27
-        $this->displayBlock('navigation', $context, $blocks);
+<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\">
+    <div class=\"container-fluid\">
+        <a class=\"navbar-brand\" href=\"#\">MerchByAmazon Master Listing</a>
+        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+            <span class=\"navbar-toggler-icon\"></span>
+        </button>
+        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">
+            <ul class=\"navbar-nav ml-auto\">
+                ";
+        // line 34
+        if ($this->env->getExtension('Symfony\Bridge\Twig\Extension\SecurityExtension')->isGranted("IS_AUTHENTICATED_FULLY")) {
+            // line 35
+            echo "                    <li class=\"nav-item badge-success\">
+                        <a class=\"nav-link\" href=\"";
+            // line 36
+            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("app_masterCreate");
+            echo "\" style=\"color: white\">Create Master Listing</a>
+                    </li>
+                    <li class=\"nav-item\" style=\"height: 33px;\">
+                        <p class=\"nav-link\">Hello, ";
+            // line 39
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 39, $this->getSourceContext()); })()), "user", array()), "username", array()), "html", null, true);
+            echo "</p>
+                    </li>
+                    <li class=\"nav-item \" style=\"height: 33px;\">
+                        <a class=\"nav-link\" href=\"";
+            // line 42
+            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("logout");
+            echo "\" style=\"color: white\">Logout</a>
+                    </li>
+                    ";
+            // line 44
+            if ($this->env->getExtension('Symfony\Bridge\Twig\Extension\SecurityExtension')->isGranted("ROLE_ADMIN")) {
+                // line 45
+                echo "                        <li class=\"nav-item \" style=\"height: 33px;\">
+                            <a class=\"nav-link badge-danger\" href=\"";
+                // line 46
+                echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("app_admin");
+                echo "\" style=\"color: white\">Admin</a>
+                        </li>
+                    ";
+            }
+            // line 49
+            echo "                ";
+        }
         // line 50
-        echo "        <div class=\"container-fluid\">
+        echo "            </ul>
+        </div>
+    </div>
+</nav>
+    <div class=\"container-fluid\" id=\"main_container\">
+        <div class=\"container-fluid\">
             <table class=\"table\">
                 <thead>
                 <tr>
@@ -60,38 +105,38 @@ class __TwigTemplate_9b0591c6412b5bb31b8c7b29bbd2269b2ff00c59bd3b7aea6501ae53ba3
                 </thead>
                 <tbody>
                 ";
-        // line 60
+        // line 65
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["posts"]) || array_key_exists("posts", $context) ? $context["posts"] : (function () { throw new Twig_Error_Runtime('Variable "posts" does not exist.', 60, $this->getSourceContext()); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["posts"]) || array_key_exists("posts", $context) ? $context["posts"] : (function () { throw new Twig_Error_Runtime('Variable "posts" does not exist.', 65, $this->getSourceContext()); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["master"]) {
-            // line 61
+            // line 66
             echo "                    <tr>
                         <th scope=\"row\">";
-            // line 62
+            // line 67
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["master"], "master_id", array()), "html", null, true);
             echo "</th>
                         <td> ";
-            // line 63
+            // line 68
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["master"], "title", array()), "html", null, true);
             echo "</td>
                         <td>";
-            // line 64
+            // line 69
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["master"], "userId", array()), "html", null, true);
             echo "</td>
                         <td><a class=\"badge badge-info\" href=\"";
-            // line 65
+            // line 70
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("app_list");
             echo "/";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["master"], "master_id", array()), "html", null, true);
             echo "\">View</a></td>
                         <td><a class=\"badge badge-info\" href=\"";
-            // line 66
+            // line 71
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("app_masterEdit");
             echo "/";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["master"], "master_id", array()), "html", null, true);
             echo "\">Edit</a></td>
                         <td><a class=\"badge badge-danger\" href=\"";
-            // line 67
+            // line 72
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("app_masterDelete");
             echo "/";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["master"], "master_id", array()), "html", null, true);
@@ -102,7 +147,7 @@ class __TwigTemplate_9b0591c6412b5bb31b8c7b29bbd2269b2ff00c59bd3b7aea6501ae53ba3
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['master'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 70
+        // line 75
         echo "                </tbody>
             </table>
         </div>
@@ -111,46 +156,46 @@ class __TwigTemplate_9b0591c6412b5bb31b8c7b29bbd2269b2ff00c59bd3b7aea6501ae53ba3
 
 
 ";
-        // line 77
+        // line 82
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 83
+        // line 88
         echo "    </div>
 </body>
 </html>";
         
-        $__internal_6faa70feadf731a9642748b5ce9e3841208b888f337a316f558e959d5faa7bd2->leave($__internal_6faa70feadf731a9642748b5ce9e3841208b888f337a316f558e959d5faa7bd2_prof);
+        $__internal_f475d049be7c1c5a2c5cb69a98a12a6e32815697703baa8018126a9cbf2784e4->leave($__internal_f475d049be7c1c5a2c5cb69a98a12a6e32815697703baa8018126a9cbf2784e4_prof);
 
         
-        $__internal_2108d5173d93df807a98e83aaa5cd2fcab1cf8dea54c70d21a34a03ecf69a716->leave($__internal_2108d5173d93df807a98e83aaa5cd2fcab1cf8dea54c70d21a34a03ecf69a716_prof);
+        $__internal_76197c76a569f41f4b8cc9281c0124bf7ebfa147065b1cbdf82455d253656071->leave($__internal_76197c76a569f41f4b8cc9281c0124bf7ebfa147065b1cbdf82455d253656071_prof);
 
     }
 
     // line 6
     public function block_title($context, array $blocks = array())
     {
-        $__internal_b0a3160b233d62ae0a6d33728ae7830e33bb49653a6c69f51bb56091c5d9574a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_b0a3160b233d62ae0a6d33728ae7830e33bb49653a6c69f51bb56091c5d9574a->enter($__internal_b0a3160b233d62ae0a6d33728ae7830e33bb49653a6c69f51bb56091c5d9574a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_3371ec6c8da573144b66c30edef8be9438fd191d6203d5c717f2407145fe8403 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_3371ec6c8da573144b66c30edef8be9438fd191d6203d5c717f2407145fe8403->enter($__internal_3371ec6c8da573144b66c30edef8be9438fd191d6203d5c717f2407145fe8403_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        $__internal_5f7e684e33dad0ee7e1a022cf5a525d25131c03f5ce6507775fce3c9b17f2d24 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_5f7e684e33dad0ee7e1a022cf5a525d25131c03f5ce6507775fce3c9b17f2d24->enter($__internal_5f7e684e33dad0ee7e1a022cf5a525d25131c03f5ce6507775fce3c9b17f2d24_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_4be32d5e84bad1026fdfd7b57e71c2dc7a9fcc649f73d091c30c7ed4638f4c2a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_4be32d5e84bad1026fdfd7b57e71c2dc7a9fcc649f73d091c30c7ed4638f4c2a->enter($__internal_4be32d5e84bad1026fdfd7b57e71c2dc7a9fcc649f73d091c30c7ed4638f4c2a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        echo "MerchHelper";
+        echo "MerchByAmazon | Master Listing";
         
-        $__internal_5f7e684e33dad0ee7e1a022cf5a525d25131c03f5ce6507775fce3c9b17f2d24->leave($__internal_5f7e684e33dad0ee7e1a022cf5a525d25131c03f5ce6507775fce3c9b17f2d24_prof);
+        $__internal_4be32d5e84bad1026fdfd7b57e71c2dc7a9fcc649f73d091c30c7ed4638f4c2a->leave($__internal_4be32d5e84bad1026fdfd7b57e71c2dc7a9fcc649f73d091c30c7ed4638f4c2a_prof);
 
         
-        $__internal_b0a3160b233d62ae0a6d33728ae7830e33bb49653a6c69f51bb56091c5d9574a->leave($__internal_b0a3160b233d62ae0a6d33728ae7830e33bb49653a6c69f51bb56091c5d9574a_prof);
+        $__internal_3371ec6c8da573144b66c30edef8be9438fd191d6203d5c717f2407145fe8403->leave($__internal_3371ec6c8da573144b66c30edef8be9438fd191d6203d5c717f2407145fe8403_prof);
 
     }
 
     // line 10
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_07ec909506f1df6e3c201ab763d1e85c1ba832a931b553e56b85f38a8080d059 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_07ec909506f1df6e3c201ab763d1e85c1ba832a931b553e56b85f38a8080d059->enter($__internal_07ec909506f1df6e3c201ab763d1e85c1ba832a931b553e56b85f38a8080d059_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_bd0675e1ef1cc27db5cf1a94636e66b6c33ccec935bfd71dab895f4740dcc2ed = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_bd0675e1ef1cc27db5cf1a94636e66b6c33ccec935bfd71dab895f4740dcc2ed->enter($__internal_bd0675e1ef1cc27db5cf1a94636e66b6c33ccec935bfd71dab895f4740dcc2ed_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        $__internal_14b4a5e87c46fe4e9242d2fd5b000315500f4b7f318c18f284a008a4ac07c8e8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_14b4a5e87c46fe4e9242d2fd5b000315500f4b7f318c18f284a008a4ac07c8e8->enter($__internal_14b4a5e87c46fe4e9242d2fd5b000315500f4b7f318c18f284a008a4ac07c8e8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_961dab4e335308d71013548d7f92ddfd163bf507488ab9e4728a65e4b602cd0a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_961dab4e335308d71013548d7f92ddfd163bf507488ab9e4728a65e4b602cd0a->enter($__internal_961dab4e335308d71013548d7f92ddfd163bf507488ab9e4728a65e4b602cd0a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 11
         echo "        <!-- Fonts -->
@@ -167,87 +212,33 @@ class __TwigTemplate_9b0591c6412b5bb31b8c7b29bbd2269b2ff00c59bd3b7aea6501ae53ba3
         <link rel=\"icon\" href=\"../assets/img/favicon.png\">
     ";
         
-        $__internal_14b4a5e87c46fe4e9242d2fd5b000315500f4b7f318c18f284a008a4ac07c8e8->leave($__internal_14b4a5e87c46fe4e9242d2fd5b000315500f4b7f318c18f284a008a4ac07c8e8_prof);
+        $__internal_961dab4e335308d71013548d7f92ddfd163bf507488ab9e4728a65e4b602cd0a->leave($__internal_961dab4e335308d71013548d7f92ddfd163bf507488ab9e4728a65e4b602cd0a_prof);
 
         
-        $__internal_07ec909506f1df6e3c201ab763d1e85c1ba832a931b553e56b85f38a8080d059->leave($__internal_07ec909506f1df6e3c201ab763d1e85c1ba832a931b553e56b85f38a8080d059_prof);
+        $__internal_bd0675e1ef1cc27db5cf1a94636e66b6c33ccec935bfd71dab895f4740dcc2ed->leave($__internal_bd0675e1ef1cc27db5cf1a94636e66b6c33ccec935bfd71dab895f4740dcc2ed_prof);
 
     }
 
-    // line 27
-    public function block_navigation($context, array $blocks = array())
-    {
-        $__internal_b61e688b9319814b2c597eb345edfd76944d03c6b31753b24319ba8a5f1e3290 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_b61e688b9319814b2c597eb345edfd76944d03c6b31753b24319ba8a5f1e3290->enter($__internal_b61e688b9319814b2c597eb345edfd76944d03c6b31753b24319ba8a5f1e3290_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "navigation"));
-
-        $__internal_5d7fc62fcedd1cd0616b056f4b26bac3248e22c0ab2a64c6f048e2e78e96e518 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_5d7fc62fcedd1cd0616b056f4b26bac3248e22c0ab2a64c6f048e2e78e96e518->enter($__internal_5d7fc62fcedd1cd0616b056f4b26bac3248e22c0ab2a64c6f048e2e78e96e518_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "navigation"));
-
-        // line 28
-        echo "                <nav class=\"navbar sticky-top navbar-expand-lg navbar-light bg-light\">
-                    <a class=\"navbar-brand\" href=\"#\">Merch Helper</a>
-                    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
-                        <span class=\"navbar-toggler-icon\"></span>
-                    </button>
-                    <div class=\"collapse navbar-collapse col\" id=\"navbarSupportedContent\">
-                        <ul class=\"nav justify-content-end main_menu ml-auto\">
-                            ";
-        // line 35
-        if ($this->env->getExtension('Symfony\Bridge\Twig\Extension\SecurityExtension')->isGranted("IS_AUTHENTICATED_FULLY")) {
-            // line 36
-            echo "                                <li class=\"nav-item text-uppercase\">
-                                    <a class=\"nav-link badge badge-success\" id=\"singUpBtn\" href=\"";
-            // line 37
-            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("app_masterCreate");
-            echo "\" style=\"color: white\">Create Listing</a>
-                                </li>
-                                <li class=\"nav-item active\">
-                                    <p class=\"nav-link\" style=\"color: black;\">Hello, <span class=\"text-uppercase\">";
-            // line 40
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new Twig_Error_Runtime('Variable "app" does not exist.', 40, $this->getSourceContext()); })()), "user", array()), "username", array()), "html", null, true);
-            echo "</span></p>
-                                </li>
-                                <li class=\"nav-item text-uppercase\">
-                                    <a class=\"nav-link badge badge-danger\" id=\"singUpBtn\" href=\"";
-            // line 43
-            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("logout");
-            echo "\" style=\"color: white\">Logout</a>
-                                </li>
-                            ";
-        }
-        // line 46
-        echo "                        </ul>
-                    </div>
-                </nav>
-            ";
-        
-        $__internal_5d7fc62fcedd1cd0616b056f4b26bac3248e22c0ab2a64c6f048e2e78e96e518->leave($__internal_5d7fc62fcedd1cd0616b056f4b26bac3248e22c0ab2a64c6f048e2e78e96e518_prof);
-
-        
-        $__internal_b61e688b9319814b2c597eb345edfd76944d03c6b31753b24319ba8a5f1e3290->leave($__internal_b61e688b9319814b2c597eb345edfd76944d03c6b31753b24319ba8a5f1e3290_prof);
-
-    }
-
-    // line 77
+    // line 82
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_6d4dc525da415b68424cf569dccc7fab3dbeabb51cacbac970f5306d4fc60828 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_6d4dc525da415b68424cf569dccc7fab3dbeabb51cacbac970f5306d4fc60828->enter($__internal_6d4dc525da415b68424cf569dccc7fab3dbeabb51cacbac970f5306d4fc60828_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_374d99d37d4f09049ddfa47fbcd51828eba430852ebb443cc481b3ba0623d1bd = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_374d99d37d4f09049ddfa47fbcd51828eba430852ebb443cc481b3ba0623d1bd->enter($__internal_374d99d37d4f09049ddfa47fbcd51828eba430852ebb443cc481b3ba0623d1bd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        $__internal_5736eea998a1da3244c943fe3bc27ca5ab4ffd99037efb9fdb5fee91c8c92137 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_5736eea998a1da3244c943fe3bc27ca5ab4ffd99037efb9fdb5fee91c8c92137->enter($__internal_5736eea998a1da3244c943fe3bc27ca5ab4ffd99037efb9fdb5fee91c8c92137_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_55aaff302f1fa6a35470acd1e6091d325d9a6ba03d8e4ac770d10e2dc3bd7ef8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_55aaff302f1fa6a35470acd1e6091d325d9a6ba03d8e4ac770d10e2dc3bd7ef8->enter($__internal_55aaff302f1fa6a35470acd1e6091d325d9a6ba03d8e4ac770d10e2dc3bd7ef8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 78
+        // line 83
         echo "    <!-- Scripts -->
     <script src=\"../assets/js/core.min.js\"></script>
     <script src=\"../assets/js/app.min.js\"></script>
     <script src=\"../assets/js/script.min.js\"></script>
 ";
         
-        $__internal_5736eea998a1da3244c943fe3bc27ca5ab4ffd99037efb9fdb5fee91c8c92137->leave($__internal_5736eea998a1da3244c943fe3bc27ca5ab4ffd99037efb9fdb5fee91c8c92137_prof);
+        $__internal_55aaff302f1fa6a35470acd1e6091d325d9a6ba03d8e4ac770d10e2dc3bd7ef8->leave($__internal_55aaff302f1fa6a35470acd1e6091d325d9a6ba03d8e4ac770d10e2dc3bd7ef8_prof);
 
         
-        $__internal_6d4dc525da415b68424cf569dccc7fab3dbeabb51cacbac970f5306d4fc60828->leave($__internal_6d4dc525da415b68424cf569dccc7fab3dbeabb51cacbac970f5306d4fc60828_prof);
+        $__internal_374d99d37d4f09049ddfa47fbcd51828eba430852ebb443cc481b3ba0623d1bd->leave($__internal_374d99d37d4f09049ddfa47fbcd51828eba430852ebb443cc481b3ba0623d1bd_prof);
 
     }
 
@@ -263,7 +254,7 @@ class __TwigTemplate_9b0591c6412b5bb31b8c7b29bbd2269b2ff00c59bd3b7aea6501ae53ba3
 
     public function getDebugInfo()
     {
-        return array (  241 => 78,  232 => 77,  219 => 46,  213 => 43,  207 => 40,  201 => 37,  198 => 36,  196 => 35,  187 => 28,  178 => 27,  156 => 11,  147 => 10,  129 => 6,  117 => 83,  115 => 77,  106 => 70,  95 => 67,  89 => 66,  83 => 65,  79 => 64,  75 => 63,  71 => 62,  68 => 61,  64 => 60,  52 => 50,  50 => 27,  45 => 24,  43 => 10,  36 => 6,  29 => 1,);
+        return array (  232 => 83,  223 => 82,  201 => 11,  192 => 10,  174 => 6,  162 => 88,  160 => 82,  151 => 75,  140 => 72,  134 => 71,  128 => 70,  124 => 69,  120 => 68,  116 => 67,  113 => 66,  109 => 65,  92 => 50,  89 => 49,  83 => 46,  80 => 45,  78 => 44,  73 => 42,  67 => 39,  61 => 36,  58 => 35,  56 => 34,  44 => 24,  42 => 10,  35 => 6,  28 => 1,);
     }
 
     public function getSourceContext()
@@ -273,7 +264,7 @@ class __TwigTemplate_9b0591c6412b5bb31b8c7b29bbd2269b2ff00c59bd3b7aea6501ae53ba3
 <html>
 <head>
     <meta http-equiv=\"Content-Type\" content=\"text/html\"; charset=utf-8\" />
-    <title>{% block title %}MerchHelper{% endblock %}</title>
+    <title>{% block title %}MerchByAmazon | Master Listing{% endblock %}</title>
     <!--[if lt IE 9]>
     <script src=\"http://html5shim.googlecode.com/svn/trunk/html5.js\"></script>
     <![endif]-->
@@ -293,30 +284,35 @@ class __TwigTemplate_9b0591c6412b5bb31b8c7b29bbd2269b2ff00c59bd3b7aea6501ae53ba3
     {% endblock %}
 </head>
 <body>
+<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\">
+    <div class=\"container-fluid\">
+        <a class=\"navbar-brand\" href=\"#\">MerchByAmazon Master Listing</a>
+        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+            <span class=\"navbar-toggler-icon\"></span>
+        </button>
+        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">
+            <ul class=\"navbar-nav ml-auto\">
+                {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                    <li class=\"nav-item badge-success\">
+                        <a class=\"nav-link\" href=\"{{ path('app_masterCreate') }}\" style=\"color: white\">Create Master Listing</a>
+                    </li>
+                    <li class=\"nav-item\" style=\"height: 33px;\">
+                        <p class=\"nav-link\">Hello, {{ app.user.username }}</p>
+                    </li>
+                    <li class=\"nav-item \" style=\"height: 33px;\">
+                        <a class=\"nav-link\" href=\"{{ path('logout') }}\" style=\"color: white\">Logout</a>
+                    </li>
+                    {% if is_granted('ROLE_ADMIN') %}
+                        <li class=\"nav-item \" style=\"height: 33px;\">
+                            <a class=\"nav-link badge-danger\" href=\"{{ path('app_admin') }}\" style=\"color: white\">Admin</a>
+                        </li>
+                    {% endif %}
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</nav>
     <div class=\"container-fluid\" id=\"main_container\">
-            {% block navigation %}
-                <nav class=\"navbar sticky-top navbar-expand-lg navbar-light bg-light\">
-                    <a class=\"navbar-brand\" href=\"#\">Merch Helper</a>
-                    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
-                        <span class=\"navbar-toggler-icon\"></span>
-                    </button>
-                    <div class=\"collapse navbar-collapse col\" id=\"navbarSupportedContent\">
-                        <ul class=\"nav justify-content-end main_menu ml-auto\">
-                            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
-                                <li class=\"nav-item text-uppercase\">
-                                    <a class=\"nav-link badge badge-success\" id=\"singUpBtn\" href=\"{{ path('app_masterCreate') }}\" style=\"color: white\">Create Listing</a>
-                                </li>
-                                <li class=\"nav-item active\">
-                                    <p class=\"nav-link\" style=\"color: black;\">Hello, <span class=\"text-uppercase\">{{ app.user.username }}</span></p>
-                                </li>
-                                <li class=\"nav-item text-uppercase\">
-                                    <a class=\"nav-link badge badge-danger\" id=\"singUpBtn\" href=\"{{ path('logout') }}\" style=\"color: white\">Logout</a>
-                                </li>
-                            {% endif %}
-                        </ul>
-                    </div>
-                </nav>
-            {% endblock %}
         <div class=\"container-fluid\">
             <table class=\"table\">
                 <thead>

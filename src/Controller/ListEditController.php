@@ -15,6 +15,7 @@ use App\Entity\Listing;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 
@@ -35,7 +36,7 @@ class ListEditController extends Controller
             );
         }
         $form = $this->createFormBuilder($listing)
-            ->add('title', TextType::class, array('data' => $listing->getTitle()))
+            ->add('title', TextType::class, array('data' => $listing->getTitle(), 'label'=> false))
             ->add('type', ChoiceType::class, array(
                 'choices'  => array(
                     'Anvil' => 'Anvil',
@@ -43,16 +44,16 @@ class ListEditController extends Controller
                     'Long-Sleeve' => 'Long-Sleeve',
                     'Sweatshirt' => 'Sweatshirt',
                     'Hoodie' => 'Hoodie',
-                ),'multiple'=>false,'expanded'=>true
+                ),'multiple'=>false,'expanded'=>true, 'label' => false, 'required' => false, 'placeholder' => false
             ), array('data' => $listing->getType()))
-            ->add('brand', TextType::class, array('data' => $listing->getBrand()))
+            ->add('brand', TextType::class, array('data' => $listing->getBrand(), 'label' => false))
 
             ->add('fit',  ChoiceType::class, array(
                 'choices'  => array(
                     'Men' => 'Men',
                     'Women' => 'Women',
                     'Youth' => 'Youth',
-                ), 'multiple'=>true,'expanded'=>true
+                ), 'multiple'=>true,'expanded'=>true, 'label' => false
             ), array('data' => $listing->getFit()))
             ->add('color',  ChoiceType::class, array(
                 'choices'  => array(
@@ -77,12 +78,12 @@ class ListEditController extends Controller
                     'pink' => '19',
                     'orange' => '20',
                     'purple' => '21',
-                ), 'multiple'=>true,'expanded'=>true, 'data' => null
+                ), 'multiple'=>true,'expanded'=>true, 'data' => null, 'label' => false
             ))
-            ->add('cost', TextType::class, array('data' => $listing->getCost()))
-            ->add('bulletOne', TextType::class, array('data' => $listing->getBulletOne()))
-            ->add('bulletTwo', TextType::class, array('data' => $listing->getBulletTwo()))
-            ->add('description', TextType::class, array('data' => $listing->getDescription()))
+            ->add('cost', TextType::class, array('data' => $listing->getCost(), 'label' => false))
+            ->add('bulletOne', TextareaType::class, array('data' => $listing->getBulletOne(), 'label' => false))
+            ->add('bulletTwo', TextareaType::class, array('data' => $listing->getBulletTwo(), 'label' => false))
+            ->add('description', TextareaType::class, array('data' => $listing->getDescription(), 'label' => false))
             ->add('userId', HiddenType::class, array('data' => $listing->getUserId()))
             ->add('master_id', HiddenType::class, array('data' => $listing->getMasterId()))
             ->add('created', DateTimeType::class, array('label' => false, 'attr'=>array('style'=>'display:none;'), 'data' => $listing->getCreated()))

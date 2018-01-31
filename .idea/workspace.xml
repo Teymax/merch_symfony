@@ -2,16 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67393e52-def7-4304-93c1-7600d300baf2" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" afterPath="$PROJECT_DIR$/.env" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/script.js" afterPath="$PROJECT_DIR$/public/assets/js/script.js" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/core.min.css" afterPath="$PROJECT_DIR$/public/assets/css/core.min.css" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/main.css" afterPath="$PROJECT_DIR$/public/assets/css/main.css" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ListEditController.php" afterPath="$PROJECT_DIR$/src/Controller/ListEditController.php" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MasterListCreateController.php" afterPath="$PROJECT_DIR$/src/Controller/MasterListCreateController.php" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MasterListEditController.php" afterPath="$PROJECT_DIR$/src/Controller/MasterListEditController.php" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/admin.html.twig" afterPath="$PROJECT_DIR$/templates/admin/admin.html.twig" />
+      <change beforePath="$PROJECT_DIR$/templates/list/list.html.twig" afterPath="$PROJECT_DIR$/templates/list/list.html.twig" />
+      <change beforePath="$PROJECT_DIR$/templates/list/listCreate.html.twig" afterPath="$PROJECT_DIR$/templates/list/listCreate.html.twig" />
       <change beforePath="$PROJECT_DIR$/templates/list/listEdit.html.twig" afterPath="$PROJECT_DIR$/templates/list/listEdit.html.twig" />
+      <change beforePath="$PROJECT_DIR$/templates/masterList/masterList.html.twig" afterPath="$PROJECT_DIR$/templates/masterList/masterList.html.twig" />
+      <change beforePath="$PROJECT_DIR$/templates/masterList/masterListCreate.html.twig" afterPath="$PROJECT_DIR$/templates/masterList/masterListCreate.html.twig" />
+      <change beforePath="$PROJECT_DIR$/templates/masterList/masterListEdit.html.twig" afterPath="$PROJECT_DIR$/templates/masterList/masterListEdit.html.twig" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/4/Z/uDef9nJlaFfjcp9ILG1u" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/4/Z/uDef9nJlaFfjcp9ILG1u" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/5/-/HgaupDw1RqWHqfTbRLss" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/5/-/HgaupDw1RqWHqfTbRLss" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/5/1/E9ZOlvRQSZ4yge9sAZA7" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/5/1/E9ZOlvRQSZ4yge9sAZA7" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/5/L/9CwYH1-meAgUJWcUxPBL" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/5/L/9CwYH1-meAgUJWcUxPBL" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/5/P/tk9Kol0TYtw44M9Lt8sU" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/5/P/tk9Kol0TYtw44M9Lt8sU" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/7/J/k0WWWm0Ff7Wj9k+CcJ9Z" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/7/J/k0WWWm0Ff7Wj9k+CcJ9Z" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/A/R/q71ormQBkmlE0gFQRxSW" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/A/R/q71ormQBkmlE0gFQRxSW" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/G/S/R24Z6DsKvSUM7UJbfB9D" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/G/S/R24Z6DsKvSUM7UJbfB9D" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/I/P/Q7hZRu0uFX+s3zMo2V+j" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/I/P/Q7hZRu0uFX+s3zMo2V+j" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/M/R/Q64CkCQOzceIhjCGiN6W" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/M/R/Q64CkCQOzceIhjCGiN6W" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/O/F/fbL7UWnXxEPrXGArLvni" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/O/F/fbL7UWnXxEPrXGArLvni" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/V/2/IlnZ441PCVYVj4AnKOKG" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/V/2/IlnZ441PCVYVj4AnKOKG" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainer.php" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/01/013b692b37d01c59a6fd0672643268ab348c4c20b55be58a569cc9e1d398d20b.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/01/013b692b37d01c59a6fd0672643268ab348c4c20b55be58a569cc9e1d398d20b.php" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/70/704c5ff5d2ca0053d9f623636c09569ee86fc19cadb74e557d8f4f7d526c286a.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/70/704c5ff5d2ca0053d9f623636c09569ee86fc19cadb74e557d8f4f7d526c286a.php" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/86/86776e85085d3cd943981a7d684f23f1a99354f0ac97487e035b4cbf6da0656d.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/86/86776e85085d3cd943981a7d684f23f1a99354f0ac97487e035b4cbf6da0656d.php" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/99/99b007bf3794595b944f51ccda2d268a8d3be091379e07c516664a6419c560b5.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/99/99b007bf3794595b944f51ccda2d268a8d3be091379e07c516664a6419c560b5.php" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/c2/c28972163f8a436d56e9a08e09e88c345a546bb291429d928080ef5ca477b700.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/c2/c28972163f8a436d56e9a08e09e88c345a546bb291429d928080ef5ca477b700.php" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/c8/c84c385985f0ab0bcba74ceebc796c752276f07f3caf280ee92f465b829409b9.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/c8/c84c385985f0ab0bcba74ceebc796c752276f07f3caf280ee92f465b829409b9.php" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/dc/dcee5af7c895647eb39d50114659951c285e24f0142c38fd4a127fee3dca4ed4.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/dc/dcee5af7c895647eb39d50114659951c285e24f0142c38fd4a127fee3dca4ed4.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,32 +50,80 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/assets/js/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="85" column="63" lean-forward="false" selection-start-line="85" selection-start-column="63" selection-end-line="85" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="listEdit.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/list/listEdit.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="43" column="133" lean-forward="false" selection-start-line="43" selection-start-column="133" selection-end-line="43" selection-end-column="133" />
+            <state relative-caret-position="544">
+              <caret line="320" column="0" lean-forward="false" selection-start-line="38" selection-start-column="3" selection-end-line="320" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListEditController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/ListEditController.php">
+      <file leaf-file-name="list.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/list/list.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="79" column="68" lean-forward="false" selection-start-line="79" selection-start-column="68" selection-end-line="79" selection-end-column="68" />
-              <folding />
+            <state relative-caret-position="459">
+              <caret line="36" column="53" lean-forward="false" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
+              <folding>
+                <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/admin/admin.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="53" selection-end-column="6" />
+              <folding>
+                <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="masterListCreate.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/masterList/masterListCreate.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="53" column="14" lean-forward="false" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
+              <folding>
+                <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="masterListEdit.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/masterList/masterListEdit.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-6">
+              <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+              <folding>
+                <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#figcaption#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,20 +139,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>master</find>
-      <find>create</find>
-      <find>f5f6fa</find>
-      <find>prev</find>
-      <find>bran</find>
-      <find>bullet</find>
-      <find>file</find>
-      <find>req</find>
-      <find>add</find>
-      <find>body</find>
-      <find>col-md-4</find>
-      <find>expo</find>
-      <find>place</find>
-      <find>color</find>
       <find>shirt</find>
       <find>shirtT</find>
       <find>shirtType</find>
@@ -95,7 +154,21 @@
       <find>royal</find>
       <find>leng</find>
       <find>pick a</find>
+      <find>data_apparel_type</find>
       <find>Royal</find>
+      <find>adm</find>
+      <find>user</find>
+      <find>file</find>
+      <find>Crea</find>
+      <find>type</find>
+      <find>nav</find>
+      <find>label</find>
+      <find>400</find>
+      <find>1%</find>
+      <find>bull</find>
+      <find>desc</find>
+      <find>listing</find>
+      <find>add to</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -126,33 +199,35 @@
         <option value="$PROJECT_DIR$/src/Controller/MasterListController.php" />
         <option value="$PROJECT_DIR$/config/packages/security.yaml" />
         <option value="$PROJECT_DIR$/src/Entity/Listing.php" />
-        <option value="$PROJECT_DIR$/templates/masterList/masterListCreate.html.twig" />
-        <option value="$PROJECT_DIR$/templates/list/list.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/ListController.php" />
         <option value="$PROJECT_DIR$/templates/product/new.html.twig" />
         <option value="$PROJECT_DIR$/src/Form/ProductType.php" />
         <option value="$PROJECT_DIR$/src/Controller/ProductController.php" />
         <option value="$PROJECT_DIR$/src/Entity/Product.php" />
-        <option value="$PROJECT_DIR$/templates/masterList/masterListEdit.html.twig" />
         <option value="$PROJECT_DIR$/src/Form/MasterListType.php" />
         <option value="$PROJECT_DIR$/config/services.yaml" />
-        <option value="$PROJECT_DIR$/src/Controller/MasterListEditController.php" />
-        <option value="$PROJECT_DIR$/src/Controller/MasterListCreateController.php" />
-        <option value="$PROJECT_DIR$/templates/masterList/masterList.html.twig" />
         <option value="$PROJECT_DIR$/src/Entity/User.php" />
         <option value="$PROJECT_DIR$/config/routes.yaml" />
         <option value="$PROJECT_DIR$/src/Form/UserType.php" />
         <option value="$PROJECT_DIR$/src/Controller/AdminController.php" />
         <option value="$PROJECT_DIR$/templates/admin/admin1.html.twig" />
-        <option value="$PROJECT_DIR$/templates/admin/admin.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/AdminEditController.php" />
         <option value="$PROJECT_DIR$/public/assets/css/app.min.css" />
         <option value="$PROJECT_DIR$/src/Controller/ListCreateController.php" />
-        <option value="$PROJECT_DIR$/public/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/templates/list/listCreate.html.twig" />
-        <option value="$PROJECT_DIR$/src/Controller/ListEditController.php" />
-        <option value="$PROJECT_DIR$/templates/list/listEdit.html.twig" />
         <option value="$PROJECT_DIR$/public/assets/js/script.js" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/public/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/public/assets/css/core.min.css" />
+        <option value="$PROJECT_DIR$/src/Controller/ListEditController.php" />
+        <option value="$PROJECT_DIR$/templates/admin/admin.html.twig" />
+        <option value="$PROJECT_DIR$/templates/list/list.html.twig" />
+        <option value="$PROJECT_DIR$/templates/list/listCreate.html.twig" />
+        <option value="$PROJECT_DIR$/templates/list/listEdit.html.twig" />
+        <option value="$PROJECT_DIR$/templates/masterList/masterList.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/MasterListCreateController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/MasterListEditController.php" />
+        <option value="$PROJECT_DIR$/templates/masterList/masterListEdit.html.twig" />
+        <option value="$PROJECT_DIR$/templates/masterList/masterListCreate.html.twig" />
       </list>
     </option>
   </component>
@@ -270,11 +345,6 @@
             <path>
               <item name="merch" type="b2602c69:ProjectViewProjectNode" />
               <item name="merch" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="merch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="merch" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -289,21 +359,6 @@
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="merch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="merch" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="merch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="merch" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="script.js" type="620a8d5e:NestingTreeNode" />
             </path>
             <path>
               <item name="merch" type="b2602c69:ProjectViewProjectNode" />
@@ -396,12 +451,13 @@
       <workItem from="1516863817384" duration="16033000" />
       <workItem from="1516949721709" duration="13098000" />
       <workItem from="1517208563788" duration="25284000" />
-      <workItem from="1517312455040" duration="21245000" />
+      <workItem from="1517312455040" duration="21822000" />
+      <workItem from="1517381933392" duration="15791000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179186000" />
+    <option name="totallyTimeSpent" value="195554000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -440,10 +496,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Controller/LoginController1.php" />
-    <entry file="file://$PROJECT_DIR$/src/Entity/Registration.php" />
-    <entry file="file://$PROJECT_DIR$/templates/default/sing-up.html.twig" />
-    <entry file="file://$PROJECT_DIR$/src/Entity/Task.php" />
     <entry file="file://$PROJECT_DIR$/src/Controller/LoginController.php" />
     <entry file="file://$PROJECT_DIR$/src/Controller/MainController.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -482,20 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-159">
-          <caret line="20" column="52" lean-forward="false" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/list/listDelete.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-513">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/MasterListingRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -507,14 +545,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -582,14 +612,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Form/MasterListType.php" />
-    <entry file="file://$PROJECT_DIR$/config/services.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Listing.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -606,21 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/masterList/masterListCreate.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="39" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/MasterListCreateController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="59" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -633,22 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="23" column="48" lean-forward="false" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/list/list.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/admin.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="81" column="135" lean-forward="false" selection-start-line="81" selection-start-column="135" selection-end-line="81" selection-end-column="135" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -656,7 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -697,18 +687,177 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/masterList/masterList.html.twig">
+    <entry file="file://$PROJECT_DIR$/public/assets/css/app.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="36" column="101" lean-forward="false" selection-start-line="36" selection-start-column="101" selection-end-line="36" selection-end-column="101" />
+        <state relative-caret-position="279">
+          <caret line="0" column="270859" lean-forward="false" selection-start-line="0" selection-start-column="270859" selection-end-line="0" selection-end-column="270859" />
+          <folding>
+            <element signature="e#186915#187054#2" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ListCreateController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1252">
+          <caret line="102" column="62" lean-forward="false" selection-start-line="102" selection-start-column="43" selection-end-line="102" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/masterList/masterListEdit.html.twig">
+    <entry file="file://$PROJECT_DIR$/public/assets/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="42" column="14" lean-forward="true" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+        <state relative-caret-position="305">
+          <caret line="85" column="63" lean-forward="false" selection-start-line="85" selection-start-column="63" selection-end-line="85" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/doctrine.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/services.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/app.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="601">
+          <caret line="6" column="25247" lean-forward="false" selection-start-line="6" selection-start-column="25244" selection-end-line="6" selection-end-column="25247" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/core.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="5" column="47290" lean-forward="false" selection-start-line="5" selection-start-column="47290" selection-end-line="5" selection-end-column="47290" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ListEditController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="38" column="88" lean-forward="false" selection-start-line="38" selection-start-column="88" selection-end-line="38" selection-end-column="88" />
+          <folding>
+            <element signature="e#119#148#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="95" column="99" lean-forward="false" selection-start-line="95" selection-start-column="99" selection-end-line="95" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="55" column="57" lean-forward="false" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/admin.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="53" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/list/list.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="36" column="53" lean-forward="false" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/list/listCreate.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="97" lean-forward="false" selection-start-line="32" selection-start-column="93" selection-end-line="32" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/list/listDelete.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/masterList/masterList.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" column="27" lean-forward="false" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/MasterListCreateController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="26" column="70" lean-forward="false" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
           <folding />
         </state>
       </provider>
@@ -721,68 +870,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/css/app.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="0" column="270859" lean-forward="false" selection-start-line="0" selection-start-column="270859" selection-end-line="0" selection-end-column="270859" />
-          <folding>
-            <element signature="e#186915#187054#2" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="50" column="43" lean-forward="false" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ListCreateController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1252">
-          <caret line="102" column="62" lean-forward="false" selection-start-line="102" selection-start-column="43" selection-end-line="102" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/list/listCreate.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="34" column="78" lean-forward="false" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="78" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#0;n#label#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#0;n#label#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#0;n#label#2;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#0;n#label#3;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#0;n#label#4;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/list/listEdit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="43" column="133" lean-forward="false" selection-start-line="43" selection-start-column="133" selection-end-line="43" selection-end-column="133" />
+        <state relative-caret-position="544">
+          <caret line="320" column="0" lean-forward="false" selection-start-line="38" selection-start-column="3" selection-end-line="320" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ListEditController.php">
+    <entry file="file://$PROJECT_DIR$/templates/masterList/masterListEdit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="79" column="68" lean-forward="false" selection-start-line="79" selection-start-column="68" selection-end-line="79" selection-end-column="68" />
-          <folding />
+        <state relative-caret-position="-6">
+          <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#figcaption#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/script.js">
+    <entry file="file://$PROJECT_DIR$/templates/masterList/masterListCreate.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="85" column="63" lean-forward="false" selection-start-line="85" selection-start-column="63" selection-end-line="85" selection-end-column="63" />
-          <folding />
+        <state relative-caret-position="595">
+          <caret line="53" column="14" lean-forward="false" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
