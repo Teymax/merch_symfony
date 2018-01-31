@@ -9,6 +9,7 @@
 namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use App\Entity\Listing;
+use App\Entity\User;
 use Symfony\Component\Routing\Annotation\Route;
 
 
@@ -25,6 +26,15 @@ class ListController extends Controller
              'master_id' => $master_id
             ]
         );
-        return $this->render('list/list.html.twig', ['posts' => $repository, 'master' => $master_id ]);
+        $list = $this->getDoctrine()->getRepository(Listing::class)->findBy(
+            ['user_id' => $user
+            ]
+        );
+        $users = $this->getDoctrine()->getRepository(User::class)->findBy(
+            ['user_id' => $user
+            ]
+        );
+        $listCount= count($list);
+        return $this->render('list/list.html.twig', ['posts' => $repository, 'master' => $master_id, 'listCount' => $listCount, 'user' =>$users ]);
     }
 }

@@ -3,15 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="67393e52-def7-4304-93c1-7600d300baf2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/templates/default/login.html.twig" afterPath="$PROJECT_DIR$/templates/default/login.html.twig" />
-      <change beforePath="$PROJECT_DIR$/templates/list/listDelete.html.twig" afterPath="$PROJECT_DIR$/templates/list/listDelete.html.twig" />
-      <change beforePath="$PROJECT_DIR$/templates/masterList/masterListDelete.html.twig" afterPath="$PROJECT_DIR$/templates/masterList/masterListDelete.html.twig" />
-      <change beforePath="$PROJECT_DIR$/templates/masterList/masterListEdit.html.twig" afterPath="$PROJECT_DIR$/templates/masterList/masterListEdit.html.twig" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ListController.php" afterPath="$PROJECT_DIR$/src/Controller/ListController.php" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MasterListController.php" afterPath="$PROJECT_DIR$/src/Controller/MasterListController.php" />
+      <change beforePath="$PROJECT_DIR$/templates/list/list.html.twig" afterPath="$PROJECT_DIR$/templates/list/list.html.twig" />
+      <change beforePath="$PROJECT_DIR$/templates/masterList/masterList.html.twig" afterPath="$PROJECT_DIR$/templates/masterList/masterList.html.twig" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/3/E/Cc52KpT-EXNPdlMqKdUE" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/3/E/Cc52KpT-EXNPdlMqKdUE" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/3/L/nx3v5gwKX3E+4jD+A3+b" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/3/L/nx3v5gwKX3E+4jD+A3+b" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/7/H/0kW2-P1tPTQ33wIWYF5j" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/7/H/0kW2-P1tPTQ33wIWYF5j" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/F/6/cS+MMEVeRzNrfNRYszz8" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/F/6/cS+MMEVeRzNrfNRYszz8" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/M/V/Z0tnVD580J260-z5sqwR" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/M/V/Z0tnVD580J260-z5sqwR" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/N/Y/lxdx1doY-l0PyhH+Ke41" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/N/Y/lxdx1doY-l0PyhH+Ke41" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/R/S/nmhvA29m3hKHjUICUKSx" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/R/S/nmhvA29m3hKHjUICUKSx" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/Z/E/7ARfUA8C1tb2BxBhKcSP" afterPath="$PROJECT_DIR$/var/cache/dev/pools/tn-4AIfIW0/Z/E/7ARfUA8C1tb2BxBhKcSP" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/99/99b007bf3794595b944f51ccda2d268a8d3be091379e07c516664a6419c560b5.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/99/99b007bf3794595b944f51ccda2d268a8d3be091379e07c516664a6419c560b5.php" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/a3/a3a74c2a28054f4cd2b67bc5eff18fe6d2676aeaed66ca0edf8227be50a192fc.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/a3/a3a74c2a28054f4cd2b67bc5eff18fe6d2676aeaed66ca0edf8227be50a192fc.php" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/c2/c2b230902ee0978704473426980d19362e4301b9a1a5aa62cf40df619085107d.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/c2/c2b230902ee0978704473426980d19362e4301b9a1a5aa62cf40df619085107d.php" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/01/013b692b37d01c59a6fd0672643268ab348c4c20b55be58a569cc9e1d398d20b.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/01/013b692b37d01c59a6fd0672643268ab348c4c20b55be58a569cc9e1d398d20b.php" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/86/86776e85085d3cd943981a7d684f23f1a99354f0ac97487e035b4cbf6da0656d.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/86/86776e85085d3cd943981a7d684f23f1a99354f0ac97487e035b4cbf6da0656d.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,14 +31,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ListController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ListController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/ListController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+            <state relative-caret-position="493">
+              <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
               <folding>
-                <element signature="e#656#677#0#PHP" expanded="true" />
+                <element signature="e#118#175#0#PHP" expanded="true" />
+                <element signature="e#977#998#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MasterListController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/MasterListController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="36" column="135" lean-forward="false" selection-start-line="36" selection-start-column="120" selection-end-line="36" selection-end-column="135" />
+              <folding>
+                <element signature="e#118#138#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/list/list.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="36" column="36" lean-forward="false" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/admin/admin.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="643">
+              <caret line="84" column="33" lean-forward="false" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,10 +139,8 @@
         <option value="$PROJECT_DIR$/src/Repository/MasterListingRepository.php" />
         <option value="$PROJECT_DIR$/src/Controller/ListDeleteController.php" />
         <option value="$PROJECT_DIR$/src/Controller/MasterListDeleteController.php" />
-        <option value="$PROJECT_DIR$/src/Controller/MasterListController.php" />
         <option value="$PROJECT_DIR$/config/packages/security.yaml" />
         <option value="$PROJECT_DIR$/src/Entity/Listing.php" />
-        <option value="$PROJECT_DIR$/src/Controller/ListController.php" />
         <option value="$PROJECT_DIR$/templates/product/new.html.twig" />
         <option value="$PROJECT_DIR$/src/Form/ProductType.php" />
         <option value="$PROJECT_DIR$/src/Controller/ProductController.php" />
@@ -122,10 +159,8 @@
         <option value="$PROJECT_DIR$/public/assets/css/core.min.css" />
         <option value="$PROJECT_DIR$/src/Controller/ListEditController.php" />
         <option value="$PROJECT_DIR$/templates/admin/admin.html.twig" />
-        <option value="$PROJECT_DIR$/templates/list/list.html.twig" />
         <option value="$PROJECT_DIR$/templates/list/listCreate.html.twig" />
         <option value="$PROJECT_DIR$/templates/list/listEdit.html.twig" />
-        <option value="$PROJECT_DIR$/templates/masterList/masterList.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/MasterListCreateController.php" />
         <option value="$PROJECT_DIR$/src/Controller/MasterListEditController.php" />
         <option value="$PROJECT_DIR$/templates/masterList/masterListCreate.html.twig" />
@@ -137,6 +172,10 @@
         <option value="$PROJECT_DIR$/templates/masterList/masterListDelete.html.twig" />
         <option value="$PROJECT_DIR$/templates/masterList/masterListEdit.html.twig" />
         <option value="$PROJECT_DIR$/templates/list/listDelete.html.twig" />
+        <option value="$PROJECT_DIR$/templates/masterList/masterList.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/MasterListController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/ListController.php" />
+        <option value="$PROJECT_DIR$/templates/list/list.html.twig" />
       </list>
     </option>
   </component>
@@ -288,6 +327,12 @@
               <item name="merch" type="b2602c69:ProjectViewProjectNode" />
               <item name="merch" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="merch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="merch" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -360,12 +405,12 @@
       <workItem from="1516949721709" duration="13098000" />
       <workItem from="1517208563788" duration="25284000" />
       <workItem from="1517312455040" duration="21822000" />
-      <workItem from="1517381933392" duration="18801000" />
+      <workItem from="1517381933392" duration="20280000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198564000" />
+    <option name="totallyTimeSpent" value="200043000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -488,14 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/MasterListController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/admin/admin1.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -510,16 +547,6 @@
           <folding>
             <element signature="e#118#175#0#PHP" expanded="false" />
             <element signature="e#1641#1665#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="e#119#142#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -633,22 +660,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/admin.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="53" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/list/listEdit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4873">
@@ -737,14 +748,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/list/list.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="53" lean-forward="false" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/masterList/masterListDelete.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -757,14 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="799">
           <caret line="47" column="72" lean-forward="false" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/masterList/masterList.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="30" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -783,13 +778,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="37" column="1" lean-forward="false" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/admin.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="643">
+          <caret line="84" column="33" lean-forward="false" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/masterList/masterList.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="34" column="41" lean-forward="true" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/ListController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+        <state relative-caret-position="493">
+          <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
           <folding>
-            <element signature="e#656#677#0#PHP" expanded="true" />
+            <element signature="e#118#175#0#PHP" expanded="true" />
+            <element signature="e#977#998#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/MasterListController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="36" column="135" lean-forward="false" selection-start-line="36" selection-start-column="120" selection-end-line="36" selection-end-column="135" />
+          <folding>
+            <element signature="e#118#138#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/list/list.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="36" column="36" lean-forward="false" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>

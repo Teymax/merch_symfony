@@ -7,6 +7,7 @@
  */
 
 namespace App\Controller;
+use App\Entity\User;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use App\Entity\MasterListing;
 use Symfony\Component\Routing\Annotation\Route;
@@ -24,6 +25,15 @@ class MasterListController extends Controller
         $repository = $this->getDoctrine()->getRepository(MasterListing::class)->findBy(
             ['user_id' => $user]
         );
-        return $this->render('masterList/masterList.html.twig', ['posts' => $repository]);
+        $list = $this->getDoctrine()->getRepository(MasterListing::class)->findBy(
+            ['user_id' => $user
+            ]
+        );
+        $users = $this->getDoctrine()->getRepository(User::class)->findBy(
+            ['user_id' => $user
+            ]
+        );
+        $masterCount= count($list);
+        return $this->render('masterList/masterList.html.twig', ['posts' => $repository, 'masterCount' => $masterCount, 'user' =>$users]);
     }
 }

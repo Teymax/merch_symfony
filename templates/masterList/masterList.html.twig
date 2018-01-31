@@ -32,9 +32,12 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 {% if is_granted('IS_AUTHENTICATED_FULLY') %}
-                    <li class="nav-item badge-success">
-                        <a class="nav-link" href="{{ path('app_masterCreate') }}" style="color: white">Create Master Listing</a>
-                    </li>
+                    {% if masterCount <25 %}
+                        <li class="nav-item badge-success">
+                            <a class="nav-link" href="{{ path('app_masterCreate') }}" style="color: white">Create Master Listing</a>
+                        </li>
+                    {% endif %}
+
                     <li class="nav-item" style="height: 33px;">
                         <p class="nav-link">Hello, {{ app.user.username }}</p>
                     </li>
