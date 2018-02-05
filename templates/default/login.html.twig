@@ -43,7 +43,7 @@
     <div class="p-3 mb-2 text-white container col-3" id="logIn_form" style="margin: 0 auto;">
             <div class="form-group">
                 {% if error %}
-                    <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                    <div class="bg-danger" style="font-size: 1rem; font-weight: 400; line-height: 1.5; color: #212529; text-align: center;">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
                 {% endif %}
 
                 <form action="{{ path('login') }}" method="post">
@@ -60,6 +60,7 @@
                     #}
                     </br>
                     <button type="submit" class="btn btn-info">Login</button>
+                    <a class="btn btn-link" href="{{ path('app_forgot') }}">Forgot Your Password?</a>
                 </form>
             </div>
     </div>

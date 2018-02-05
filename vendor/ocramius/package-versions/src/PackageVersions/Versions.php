@@ -24,6 +24,7 @@ final class Versions
   'doctrine/lexer' => 'v1.0.1@83893c552fd2045dd78aef794c31e694c37c0b8c',
   'doctrine/migrations' => 'v1.6.2@e3faf7c96b8a6084045dedcaf51f74c7834644d4',
   'doctrine/orm' => 'v2.6.0@374e7ace49d864dad8cddbc55346447c8a6a2083',
+  'egulias/email-validator' => '2.1.3@1bec00a10039b823cc94eef4eddd47dcd3b2ca04',
   'jdorn/sql-formatter' => 'v1.2.17@64990d96e0959dff8e059dfcdc1af130728d92bc',
   'ocramius/package-versions' => '1.2.0@ad8a245decad4897cc6b432743913dad0d69753c',
   'ocramius/proxy-manager' => '2.2.0@81d53b2878f1d1c40ad27270e64b51798485dfc5',
@@ -32,6 +33,7 @@ final class Versions
   'psr/log' => '1.0.2@4ebe3a8bf773a19edfe0a84b6585ba3d401b724d',
   'psr/simple-cache' => '1.0.0@753fa598e8f3b9966c886fe13f370baa45ef0e24',
   'sensio/framework-extra-bundle' => 'v5.1.3@0696496cb3e2d23add645d424699e5c723238aad',
+  'swiftmailer/swiftmailer' => 'v6.0.2@412333372fb6c8ffb65496a2bbd7321af75733fc',
   'symfony/asset' => 'v4.0.3@db6063ab6e71c0d4910328a4d10eba197e1d6b40',
   'symfony/cache' => 'v4.0.3@1ebe207de664355b1699d35b12b0563c38a47b4e',
   'symfony/config' => 'v4.0.3@0e86d267db0851cf55f339c97df00d693fe8592f',
@@ -60,6 +62,7 @@ final class Versions
   'symfony/routing' => 'v4.0.3@a34b58ed26cc090f99b2ef833d609a6884581b3c',
   'symfony/security' => 'v4.0.3@dfc0ef20a75b723ab2f20449a7b5dd768800c9e2',
   'symfony/security-bundle' => 'v4.0.3@0440854c202dd49a64310cdd40a1c7008449b578',
+  'symfony/swiftmailer-bundle' => 'v3.1.6@9728097df87e76e2db71fc41fd7d211c06daea3e',
   'symfony/templating' => 'v4.0.3@1b30ab3884d860f59811960db670273893edddae',
   'symfony/translation' => 'v4.0.3@2bb1b9dac38d32c5afb00edc9371b5db4cf6d000',
   'symfony/twig-bridge' => 'v4.0.3@92b7c3f30fc8d23ac4be8da4e575a3bb7ea903c1',
@@ -76,7 +79,7 @@ final class Versions
   'symfony/stopwatch' => 'v4.0.3@d52321f0e2b596bd03b5d1dd6eebe71caa925704',
   'symfony/var-dumper' => 'v4.0.3@883f6109a2069773e088c08626b87a3d3d61c566',
   'symfony/web-profiler-bundle' => 'v4.0.3@20a04d0672d7f538d1c06ded7bf5990f23c089aa',
-  '__root__' => 'dev-master@779e2b3ea54793a4d6d6699bf4478f412ef82f5f',
+  '__root__' => 'dev-master@6cf22957e2fce1944cc61d2f9bd412169767bd20',
 );
 
     private function __construct()

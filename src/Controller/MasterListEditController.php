@@ -26,7 +26,7 @@ class MasterListEditController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
         $master = $em->getRepository(MasterListing::class)->find($master_id);
-
+        $fil = $master ->getFilename();
         if (!$master) {
             throw $this->createNotFoundException(
                 'No product found for id '.$master_id
@@ -34,7 +34,7 @@ class MasterListEditController extends Controller
         }
         $form = $this->createFormBuilder($master)
             ->add('title', TextType::class, array('data' => $master->getTitle(), 'label' => false))
-            ->add('filename', FileType::class, array('label' => 'Upload (PNG file)', 'data_class' => null, 'label' => false))
+            ->add('filename', FileType::class, array( 'data_class' => null, 'label' => false, 'required' => false))
             ->add('userId', HiddenType::class, array('data' => $master->getUserId()))
             ->add('created', DateTimeType::class, array('label' => false, 'attr'=>array('style'=>'display:none;'), 'data' => $master->getCreated()))
             ->add('updated', DateTimeType::class, array('label' => false, 'attr'=>array('style'=>'display:none;'), 'data' => new \DateTime("now")))
@@ -48,8 +48,9 @@ class MasterListEditController extends Controller
              */
             $create = $form->getData();
             $file = $create->getFilename();
+            if ($file != null) {
             // Generate a unique name for the file before saving it
-            $fileName = md5(uniqid()).'.'.$file->guessExtension();
+            $fileName = md5(uniqid()) . '.' . $file->guessExtension();
             // Move the file to the directory where brochures are stored
             $file->move(
                 $this->getParameter('image_directory'),
@@ -59,6 +60,10 @@ class MasterListEditController extends Controller
             // Update the 'brochure' property to store the PDF file name
             // instead of its contents
             $create->setFilename($fileName);
+        }
+        else {
+            $create->setFilename($fil);
+        }
 
             $em = $this->getDoctrine()->getManager();
             $em->persist($create);

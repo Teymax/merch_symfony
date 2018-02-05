@@ -53,6 +53,7 @@ class ListCreateController extends Controller
                 'expanded'=>true,
                 'required' => false,
                 'label' => false,
+                'data' => array('Men', 'Women', 'Youth' ),
             ))
             ->add('color',  ChoiceType::class, array(
                 'choices'  => array(

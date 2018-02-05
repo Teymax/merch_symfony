@@ -169,6 +169,19 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
+        elseif (0 === strpos($pathinfo, '/password-recovery')) {
+            // password-recovery
+            if (preg_match('#^/password\\-recovery/(?P<user_id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'password-recovery')), array (  '_controller' => 'App\\Controller\\RecoveryController::recovery',));
+            }
+
+            // app_passwordRecovery
+            if ('/password-recovery' === $pathinfo) {
+                return array (  '_controller' => 'App\\Controller\\RecoveryController::recovery',  '_route' => 'app_passwordRecovery',);
+            }
+
+        }
+
         elseif (0 === strpos($pathinfo, '/register')) {
             // user_registration
             if ('/register' === $pathinfo) {
@@ -264,6 +277,11 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             }
 
             return $ret;
+        }
+
+        // app_forgot
+        if ('/forgot-password' === $pathinfo) {
+            return array (  '_controller' => 'App\\Controller\\ForgotController::forgot',  '_route' => 'app_forgot',);
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

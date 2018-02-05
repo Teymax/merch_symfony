@@ -40,5 +40,11 @@ app_listEdit:
 app_listDelete:
     path: /list-delete
     controller: App\Controller\ListDeleteController::listDelete
+app_passwordRecovery:
+    path: /password-recovery
+    controller: App\Controller\RecoveryController::recovery
+app_forgot:
+    path: /forgot-password
+    controller: App\Controller\ForgotController::forgot
 logout:
     path: /logout

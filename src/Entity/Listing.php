@@ -42,15 +42,15 @@ class Listing
      */
     private $cost;
     /**
-     * @ORM\Column(type="string", length=100)
+     * @ORM\Column(type="string", length=255)
      */
     private $bulletOne;
     /**
-     * @ORM\Column(type="string", length=100)
+     * @ORM\Column(type="string", length=255)
      */
     private $bulletTwo;
     /**
-     * @ORM\Column(type="string", length=100)
+     * @ORM\Column(type="string", length=1000)
      */
     private $description;
     /**

@@ -80,7 +80,7 @@
                         <td>{{ master.userId }}</td>
                         <td><a class="badge badge-info" href="{{ path('app_list')}}/{{ master.master_id}}">View</a></td>
                         <td><a class="badge badge-info" href="{{ path('app_masterEdit')}}/{{ master.master_id}}">Edit</a></td>
-                        <td><a class="badge badge-danger" href="{{ path('app_masterDelete')}}/{{ master.master_id}}">Delete</a></td>
+                        <td><a class="badge badge-danger" onclick="deletePost()" href="#">Delete</a></td>
                     </tr>
                 {% endfor %}
                 </tbody>
@@ -93,6 +93,16 @@
 {% block javascripts %}
     <!-- Scripts -->
     <script src="../assets/js/core.min.js"></script>
+    <script type="text/javascript">
+        function deletePost() {
+            var ask = window.confirm("Are you sure you want to delete this Master Listing?");
+            if (ask) {
+                {% for master in posts %}
+                window.location.href = "{{ path('app_masterDelete')}}/{{ master.master_id}}";
+                {% endfor %}
+            }
+        }
+    </script>
     <script src="../assets/js/app.min.js"></script>
     <script src="../assets/js/script.min.js"></script>
 {% endblock %}
